@@ -19,14 +19,6 @@ export const StyledTextContainer = styled(Container)`
     top: 852px;
   }
 `;
-export const StyledTextContainer2 = styled(Container)`
-  &&& {
-    width: 745px;
-    height: 154px;
-    left: 347px;
-    top: 1305px;
-  }
-`;
 
 export const StyledMissionTitle = styled.h1`
   &&& {
@@ -131,5 +123,17 @@ export const StyledSocialContainer = styled(Container)`
     position: absolute;
     margin-bottom: 32px;
     top: 1500px;
+  }
+`;
+
+export const StyledButtonText = styled.p`
+  &&& {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #fcfcfc;
   }
 `;

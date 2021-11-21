@@ -7,183 +7,323 @@ import {
   StyledDescription,
   StyledText,
   StyledTextContainer,
-  StyledTextContainer2,
   StyledSocialContainer,
   StyledGridColumn,
   StyledGrid,
+  StyledButtonText,
 } from "./styles";
-import { GridColumn, ImageGroup } from "semantic-ui-react";
+import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
 import Date from "../../components/Time/Time";
-
+import Social from "../../components/Social/Social";
 import facebook from "../../res/images/facebook.png";
 import instagram from "../../res/images/instagram.png";
 import linkedin from "../../res/images/linkedin.png";
 import twitter from "../../res/images/twitter.png";
+import collage1 from "../../res/images/collage1.png";
+import collage2 from "../../res/images/collage2.png";
+import "../../grid.min.css";
 
 // Landing page component
 function Landing() {
   //Functions to track clicks
   return (
-    <div>
-      <StyledLandingContainer>
+    <div style={{ background: "black" }}>
+      <Container
+        text
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          color: "white",
+          width: "1004px",
+          position: "relative",
+          textAlign: "left",
+        }}>
         <StyledMissionTitle>2020 Vision.</StyledMissionTitle>
-        <StyledTextContainer>
-          <StyledStatement>
-            2020 marked the start of an incredibly difficult time period. It is
-            easy to say that hindsight is 2020, but we do not live in the past
-            and unfortunately can’t change the present — what we can do is
-            learn, grow, and look toward the future with 20/20 vision.
-          </StyledStatement>
-        </StyledTextContainer>
-        <StyledTitle>What is TEDx?</StyledTitle>
-        <StyledTextContainer2>
-          <StyledDescription>
-            In the spirit of ideas worth spreading, TED has created a program
-            called TEDx.
-          </StyledDescription>
-          <StyledDescription>
-            TEDx is a program of local, self-organized events that bring people
-            together to share a TED-like experience. Our event is called TEDxUW,
-            where x = independently organized TED event. At our TEDxUW, TED
-            Talks video and live speakers will combine to spark deep discussion
-            and connection in a small group. The TED Conference provides general
-            guidance for the TEDx program, but individual TEDx events, including
-            ours, are self-organized.
-          </StyledDescription>
-        </StyledTextContainer2>
+      </Container>
+      <Button
+        // onClick={() => window.location.replace("/#about")}
+        style={{
+          backgroundColor: "#E62B1E",
+          borderRadius: "100px",
+          color: "#FCFCFC",
+          width: "272px",
+          height: "45px",
+          textAlign: "center",
+          justifyContent: "center",
+          // left: "584px",
+          // bottom: "2548px",
+        }}>
+        <StyledButtonText>Sign Up for Email Reminders</StyledButtonText>
+      </Button>
+      <Container
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          color: "white",
+          width: "1440px",
+          position: "relative",
+          textAlign: "left",
+        }}>
+        <div
+          style={{
+            width: "1440px",
+            height: "299px",
+            backgroundImage: `url(${collage1})`,
+          }}>
+          <Container
+            text
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              color: "white",
+              width: "745px",
+              position: "relative",
+              textAlign: "left",
+            }}>
+            <StyledStatement style={{ paddingTop: "29px" }}>
+              2020 marked the start of an incredibly difficult time period. It
+              is easy to say that hindsight is 2020, but we do not live in the
+              past and unfortunately can’t change the present — what we can do
+              is learn, grow, and look toward the future with 20/20 vision.
+            </StyledStatement>
+          </Container>
+        </div>
+      </Container>
 
+      <Container
+        text
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          color: "white",
+          width: "745px",
+          position: "relative",
+          textAlign: "left",
+        }}>
+        <Divider hidden style={{ height: "80px" }} />
+        <StyledTitle>What is TEDx?</StyledTitle>
+      </Container>
+      <div
+        style={{
+          position: "relative",
+          marginLeft: "auto",
+          marginRight: "auto",
+          transform: "translate(-110%, -100%)",
+          color: "white",
+          width: "243px",
+          borderBottom: "15px solid #e62b1e",
+        }}></div>
+      <Container
+        text
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          color: "white",
+          width: "745px",
+          position: "relative",
+          textAlign: "left",
+        }}>
+        <StyledDescription>
+          In the spirit of ideas worth spreading, TED has created a program
+          called&nbsp;
+          <a
+            style={{ color: "#e62b1e" }}
+            href="https://www.ted.com/about/programs-initiatives/tedx-program">
+            TEDx
+          </a>
+          .
+        </StyledDescription>
+        <StyledDescription>
+          TEDx is a program of local, self-organized events that bring people
+          together to share a TED-like experience. Our event is called TEDxUW,
+          where x = independently organized TED event. At our TEDxUW, TED Talks
+          video and live speakers will combine to spark deep discussion and
+          connection in a small group. The TED Conference provides general
+          guidance for the TEDx program, but individual TEDx events, including
+          ours, are self-organized.
+        </StyledDescription>
+        <Divider hidden style={{ height: "100px" }} />
         <StyledTitle>What is TEDxUW?</StyledTitle>
-        <StyledTextContainer2>
-          <StyledDescription>
-            <span
-              style={{
-                color: "white",
-                fontFamily: "Avenir",
-                fontStyle: "normal",
-                fontWeight: "800",
-                fontSize: "24px",
-                lineHeight: "33px",
-                textAlign: "left",
-              }}>
-              Founded in 2011
-            </span>
-            , TEDxUW is the University of Waterloo's official TEDx experience.
-            It is one in a series of 3,000+ events being held worldwide as part
-            of the international TED movement to create open platforms for
-            riveting ideas to be shared with the world. The diverse group of
-            students, faculty, and alumni learn from one another, both as
-            speakers and as attendees, and leave the conference driven to
-            creatively and collectively improve our future.
-          </StyledDescription>
-          <StyledDescription>
-            <span
-              style={{
-                color: "white",
-                fontFamily: "Avenir",
-                fontStyle: "normal",
-                fontWeight: "800",
-                fontSize: "24px",
-                lineHeight: "33px",
-                textAlign: "left",
-              }}>
-              Our mission
-            </span>
-            &nbsp; is to bring together intelligent, talented and energetic
-            members within the University of Waterloo community to foster an
-            environment in which change-makers are able to showcase their ideas
-            and achievements to a global audience. With TEDxUW talks published
-            on TED.com and amassing over 5 million views on YouTube, TEDxUW
-            sparks innovation across the globe starting at the University of
-            Waterloo.
-          </StyledDescription>
-          <StyledDescription>
-            <span
-              style={{
-                color: "white",
-                fontFamily: "Avenir",
-                fontStyle: "normal",
-                fontWeight: "800",
-                fontSize: "24px",
-                lineHeight: "33px",
-                textAlign: "left",
-              }}>
-              At the University of Waterloo
-            </span>
-            , ideas are a part of who we are. Both on and off campus, we
-            cultivate and apply diverse, multidisciplinary ideas in a variety of
-            fields. Hosting a TEDx conference each year is our distinct way of
-            supporting and encouraging the “ideas worth spreading” philosophy.
-            Our goal is to highlight the collective contributions of our
-            university to a global society, simultaneously championing the
-            University of Waterloo as a community where great minds and big
-            ideas always meet. TEDxUW strives to position the University and its
-            extended community on an international activity platform that is
-            being watched, shared and talked about by the world’s top thinkers,
-            thought leaders, businessmen, problem-solvers, entrepreneurs,
-            writers, activists, and change-makers.
-          </StyledDescription>
+        <div
+          style={{
+            position: "relative",
+            marginLeft: "auto",
+            marginRight: "auto",
+            transform: "translate(-78.3%, -100%)",
+            color: "white",
+            width: "303px",
+            borderBottom: "15px solid #e62b1e",
+          }}></div>
+        <StyledDescription>
+          <span
+            style={{
+              color: "#afafaf",
+              fontFamily: "Avenir",
+              fontStyle: "normal",
+              fontWeight: "800",
+              fontSize: "24px",
+              lineHeight: "33px",
+              textAlign: "left",
+            }}>
+            Founded in 2011
+          </span>
+          , TEDxUW is the University of Waterloo's official TEDx experience. It
+          is one in a series of 3,000+ events being held worldwide as part of
+          the international TED movement to create open platforms for riveting
+          ideas to be shared with the world. The diverse group of students,
+          faculty, and alumni learn from one another, both as speakers and as
+          attendees, and leave the conference driven to creatively and
+          collectively improve our future.
+        </StyledDescription>
+        <Divider hidden style={{ height: "25px" }} />
+        <StyledDescription>
+          <span
+            style={{
+              color: "#afafaf",
+              fontFamily: "Avenir",
+              fontStyle: "normal",
+              fontWeight: "800",
+              fontSize: "24px",
+              lineHeight: "33px",
+              textAlign: "left",
+            }}>
+            Our mission
+          </span>
+          &nbsp; is to bring together intelligent, talented and energetic
+          members within the University of Waterloo community to foster an
+          environment in which change-makers are able to showcase their ideas
+          and achievements to a global audience. With TEDxUW talks published on
+          TED.com and amassing over 5 million views on YouTube, TEDxUW sparks
+          innovation across the globe starting at the University of Waterloo.
+        </StyledDescription>
+        <Divider hidden style={{ height: "25px" }} />
+        <StyledDescription>
+          <span
+            style={{
+              color: "#afafaf",
+              fontFamily: "Avenir",
+              fontStyle: "normal",
+              fontWeight: "800",
+              fontSize: "24px",
+              lineHeight: "33px",
+              textAlign: "left",
+            }}>
+            At the University of Waterloo
+          </span>
+          , ideas are a part of who we are. Both on and off campus, we cultivate
+          and apply diverse, multidisciplinary ideas in a variety of fields.
+          Hosting a TEDx conference each year is our distinct way of supporting
+          and encouraging the “ideas worth spreading” philosophy. Our goal is to
+          highlight the collective contributions of our university to a global
+          society, simultaneously championing the University of Waterloo as a
+          community where great minds and big ideas always meet. TEDxUW strives
+          to position the University and its extended community on an
+          international activity platform that is being watched, shared and
+          talked about by the world’s top thinkers, thought leaders,
+          businessmen, problem-solvers, entrepreneurs, writers, activists, and
+          change-makers.
+        </StyledDescription>
+      </Container>
+
+      <Container
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          color: "white",
+          width: "1440px",
+          position: "relative",
+          textAlign: "left",
+        }}>
+        <div
+          style={{
+            width: "1440px",
+            height: "324.41px",
+            backgroundImage: `url(${collage2})`,
+          }}>
           <StyledStatement>
             “There aren’t many times I’d say I’d be willing to travel 18 hours
             to go to a 7 hour conference but I’d do this again in a heartbeat.”
             - 2017 TEDxUW Delegate
           </StyledStatement>
-          <StyledText>Follow us on Social Media!</StyledText>
-        </StyledTextContainer2>
-        <StyledGrid column={4}>
-          <StyledGridColumn>
+        </div>
+      </Container>
+
+      <StyledText style={{ textAlign: "center" }}>
+        Follow us on Social Media!
+      </StyledText>
+
+      <Container
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          color: "white",
+          width: "420px",
+          position: "relative",
+          textAlign: "left",
+        }}>
+        <div class="ui relaxed grid" style={{ color: "white" }}>
+          <div class="column" style={{ marginRight: "42px" }}>
             <ImageGroup>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer">
                 <img
+                  style={{ width: "57px" }}
                   alt=""
                   src={facebook}
                   onMouseOut={(e) => (e.currentTarget.src = facebook)}
                 />
               </a>
             </ImageGroup>
-          </StyledGridColumn>
-          <StyledGridColumn>
+          </div>
+          <div class="column" style={{ marginRight: "42px" }}>
             <ImageGroup>
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer">
                 <img
+                  style={{ width: "57px" }}
                   alt=""
                   src={linkedin}
                   onMouseOut={(e) => (e.currentTarget.src = linkedin)}
                 />
               </a>
             </ImageGroup>
-          </StyledGridColumn>
-          <ImageGroup>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer">
-              <img
-                alt=""
-                src={instagram}
-                onMouseOut={(e) => (e.currentTarget.src = instagram)}
-              />
-            </a>
-          </ImageGroup>
-          <ImageGroup>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer">
-              <img
-                alt=""
-                src={twitter}
-                onMouseOut={(e) => (e.currentTarget.src = twitter)}
-              />
-            </a>
-          </ImageGroup>
-        </StyledGrid>
-      </StyledLandingContainer>
+          </div>
+          <div class="column" style={{ marginRight: "42px" }}>
+            <ImageGroup>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  style={{ width: "57px" }}
+                  alt=""
+                  src={instagram}
+                  onMouseOut={(e) => (e.currentTarget.src = instagram)}
+                />
+              </a>
+            </ImageGroup>
+          </div>
+          <div class="column">
+            <ImageGroup>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  style={{ width: "57px" }}
+                  alt=""
+                  src={twitter}
+                  onMouseOut={(e) => (e.currentTarget.src = twitter)}
+                />
+              </a>
+            </ImageGroup>
+          </div>
+        </div>
+      </Container>
     </div>
   );
 }
