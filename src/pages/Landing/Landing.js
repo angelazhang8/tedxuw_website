@@ -43,6 +43,8 @@ function Landing() {
       <Button
         // onClick={() => window.location.replace("/#about")}
         style={{
+          display: "inline-flex",
+          alignItems: "center",
           backgroundColor: "#E62B1E",
           borderRadius: "100px",
           color: "#FCFCFC",
