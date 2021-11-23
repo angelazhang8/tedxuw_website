@@ -13,7 +13,7 @@ import {
   StyledList,
   StyledSubtleLink,
 } from "./styles";
-import Form from "../../components/Form/Form";
+import EmailForm from "../../components/EmailForm/EmailForm";
 class Footer extends Component {
   render() {
     return (
@@ -34,7 +34,7 @@ class Footer extends Component {
                   Enter your email to receive the latest news and opportunities
                   from the TEDxUW Community.
                 </StyledDescription>
-                <Form />
+                <EmailForm />
                 <Container
                   style={{
                     marginBottom: "33px",
