@@ -8,10 +8,12 @@ import {
   ImageGroup,
   Item,
 } from "semantic-ui-react";
+import Footer from "./sections/Footer/Footer";
 export default function App() {
   return (
     <div className="App">
       <Landing />
+      <Footer />
     </div>
   );
 }

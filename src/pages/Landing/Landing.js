@@ -21,6 +21,7 @@ import linkedin from "../../res/images/linkedin.png";
 import twitter from "../../res/images/twitter.png";
 import collage1 from "../../res/images/collage1.png";
 import collage2 from "../../res/images/collage2.png";
+import attendees from "../../res/images/attendees.png";
 import "../../grid.min.css";
 
 // Landing page component
@@ -52,9 +53,9 @@ function Landing() {
           height: "45px",
           textAlign: "center",
           justifyContent: "center",
-          // left: "584px",
-          // bottom: "2548px",
+          border: "none",
         }}>
+        <Divider hidden style={{ height: "150px" }} />
         <StyledButtonText>Sign Up for Email Reminders</StyledButtonText>
       </Button>
       <Container
@@ -101,8 +102,8 @@ function Landing() {
           width: "745px",
           position: "relative",
           textAlign: "left",
+          marginTop: "90px",
         }}>
-        <Divider hidden style={{ height: "80px" }} />
         <StyledTitle>What is TEDx?</StyledTitle>
       </Container>
       <div
@@ -135,7 +136,7 @@ function Landing() {
           </a>
           .
         </StyledDescription>
-        <StyledDescription>
+        <StyledDescription style={{ marginBottom: "100px" }}>
           TEDx is a program of local, self-organized events that bring people
           together to share a TED-like experience. Our event is called TEDxUW,
           where x = independently organized TED event. At our TEDxUW, TED Talks
@@ -144,7 +145,6 @@ function Landing() {
           guidance for the TEDx program, but individual TEDx events, including
           ours, are self-organized.
         </StyledDescription>
-        <Divider hidden style={{ height: "100px" }} />
         <StyledTitle>What is TEDxUW?</StyledTitle>
         <div
           style={{
@@ -156,7 +156,7 @@ function Landing() {
             width: "303px",
             borderBottom: "15px solid #e62b1e",
           }}></div>
-        <StyledDescription>
+        <StyledDescription style={{ marginBottom: "30px" }}>
           <span
             style={{
               color: "#afafaf",
@@ -177,8 +177,7 @@ function Landing() {
           attendees, and leave the conference driven to creatively and
           collectively improve our future.
         </StyledDescription>
-        <Divider hidden style={{ height: "25px" }} />
-        <StyledDescription>
+        <StyledDescription style={{ marginBottom: "30px" }}>
           <span
             style={{
               color: "#afafaf",
@@ -198,7 +197,6 @@ function Landing() {
           TED.com and amassing over 5 million views on YouTube, TEDxUW sparks
           innovation across the globe starting at the University of Waterloo.
         </StyledDescription>
-        <Divider hidden style={{ height: "25px" }} />
         <StyledDescription>
           <span
             style={{
@@ -226,11 +224,11 @@ function Landing() {
           change-makers.
         </StyledDescription>
       </Container>
-
       <Container
         style={{
           marginLeft: "auto",
           marginRight: "auto",
+          marginTop: "126px",
           color: "white",
           width: "1440px",
           position: "relative",
@@ -241,21 +239,55 @@ function Landing() {
             width: "1440px",
             height: "324.41px",
             backgroundImage: `url(${collage2})`,
+            marginBottom: "100px",
           }}>
-          <StyledStatement>
-            “There aren’t many times I’d say I’d be willing to travel 18 hours
-            to go to a 7 hour conference but I’d do this again in a heartbeat.”
-            - 2017 TEDxUW Delegate
-          </StyledStatement>
+          <Container
+            text
+            style={{
+              marginLeft: "auto",
+              marginRight: "auto",
+              color: "white",
+              width: "1040px",
+              position: "relative",
+              textAlign: "left",
+              transform: "translate(50px, -10px)",
+              alignItems: "center",
+            }}>
+            <div class="ui grid ">
+              <div
+                class="row"
+                style={{ columnGap: "60px", alignItems: "center" }}>
+                <div class="five wide column">
+                  <img
+                    src={attendees}
+                    style={{
+                      width: "332px",
+                      height: "221.72px",
+                      left: "284px",
+                      top: "2270px",
+                    }}
+                  />
+                </div>
+                <div class="seven wide column">
+                  <StyledStatement>
+                    “There aren’t many times I’d say I’d be willing to travel 18
+                    hours to go to a 7 hour conference but I’d do this again in
+                    a heartbeat.”
+                  </StyledStatement>
+                  <StyledStatement> - 2017 TEDxUW Delegate</StyledStatement>
+                </div>
+              </div>
+            </div>
+          </Container>
         </div>
       </Container>
-
       <StyledText style={{ textAlign: "center" }}>
         Follow us on Social Media!
       </StyledText>
-
       <Container
         style={{
+          marginTop: "32px",
+          marginBottom: "100px",
           marginLeft: "auto",
           marginRight: "auto",
           color: "white",
