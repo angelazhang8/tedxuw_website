@@ -32,6 +32,7 @@ export const StyledMissionTitle = styled.h1`
     text-align: left;
     text-shadow: 4px 4px 25px rgba(249, 214, 103, 0.5);
     margin-bottom: 32px;
+    margin-top: 48px;
   }
 `;
 

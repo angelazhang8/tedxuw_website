@@ -59,3 +59,14 @@ export const StyledSubtleLink = styled.a`
     color: #afafaf;
   }
 `;
+
+export const StyledHr = styled.hr`
+  &&& {
+    transform: translateX(-15px);
+    margin-bottom: 32px;
+    width: 1040px;
+    height: 0px;
+    border: 1.59223px solid #3c3c3c;
+    color: white;
+  }
+`;

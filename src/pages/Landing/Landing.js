@@ -13,7 +13,7 @@ import {
   StyledButtonText,
 } from "./styles";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
-import Date from "../../components/Time/Time";
+import Time from "../../components/Time/Time";
 import Social from "../../components/Social/Social";
 import facebook from "../../res/images/facebook.png";
 import instagram from "../../res/images/instagram.png";
@@ -22,6 +22,7 @@ import twitter from "../../res/images/twitter.png";
 import collage1 from "../../res/images/collage1.png";
 import collage2 from "../../res/images/collage2.png";
 import attendees from "../../res/images/attendees.png";
+import { Link } from "react-scroll";
 import "../../grid.min.css";
 
 // Landing page component
@@ -39,25 +40,28 @@ function Landing() {
           position: "relative",
           textAlign: "left",
         }}>
+        <Time />
         <StyledMissionTitle>2020 Vision.</StyledMissionTitle>
       </Container>
-      <Button
-        // onClick={() => window.location.replace("/#about")}
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          backgroundColor: "#E62B1E",
-          borderRadius: "100px",
-          color: "#FCFCFC",
-          width: "272px",
-          height: "45px",
-          textAlign: "center",
-          justifyContent: "center",
-          border: "none",
-        }}>
-        <Divider hidden style={{ height: "150px" }} />
-        <StyledButtonText>Sign Up for Email Reminders</StyledButtonText>
-      </Button>
+      <Link to="footer" smooth={true} spy={true}>
+        <Button
+          // onClick={() => window.location.replace("/#footer")}
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            backgroundColor: "#E62B1E",
+            borderRadius: "100px",
+            color: "#FCFCFC",
+            width: "272px",
+            height: "45px",
+            textAlign: "center",
+            justifyContent: "center",
+            border: "none",
+          }}>
+          <Divider hidden style={{ height: "150px" }} />
+          <StyledButtonText>Sign Up for Email Reminders</StyledButtonText>
+        </Button>
+      </Link>
       <Container
         style={{
           marginLeft: "auto",
@@ -112,6 +116,7 @@ function Landing() {
           marginLeft: "auto",
           marginRight: "auto",
           transform: "translate(-110%, -100%)",
+          // transform: "translate(-18vw, -100%)",
           color: "white",
           width: "243px",
           borderBottom: "15px solid #e62b1e",
@@ -152,6 +157,7 @@ function Landing() {
             marginLeft: "auto",
             marginRight: "auto",
             transform: "translate(-78.3%, -100%)",
+            // transform: "translate(-16vw, -100%)",
             color: "white",
             width: "303px",
             borderBottom: "15px solid #e62b1e",
@@ -236,7 +242,7 @@ function Landing() {
         }}>
         <div
           style={{
-            width: "1440px",
+            width: "100%",
             height: "324.41px",
             backgroundImage: `url(${collage2})`,
             marginBottom: "100px",
