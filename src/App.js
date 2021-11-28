@@ -8,7 +8,7 @@ import {
   ImageGroup,
   Item,
 } from "semantic-ui-react";
-import Footer from "./sections/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 import Landing from "./pages/Landing/Landing";
 import Header from "./components/Header/Header";
 export default function App() {
@@ -20,9 +20,3 @@ export default function App() {
     </div>
   );
 }
-
-// const styleLink = document.createElement("link");
-// styleLink.rel = "stylesheet";
-// styleLink.href =
-//   "https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css";
-// document.head.appendChild(styleLink);

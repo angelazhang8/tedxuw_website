@@ -20,6 +20,7 @@ function Header() {
         style={{ width: "1040px", marginLeft: "auto", marginRight: "auto" }}>
         <ul
           style={{
+            marginTop: "0px",
             paddingTop: "35px",
             paddingBottom: "0px",
             display: "flex",
