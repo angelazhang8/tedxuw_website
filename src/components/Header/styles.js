@@ -8,8 +8,10 @@ export const Styledli = styled.li`
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
-
+    text-decoration: none;
     color: #fcfcfc;
+    position: fixed;
+    transform: translate(80px, -10px);
   }
 `;
 export const StyledButtonText = styled.p`
