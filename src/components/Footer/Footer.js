@@ -153,27 +153,27 @@ class Footer extends Component {
               <div class="two wide column">
                 <Container style={{ textAlign: "left" }}>
                   <StyledHeading>Navigate</StyledHeading>
-                  <StyledSubtleLink href="home">
+                  <StyledSubtleLink href="/">
                     Home
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="speakers">
+                  <StyledSubtleLink href="Speakers">
                     Speakers
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="partners">
+                  <StyledSubtleLink href="Partners">
                     Partners
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="about">
+                  <StyledSubtleLink href="About">
                     About
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="faq">
+                  <StyledSubtleLink href="Faq">
                     FAQ
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="blog">
+                  <StyledSubtleLink href="https://medium.com/@tedxuw">
                     Blog
                     <br />
                   </StyledSubtleLink>

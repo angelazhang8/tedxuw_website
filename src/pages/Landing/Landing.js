@@ -14,7 +14,6 @@ import {
 } from "./styles";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
 import Time from "../../components/Time/Time";
-import Social from "../../components/Social/Social";
 import facebook from "../../res/images/facebook.png";
 import instagram from "../../res/images/instagram.png";
 import linkedin from "../../res/images/linkedin.png";

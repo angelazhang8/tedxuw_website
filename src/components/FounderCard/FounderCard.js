@@ -7,14 +7,26 @@ class FounderCard extends React.Component {
   render() {
     return (
       <div class="ui grid ">
-        <div class="row" style={{ alignItems: "center" }}>
-          <div class="three wide column">
-            <img src={this.props.img} />
+        <div
+          class="row"
+          style={{
+            alignItems: "center",
+          }}>
+          <div
+            class="four wide column"
+            style={{
+              position: "left",
+              justifyItems: "left",
+              marginRight: "20px",
+              transform: "translateX(-20px)",
+            }}>
+            <img style={{ width: "235px" }} src={this.props.img} />
           </div>
           <div class="eight wide column">
             <Container
               style={{
                 textAlign: "left",
+                width: "574px",
               }}>
               <StyledName>{this.props.name}</StyledName>
               <StyledPosition>

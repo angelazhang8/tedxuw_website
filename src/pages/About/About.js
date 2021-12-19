@@ -4,12 +4,11 @@ import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
 import { StyledTitle, StyledDescription, StyledHeader } from "./styles";
 import Header from "../../components/Header/Header";
 import FounderCard from "../../components/FounderCard/FounderCard";
+import ExecCard from "../../components/ExecCard/ExecCard";
 import team_matthew from "../../res/images/team_matthew.png";
 
 const About = () => (
   <section>
-    <Header style={{ background: "yellow" }} />
-
     <Container
       text
       style={{
@@ -43,7 +42,6 @@ const About = () => (
           </StyledDescription>
         </Container>
       </div>
-      {/* <h1 style={{ color: "white" }}>About</h1> */}
     </Container>
     <Container
       style={{
@@ -51,7 +49,7 @@ const About = () => (
         marginLeft: "auto",
         marginRight: "auto",
         color: "white",
-        width: "1440px",
+        width: "1004px",
         position: "relative",
         textAlign: "center",
       }}>
@@ -81,7 +79,143 @@ const About = () => (
         linkedin="https://www.linkedin.com/notifications/"
       />
       <StyledHeader>Marketing</StyledHeader>
+      <div class="ui grid">
+        <div class="column" style={{ width: "350px" }}>
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+        </div>
+        <div class="column" style={{ width: "350px" }}>
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+        </div>
+        <div class="column" s>
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+        </div>
+      </div>
       <StyledHeader>Participant Experience</StyledHeader>
+      <div class="ui grid">
+        <div class="column" style={{ width: "350px" }}>
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+        </div>
+        <div class="column" style={{ width: "350px" }}>
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+        </div>
+        <div class="column">
+          <ExecCard
+            img={team_matthew}
+            name="Matthew Zhu"
+            position="Co-Chair"
+            description="Matthew Zhu is a fourth year student in the Accounting and
+                Financial Management program. He has been part of TEDxUW since
+                2019 where he started as a partnership manager and lead
+                accountant. As the Co-Chair and Licensee for TEDxUW 2021, he is
+                excited to coordinate the team to deliver an engaging event that
+                fosters ideas worth spreading."
+            linkedin="https://www.linkedin.com/notifications/"
+          />
+        </div>
+      </div>
     </Container>
   </section>
 );
