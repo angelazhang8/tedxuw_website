@@ -14,54 +14,58 @@ import {
 
 const Speakers = () => (
   <section>
-    {/* <div
+    <div
       style={{
-        backgroundImage: "linear-gradient(#FF1A0A, black)",
-        opacitiy: "0.6",
-        width: "1440px",
-      }}> */}
-    <Container
-      text
-      style={{
-        // transform: "translateY(-50px)",
-        marginTop: "121px",
+        background:
+          "linear-gradient(180deg, rgba(230, 43, 30, 0.2) 17.25%, rgba(230, 43, 30, 0) 100%)",
+        width: "100%",
         marginLeft: "auto",
         marginRight: "auto",
-        color: "white",
-        width: "1040px",
-        position: "relative",
-        textAlign: "center",
-        textAlign: "left",
+        marginTop: "0px",
       }}>
-      <StyledRedHeader>Coming Soon</StyledRedHeader>
-      <StyledMainHeader>2021 Speaker Lineup </StyledMainHeader>
-      <StyledHeaderDescription>
-        In the meantime, checkout our past speakers below!
-      </StyledHeaderDescription>
-    </Container>
-    {/* </div> */}
+      <Container
+        text
+        style={{
+          // transform: "translateY(-50px)",
+          marginTop: "70px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          color: "white",
+          width: "1040px",
+          position: "relative",
+          textAlign: "center",
+          textAlign: "left",
+        }}>
+        <StyledRedHeader style={{ paddingTop: "64px" }}>
+          Coming Soon
+        </StyledRedHeader>
+        <StyledMainHeader>2021 Speaker Lineup </StyledMainHeader>
+        <StyledHeaderDescription>
+          In the meantime, checkout our past speakers below!
+        </StyledHeaderDescription>
+      </Container>
 
-    <Container
-      text
-      style={{
-        // transform: "translateY(-50px)",
-        marginLeft: "auto",
-        marginRight: "auto",
-        color: "white",
-        width: "1004px",
-        position: "relative",
-        textAlign: "center",
-        textAlign: "center",
-        padding: "0px",
-      }}>
-      <Link to="speakers" smooth={true} spy={true}>
-        <img
-          src={down}
-          style={{ width: "32px", marginTop: "83px", marginBottom: "40px" }}
-        />
-      </Link>
-    </Container>
-
+      <Container
+        text
+        style={{
+          // transform: "translateY(-50px)",
+          marginLeft: "auto",
+          marginRight: "auto",
+          color: "white",
+          width: "1004px",
+          position: "relative",
+          textAlign: "center",
+          textAlign: "center",
+          padding: "0px",
+        }}>
+        <Link to="speakers" smooth={true} spy={true}>
+          <img
+            src={down}
+            style={{ width: "32px", marginTop: "83px", marginBottom: "40px" }}
+          />
+        </Link>
+      </Container>
+    </div>
     <Container
       text
       style={{
