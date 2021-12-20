@@ -35,7 +35,7 @@ export const StyledHeader = styled.h2`
     font-size: 32px;
     line-height: 43px;
     /* identical to box height */
-
+    margin-bottom: 30px;
     color: #ffffff;
   }
 `;

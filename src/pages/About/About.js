@@ -93,6 +93,7 @@ const About = () => (
                 fosters ideas worth spreading."
             linkedin="https://www.linkedin.com/notifications/"
           />
+          <Divider style={{ height: "35px" }} />
           <ExecCard
             img={team_matthew}
             name="Matthew Zhu"
@@ -119,6 +120,7 @@ const About = () => (
                 fosters ideas worth spreading."
             linkedin="https://www.linkedin.com/notifications/"
           />
+          <Divider style={{ height: "35px" }} />
           <ExecCard
             img={team_matthew}
             name="Matthew Zhu"
@@ -145,6 +147,7 @@ const About = () => (
                 fosters ideas worth spreading."
             linkedin="https://www.linkedin.com/notifications/"
           />
+          <Divider style={{ height: "35px" }} />
           <ExecCard
             img={team_matthew}
             name="Matthew Zhu"
@@ -173,7 +176,8 @@ const About = () => (
                 excited to coordinate the team to deliver an engaging event that
                 fosters ideas worth spreading."
             linkedin="https://www.linkedin.com/notifications/"
-          />
+          />{" "}
+          <Divider style={{ height: "35px" }} />
           <ExecCard
             img={team_matthew}
             name="Matthew Zhu"

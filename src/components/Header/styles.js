@@ -11,7 +11,7 @@ export const Styledli = styled.li`
     text-decoration: none;
     color: #fcfcfc;
     position: fixed;
-    transform: translate(80px, -10px);
+    transform: translate(80px, -5px);
   }
 `;
 export const StyledButtonText = styled.p`
