@@ -38,6 +38,7 @@ function Landing() {
           width: "1004px",
           position: "relative",
           textAlign: "left",
+          paddingTop: "80px",
         }}>
         <Time />
         <StyledMissionTitle>2020 Vision.</StyledMissionTitle>
@@ -258,7 +259,7 @@ function Landing() {
               transform: "translate(50px, -10px)",
               alignItems: "center",
             }}>
-            <div class="ui grid ">
+            <div class="ui grid">
               <div
                 class="row"
                 style={{ columnGap: "60px", alignItems: "center" }}>

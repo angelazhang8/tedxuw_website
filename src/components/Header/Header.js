@@ -55,7 +55,7 @@ function Header() {
           <NavLink exact to="/About">
             <Styledli>About</Styledli>
           </NavLink>
-          <NavLink exact to="/FAQ">
+          <NavLink exact to="/Faq">
             <Styledli>FAQ</Styledli>
           </NavLink>
           <a href="https://medium.com/@tedxuw">
