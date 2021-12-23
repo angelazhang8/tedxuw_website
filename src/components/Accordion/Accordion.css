@@ -39,6 +39,7 @@
   color: #ffffff;
   text-align: left;
   width: 621px;
+  padding-left: 10px;
 }
 
 /* Style the accordion chevron icon */
@@ -77,20 +78,6 @@
   /* identical to box height */
   text-align: left;
   color: #afafaf;
-}
-
-.accordion__text_link {
-  font-family: Avenir;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-
-  /* Light Grey */
-
-  color: #afafaf;
-
-  /* identical to box height */
-  text-align: left;
-  color: red;
+  padding-left: 15px;
+  padding-right: 15px;
 }
