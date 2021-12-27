@@ -1,14 +1,14 @@
 import React from "react";
 import SpeakerCard from "../../components/SpeakerCard/SpeakerCard";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
-import speaker_john from "../../res/images/speaker_john.png";
-import thomas_lenhard from "../../res/images/thomas_lenhard.png";
-import andrew_guy from "../../res/images/andrew_guy.png";
-import anh_le from "../../res/images/anh_le.png";
-import karandeep_gill from "../../res/images/karandeep_gill.png";
-import iman_salehi from "../../res/images/iman_salehi.png";
-import chris_costa from "../../res/images/chris_costa.png";
-import tanner_philp from "../../res/images/tanner_philp.png";
+import thomas_lenhard from "../../res/images/speakers/thomas_lenhard.png";
+import andrew_guy from "../../res/images/speakers/andrew_guy.png";
+import anh_le from "../../res/images/speakers/anh_le.png";
+import karandeep_gill from "../../res/images/speakers/karandeep_gill.png";
+import iman_salehi from "../../res/images/speakers/iman_salehi.png";
+import chris_costa from "../../res/images/speakers/chris_costa.png";
+import tanner_philp from "../../res/images/speakers/tanner_philp.png";
+import filler from "../../res/images/speakers/filler.png";
 
 import down from "../../res/images/down.svg";
 import { Link } from "react-scroll";
@@ -142,7 +142,7 @@ const Speakers = () => (
         description="The founder of The Costa Group and Change in Motion. Chris has figured out how to turn the most adversity into an engine for positive change. Both for himself and his community. Throughout his life he’s experienced violence, incarceration, and addiction – and perhaps most difficult for him; he made choices which kept him away from his passion as an athlete. Now 20 years later, he’s not only overcome his past but he’s speaking out against domestic violence. He used sport to reconnect with his past, heal it and use that experience to help his local community. He is a competitive middle-distance runner who’s competed internationally for Canada as a master’s athlete and kickboxer."
       />
       <SpeakerCard
-        img={tanner_philp}
+        img={filler}
         name="Tanner Philp"
         talk_name="Enter the Metaverse"
         description="Tanner Philp has previously held speaking positions at TEDx UW, Tech TO, Guest Lecturer at Stanford, Laurier, UW, Multiple conferences across 10+ countries"

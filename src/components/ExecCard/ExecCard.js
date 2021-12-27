@@ -28,7 +28,7 @@ class ExecCard extends React.Component {
   }
   render() {
     return (
-      <Container style={{ width: "235px" }}>
+      <Container style={{ width: "270px" }}>
         <img src={this.props.img} style={{ width: "235px" }} />
         <Container
           style={{
