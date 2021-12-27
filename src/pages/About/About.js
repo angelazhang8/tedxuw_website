@@ -31,6 +31,28 @@ import filler from "../../res/images/team/filler.png";
 
 const About = () => (
   <section>
+    <div
+      style={{
+        width: "100%",
+        height: "900px",
+        backgroundImage: `url(${meet_the_team})`,
+      }}>
+      <Container
+        text
+        style={{
+          marginLeft: "auto",
+          marginRight: "auto",
+          color: "white",
+          width: "100%",
+          position: "relative",
+          textAlign: "center",
+        }}>
+        <StyledTitle>Meet the Team</StyledTitle>
+        <StyledDescription>
+          A group of curious students inspired by creativity.
+        </StyledDescription>
+      </Container>
+    </div>
     <Container
       text
       style={{
@@ -41,30 +63,7 @@ const About = () => (
         width: "1440px",
         position: "relative",
         textAlign: "center",
-      }}>
-      <div
-        style={{
-          width: "1440px",
-          height: "900px",
-          backgroundImage: `url(${meet_the_team})`,
-        }}>
-        <Container
-          text
-          style={{
-            marginLeft: "auto",
-            marginRight: "auto",
-            color: "white",
-            width: "1440px",
-            position: "relative",
-            textAlign: "center",
-          }}>
-          <StyledTitle>Meet the Team</StyledTitle>
-          <StyledDescription>
-            A group of curious students inspired by creativity.
-          </StyledDescription>
-        </Container>
-      </div>
-    </Container>
+      }}></Container>
     <Container
       style={{
         marginTop: "100px",
@@ -245,7 +244,7 @@ const About = () => (
       <div class="ui grid">
         <div class="column" style={{ width: "350px" }}>
           <ExecCard
-            img={filler}
+            img={annie_yuan}
             name="Annie Yuan"
             position="Operations Director"
             description="Currently a fourth-year student in the Accounting and Financial Management program, Annie first became involved with TEDxUW in her second year as the Lead Accountant, helping to organize one of the largest in-person TEDx conferences. She is excited to be part of the team again and hopes to make the virtual conference this year a memorable one!"

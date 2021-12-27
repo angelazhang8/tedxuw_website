@@ -8,7 +8,7 @@ import {
 import { Container, ImageGroup } from "semantic-ui-react";
 import linkedin from "../../res/images/linkedin_red.svg";
 import forward from "../../res/images/forward.svg";
-import { Icon } from "semantic-ui-react";
+import backward from "../../res/images/backward.svg";
 
 class ExecCard extends React.Component {
   constructor(props) {
@@ -54,7 +54,16 @@ class ExecCard extends React.Component {
           <a onClick={this.showMore}>
             {this.state.expanded ? (
               <span>
-                <StyledCollapseText>Show less</StyledCollapseText>
+                <StyledCollapseText>
+                  <img
+                    src={backward}
+                    style={{
+                      width: "18px",
+                      transform: "translate(-8px, 4px)",
+                    }}
+                  />
+                  {"  "}Read less{" "}
+                </StyledCollapseText>
               </span>
             ) : (
               <span>
