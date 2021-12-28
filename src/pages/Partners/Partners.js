@@ -6,7 +6,13 @@ import {
   StyledHeaderDescription,
 } from "./styles";
 import down from "../../res/images/down.svg";
-import sponsor1 from "../../res/images/sponsor1.png";
+import university_of_waterloo from "../../res/images/sponsors/university_of_waterloo.svg";
+import basecamp from "../../res/images/sponsors/basecamp.svg";
+import city_of_waterloo from "../../res/images/sponsors/city_of_waterloo.svg";
+import mailchimp from "../../res/images/sponsors/mailchimp.svg";
+import waterloo_arts_endowment_fund from "../../res/images/sponsors/waterloo_arts_endowment_fund.svg";
+import wusa from "../../res/images/sponsors/wusa.svg";
+
 import { Link } from "react-scroll";
 import Header from "../../components/Header/Header";
 
@@ -68,6 +74,8 @@ const Partners = () => (
       text
       style={{
         // transform: "translateY(-50px)",
+        marginTop: "50px",
+        marginBottom: "160px",
         marginLeft: "auto",
         marginRight: "auto",
         color: "white",
@@ -81,24 +89,27 @@ const Partners = () => (
         <div class="ui grid" style={{ transform: "translateX(-10px" }}>
           <div class="row" style={{ columnGap: "80px", alignItems: "center" }}>
             <div class="four wide column">
-              <img src={sponsor1} style={{ width: "235px" }} />
+              <img src={university_of_waterloo} style={{ width: "235px" }} />
             </div>
             <div class="four wide column">
-              <img src={sponsor1} style={{ width: "235px" }} />
+              <img src={wusa} style={{ width: "235px" }} />
             </div>
             <div class="four wide column">
-              <img src={sponsor1} style={{ width: "235px" }} />
+              <img
+                src={waterloo_arts_endowment_fund}
+                style={{ width: "235px" }}
+              />
             </div>
           </div>
           <div class="row" style={{ columnGap: "80px", alignItems: "center" }}>
             <div class="four wide column">
-              <img src={sponsor1} style={{ width: "235px" }} />
+              <img src={basecamp} style={{ width: "235px" }} />
             </div>
             <div class="four wide column">
-              <img src={sponsor1} style={{ width: "235px" }} />
+              <img src={city_of_waterloo} style={{ width: "235px" }} />
             </div>
             <div class="four wide column">
-              <img src={sponsor1} style={{ width: "235px" }} />
+              <img src={mailchimp} style={{ width: "235px" }} />
             </div>
           </div>
         </div>

@@ -14,10 +14,10 @@ import {
 } from "./styles";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
 import Time from "../../components/Time/Time";
-import facebook from "../../res/images/facebook.png";
-import instagram from "../../res/images/instagram.png";
-import linkedin from "../../res/images/linkedin.png";
-import twitter from "../../res/images/twitter.png";
+import facebook from "../../res/images/facebook.svg";
+import instagram from "../../res/images/instagram.svg";
+import linkedin from "../../res/images/linkedin.svg";
+import twitter from "../../res/images/twitter.svg";
 import collage1 from "../../res/images/collage1.png";
 import collage2 from "../../res/images/collage2.png";
 import attendees from "../../res/images/attendees.png";

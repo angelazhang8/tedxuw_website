@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Grid, Image, Container, ImageGroup, Divider } from "semantic-ui-react";
 
-import facebook from "../../res/images/facebook.png";
-import instagram from "../../res/images/instagram.png";
-import linkedin from "../../res/images/linkedin.png";
-import twitter from "../../res/images/twitter.png";
+import facebook from "../../res/images/facebook.svg";
+import instagram from "../../res/images/instagram.svg";
+import linkedin from "../../res/images/linkedin.svg";
+import twitter from "../../res/images/twitter.svg";
 import "../../grid.min.css";
 import {
   StyledLink,

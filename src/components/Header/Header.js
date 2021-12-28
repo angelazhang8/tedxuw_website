@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Button, Checkbox, Form, Container } from "semantic-ui-react";
 import { Styledli, StyledButtonText, StyledButton } from "./styles";
-import tedxuw_logo from "../../res/images/tedxuw_logo.png";
+import tedxuw_logo from "../../res/images/tedxuw_logo.svg";
 import { NavLink } from "react-router-dom";
 
 const useScrollPosition = () => {
