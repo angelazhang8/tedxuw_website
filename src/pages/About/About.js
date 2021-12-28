@@ -47,6 +47,7 @@ const About = () => (
           position: "relative",
           textAlign: "center",
         }}>
+        <Header color="#450d09" height="900" />
         <StyledTitle>Meet the Team</StyledTitle>
         <StyledDescription>
           A group of curious students inspired by creativity.
@@ -143,8 +144,8 @@ const About = () => (
             img={filler}
             name="Miguel Arango"
             position="Social Media Manager"
-            description="Miguel is a Biotech and Econ student at the University of Waterloo."
-            // linkedin="https://www.linkedin.com/"
+            description="Miguel is a person who has always watched TEDx talks to learn about new subjects, understand things better, or learn about new paradoxes. He is thrilled to take on the social media manager role and propose better ideas and new ways to increase engagement with our social media platforms. Miguel is also motivated to use his analysis and organization skills to deliver and develop the best plans to up our social media platforms."
+            linkedin="https://www.linkedin.com/in/miguel-andres-arango-361b311b6/"
           />
         </div>
       </div>

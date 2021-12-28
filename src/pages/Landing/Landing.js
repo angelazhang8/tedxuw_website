@@ -23,12 +23,14 @@ import collage2 from "../../res/images/collage2.png";
 import attendees from "../../res/images/attendees.png";
 import { Link } from "react-scroll";
 import "../../grid.min.css";
+import Header from "../../components/Header/Header";
 
 // Landing page component
 function Landing() {
   //Functions to track clicks
   return (
     <div style={{ background: "black" }}>
+      <Header color="black" />
       <Container
         text
         style={{
@@ -67,13 +69,15 @@ function Landing() {
           marginLeft: "auto",
           marginRight: "auto",
           color: "white",
-          width: "1440px",
+          // width: "1440px",
+          width: "100%",
           position: "relative",
           textAlign: "left",
         }}>
         <div
           style={{
-            width: "1440px",
+            // width: "1440px",
+            width: "100%",
             height: "299px",
             backgroundImage: `url(${collage1})`,
           }}>
@@ -236,7 +240,8 @@ function Landing() {
           marginRight: "auto",
           marginTop: "126px",
           color: "white",
-          width: "1440px",
+          // width: "1440px",
+          width: "100%",
           position: "relative",
           textAlign: "left",
         }}>

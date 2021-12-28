@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header />
+        <Header color="blue" />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/About" element={<About />} />

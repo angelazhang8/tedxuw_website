@@ -8,6 +8,7 @@ import {
 import down from "../../res/images/down.svg";
 import sponsor1 from "../../res/images/sponsor1.png";
 import { Link } from "react-scroll";
+import Header from "../../components/Header/Header";
 
 const Partners = () => (
   <section>
@@ -20,6 +21,7 @@ const Partners = () => (
         marginRight: "auto",
         marginTop: "0px",
       }}>
+      <Header color="#2e0807" height="200" />
       <Container
         text
         style={{

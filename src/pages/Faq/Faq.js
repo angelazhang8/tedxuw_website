@@ -2,9 +2,11 @@ import React from "react";
 import { StyledTitle, StyledDescription } from "./styles";
 import { Divider } from "semantic-ui-react";
 import Accordion from "../../components/Accordion/Accordion";
+import Header from "../../components/Header/Header";
 
 const Faq = () => (
   <section>
+    <Header color="black" />
     <Divider style={{ color: "white", height: "144px" }} />
     <StyledTitle style={{ marginBottom: "64px" }}>
       Frequently Asked Questions

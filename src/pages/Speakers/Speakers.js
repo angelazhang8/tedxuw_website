@@ -12,6 +12,7 @@ import filler from "../../res/images/speakers/filler.png";
 
 import down from "../../res/images/down.svg";
 import { Link } from "react-scroll";
+import Header from "../../components/Header/Header";
 
 import {
   StyledRedHeader,
@@ -31,6 +32,7 @@ const Speakers = () => (
         marginRight: "auto",
         marginTop: "0px",
       }}>
+      <Header color="#2e0807" height="200" />
       <Container
         text
         style={{
@@ -142,10 +144,10 @@ const Speakers = () => (
         description="The founder of The Costa Group and Change in Motion. Chris has figured out how to turn the most adversity into an engine for positive change. Both for himself and his community. Throughout his life he’s experienced violence, incarceration, and addiction – and perhaps most difficult for him; he made choices which kept him away from his passion as an athlete. Now 20 years later, he’s not only overcome his past but he’s speaking out against domestic violence. He used sport to reconnect with his past, heal it and use that experience to help his local community. He is a competitive middle-distance runner who’s competed internationally for Canada as a master’s athlete and kickboxer."
       />
       <SpeakerCard
-        img={filler}
+        img={tanner_philp}
         name="Tanner Philp"
         talk_name="Enter the Metaverse"
-        description="Tanner Philp has previously held speaking positions at TEDx UW, Tech TO, Guest Lecturer at Stanford, Laurier, UW, Multiple conferences across 10+ countries"
+        description="Tanner currently works at Kik Interactive, one of Canada’s tech unicorns, which was founded here at the UW Velocity program. For the past year, Tanner has been working with the team at Kik to develop an ecosystem of digital services powered by the cryptocurrency, Kin. His number one priority is finding a way to empower everyone, regardless of demographic, location, or socioeconomic status, to generate and capture value in this age of globalization. In another life, Tanner was a 3-year captain for the Laurier Golden Hawks football team, squaring off in many “Battles of Waterloo.”"
       />
     </Container>
     <Divider style={{ height: "100px" }} />
