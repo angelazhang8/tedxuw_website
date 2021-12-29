@@ -56,16 +56,6 @@ const About = () => (
       </Container>
     </div>
     <Container
-      text
-      style={{
-        marginLeft: "auto",
-        marginRight: "auto",
-        color: "white",
-        width: "1440px",
-        position: "relative",
-        textAlign: "center",
-      }}></Container>
-    <Container
       style={{
         marginTop: "100px",
         marginLeft: "auto",
@@ -96,8 +86,18 @@ const About = () => (
         linkedin="https://www.linkedin.com/in/omarkhan28"
       />
       <StyledHeader>Marketing</StyledHeader>
-      <div class="ui grid">
-        <div class="column" style={{ width: "350px" }}>
+      <div
+        class="ui grid"
+        style={{
+          marginTop: "10px",
+        }}>
+        <div
+          class="column"
+          style={{
+            paddingTop: "35px",
+            paddingLeft: "0px",
+            marginRight: "300px",
+          }}>
           <ExecCard
             img={salma_marzouk}
             name="Salma Marzouk"
@@ -105,7 +105,38 @@ const About = () => (
             description="As someone who loves watching TED and TEDx talks, Salma is excited to lead the marketing team in reaching a wide audience for this year's TEDxUW conference. Salma is also excited to use her event planning skills to organize the best TEDxUW conference yet along with the rest of the team. Feel free to reach out to Salma if you have any questions about TEDxUW, marketing, or getting involved in UWaterloo!"
             linkedin="https://www.linkedin.com/in/salmamarzouk/"
           />
-          <Divider style={{ height: "35px" }} />
+        </div>
+        <div
+          class="column"
+          style={{
+            paddingTop: "35px",
+            paddingLeft: "0px",
+            marginRight: "300px",
+          }}>
+          <ExecCard
+            img={abby_zinman}
+            name="Abby Zinman"
+            position="Content Manager"
+            description="Abby is thrilled to be joining the TEDxUW team as a longtime lover of TED talks, and with a passion for publishing written and visual online content. Her goal is to deliver content that communicates the TEDxUW vision, which includes inspiring people and sharing unique ideas."
+            linkedin="https://www.linkedin.com/in/abby-zinman-79212a1aa/"
+          />
+        </div>
+        <div class="column" style={{ paddingLeft: "0px", paddingTop: "35px" }}>
+          <ExecCard
+            img={angela_zhang}
+            name="Angela Zhang"
+            position="Web Manager"
+            description="Angela is a 3A Computer Science student. Angela had a blast attending TEDxUW in 2018 and made some great memories :D She enjoyed listening to the speakers and attending various events and activities throughout the day. She found the day to be both very enjoyable and eye-opening."
+            linkedin="https://www.linkedin.com/in/angela-zhang-uw/"
+          />
+        </div>
+        <div
+          class="column"
+          style={{
+            paddingLeft: "0px",
+            paddingTop: "35px",
+            marginRight: "300px",
+          }}>
           <ExecCard
             img={jennifer_man}
             name="Jennifer Man"
@@ -114,15 +145,13 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/jenniferm0814/"
           />
         </div>
-        <div class="column" style={{ width: "350px" }}>
-          <ExecCard
-            img={abby_zinman}
-            name="Abby Zinman"
-            position="Content Manager"
-            description="Abby is thrilled to be joining the TEDxUW team as a longtime lover of TED talks, and with a passion for publishing written and visual online content. Her goal is to deliver content that communicates the TEDxUW vision, which includes inspiring people and sharing unique ideas."
-            linkedin="https://www.linkedin.com/in/abby-zinman-79212a1aa/"
-          />
-          <Divider style={{ height: "35px" }} />
+        <div
+          class="column"
+          style={{
+            paddingLeft: "0px",
+            paddingTop: "35px",
+            marginRight: "300px",
+          }}>
           <ExecCard
             img={pamela_wang}
             name="Pamela Wang"
@@ -131,15 +160,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/pamwang/"
           />
         </div>
-        <div class="column" s>
-          <ExecCard
-            img={angela_zhang}
-            name="Angela Zhang"
-            position="Web Manager"
-            description="Angela is a 3A Computer Science student. Angela had a blast attending TEDxUW in 2018 and made some great memories :D She enjoyed listening to the speakers and attending various events and activities throughout the day. She found the day to be both very enjoyable and eye-opening."
-            linkedin="https://www.linkedin.com/in/angela-zhang-uw/"
-          />
-          <Divider style={{ height: "35px" }} />
+        <div class="column" style={{ paddingLeft: "0px", paddingTop: "35px" }}>
           <ExecCard
             img={filler}
             name="Miguel Arango"
@@ -149,9 +170,20 @@ const About = () => (
           />
         </div>
       </div>
+
       <StyledHeader>Participant Experience</StyledHeader>
-      <div class="ui grid">
-        <div class="column" style={{ width: "350px" }}>
+      <div
+        class="ui grid"
+        style={{
+          marginTop: "10px",
+        }}>
+        <div
+          class="column"
+          style={{
+            paddingLeft: "0px",
+            paddingTop: "35px",
+            marginRight: "300px",
+          }}>
           <ExecCard
             img={soyeon_jang}
             name="Soyeon Jang"
@@ -159,16 +191,14 @@ const About = () => (
             description="Soyeon started off as a logistics manager in her first year and she is thrilled to have this opportunity to join the organizing team again for the second time! Another year dedicated to TEDxUW - we aim to make your TEDxUW experience an unforgettable one, so stay tuned."
             linkedin="https://www.linkedin.com/in/soyeon-j/"
           />
-          <Divider style={{ height: "35px" }} />
-          <ExecCard
-            img={taneya_raguram}
-            name="Taneya Raguram"
-            position="Logistics Manager"
-            description="From a young age, Taneya has always wanted to be a changemaker and TED talks have always inspired her to go out of her comfort zone. From the large variety of speakers to the countless topics discussed, TED events celebrate knowledge and spark innovation. As a member of TEDxUW she hopes to create events that empower and encourage others to do the same!"
-            linkedin="https://www.linkedin.com/in/taneya-raguram-015b191a2/"
-          />
         </div>
-        <div class="column" style={{ width: "350px" }}>
+        <div
+          class="column"
+          style={{
+            paddingLeft: "0px",
+            paddingTop: "35px",
+            marginRight: "300px",
+          }}>
           <ExecCard
             img={christine_lee}
             name="Christine Lee"
@@ -177,7 +207,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/christineeunseolee/"
           />
         </div>
-        <div class="column">
+        <div class="column" style={{ paddingLeft: "0px" }}>
           <ExecCard
             img={leona_kuo}
             name="Leona Kuo"
@@ -186,18 +216,69 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/leona-kuo-7b8462157"
           />
         </div>
+        <div
+          class="column"
+          style={{
+            paddingLeft: "0px",
+            paddingTop: "35px",
+            marginRight: "300px",
+          }}>
+          <ExecCard
+            img={taneya_raguram}
+            name="Taneya Raguram"
+            position="Logistics Manager"
+            description="From a young age, Taneya has always wanted to be a changemaker and TED talks have always inspired her to go out of her comfort zone. From the large variety of speakers to the countless topics discussed, TED events celebrate knowledge and spark innovation. As a member of TEDxUW she hopes to create events that empower and encourage others to do the same!"
+            linkedin="https://www.linkedin.com/in/taneya-raguram-015b191a2/"
+          />
+        </div>
       </div>
       <StyledHeader>Speaker Relations</StyledHeader>
       <div class="ui grid">
-        <div class="column" style={{ width: "350px" }}>
+        <div
+          class="column"
+          style={{
+            paddingLeft: "0px",
+            paddingTop: "35px",
+            marginRight: "300px",
+          }}>
           <ExecCard
             img={kiana_wong}
             name="Kiana Wong"
             position="Director of Speaker Relations"
             description="Kiana is an Honours Science and incoming Pharmacy student. She has been heavily involved in public speaking, and is currently an instructor with a Royal Canadian Air Cadet Squadron where she runs the Effective Speaking team. As the Director of Speaker Relations, she looks forward to working closely with the speakers, and contributing her knowledge and skills when collaborating with the team. Kiana is extremely honoured to be a part of an organization where she can work with individuals in achieving a common goal: to share ideas worth spreading, and she looks forward to the upcoming TEDxUW event!"
-            // linkedin="https://www.linkedin.com/"
           />
-          <Divider style={{ height: "35px" }} />
+        </div>
+        <div
+          class="column"
+          style={{
+            paddingLeft: "0px",
+            paddingTop: "35px",
+            marginRight: "300px",
+          }}>
+          <ExecCard
+            img={kate_bendall}
+            name="Kate Bendall"
+            position="Speaker Relations Associate"
+            description="When deciding how to begin her university experience, Kate first recognized all the different ways in which to learn from others whether it be in classes, extracurriculars or just a chat between friends. TEDxUW is the perfect opportunity to share ideas as a speaker and thrive in open mindedness as a participant. As a new member to both the UW community and the TEDxUW team, Kate is full of passion and ready to ensure an event filled with enlightening speakers. Join her in celebrating the eloquence and expanse of knowledge that TEDxUW highlights this February!"
+            linkedin="www.linkedin.com/in/katebendall"
+          />
+        </div>
+        <div class="column" style={{ paddingLeft: "0px", paddingTop: "35px" }}>
+          <ExecCard
+            img={ahmed_khalil}
+            name="Ahmed Khalil"
+            position="Speaker Relations Associate"
+            description="Ahmed Khalil is a huge sports enthusiast and fanatic. He hopes to travel to as many countries as possible in his lifetime. He joined TEDxUW because he loves learning about the ideas that people have and how powerful those ideas can be in changing the world. It is always inspiring for him to know that there is hope for the future with people’s brilliant ideas. TEDxUW is a great platform for speakers to spread their ideas and perspectives, and for a global audience to cultivate that ability to listen and be open. He is super excited for a great event this year!"
+            linkedin="https://www.linkedin.com/in/ahmedek/"
+          />
+        </div>
+        <div
+          class="column"
+          style={{
+            paddingLeft: "0px",
+            paddingTop: "35px",
+            marginRight: "300px",
+          }}>
           <ExecCard
             img={julia_ling_smith}
             name="Julia-Ling Smith"
@@ -206,15 +287,13 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/julia-ling-smith-58a61a1b5"
           />
         </div>
-        <div class="column" style={{ width: "350px" }}>
-          <ExecCard
-            img={kate_bendall}
-            name="Kate Bendall"
-            position="Speaker Relations Associate"
-            description="When deciding how to begin her university experience, Kate first recognized all the different ways in which to learn from others whether it be in classes, extracurriculars or just a chat between friends. TEDxUW is the perfect opportunity to share ideas as a speaker and thrive in open mindedness as a participant. As a new member to both the UW community and the TEDxUW team, Kate is full of passion and ready to ensure an event filled with enlightening speakers. Join her in celebrating the eloquence and expanse of knowledge that TEDxUW highlights this February!"
-            linkedin="www.linkedin.com/in/katebendall"
-          />
-          <Divider style={{ height: "35px" }} />
+        <div
+          class="column"
+          style={{
+            paddingLeft: "0px",
+            paddingTop: "35px",
+            marginRight: "300px",
+          }}>
           <ExecCard
             img={filler}
             name="Andrea Ta"
@@ -223,15 +302,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/andrea-ta-5060241b8/"
           />
         </div>
-        <div class="column">
-          <ExecCard
-            img={ahmed_khalil}
-            name="Ahmed Khalil"
-            position="Speaker Relations Associate"
-            description="Ahmed Khalil is a huge sports enthusiast and fanatic. He hopes to travel to as many countries as possible in his lifetime. He joined TEDxUW because he loves learning about the ideas that people have and how powerful those ideas can be in changing the world. It is always inspiring for him to know that there is hope for the future with people’s brilliant ideas. TEDxUW is a great platform for speakers to spread their ideas and perspectives, and for a global audience to cultivate that ability to listen and be open. He is super excited for a great event this year!"
-            linkedin="https://www.linkedin.com/in/ahmedek/"
-          />
-          <Divider style={{ height: "35px" }} />
+        <div class="column" style={{ paddingLeft: "0px", paddingTop: "35px" }}>
           <ExecCard
             img={filler}
             name="Sehaj Raj Singh"
@@ -242,7 +313,11 @@ const About = () => (
         </div>
       </div>
       <StyledHeader>Operations</StyledHeader>
-      <div class="ui grid">
+      <div
+        class="ui grid"
+        style={{
+          marginTop: "10px",
+        }}>
         <div class="column" style={{ width: "350px" }}>
           <ExecCard
             img={annie_yuan}
@@ -254,7 +329,11 @@ const About = () => (
         </div>
       </div>
       <StyledHeader>Finance</StyledHeader>
-      <div class="ui grid">
+      <div
+        class="ui grid"
+        style={{
+          marginTop: "10px",
+        }}>
         <div class="column" style={{ width: "350px" }}>
           <ExecCard
             img={mahnoor_fatima}
