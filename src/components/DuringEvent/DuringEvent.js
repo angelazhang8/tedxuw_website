@@ -52,10 +52,14 @@ class DuringEvent extends React.Component {
                   style={{ transform: "translateY(-70px)" }}>
                   Registration Now Open!
                 </StyledRegistrationNotice>
-                <StyledButton style={{ transform: "translateY(-65px)" }}>
-                  <Divider hidden style={{ height: "150px" }} />
-                  <StyledButtonText>Register Now</StyledButtonText>
-                </StyledButton>
+                <a
+                  href="https://www.google.com"
+                  style={{ textDecoration: "none" }}>
+                  <StyledButton style={{ transform: "translateY(-65px)" }}>
+                    <Divider hidden style={{ height: "150px" }} />
+                    <StyledButtonText>Register Now</StyledButtonText>
+                  </StyledButton>
+                </a>
               </div>
               <div
                 class="column"

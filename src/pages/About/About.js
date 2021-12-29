@@ -34,8 +34,9 @@ const About = () => (
     <div
       style={{
         width: "100%",
-        height: "900px",
+        height: "815px",
         backgroundImage: `url(${meet_the_team})`,
+        // transform: "translateY(-50px)",
       }}>
       <Container
         text
@@ -47,7 +48,7 @@ const About = () => (
           position: "relative",
           textAlign: "center",
         }}>
-        <Header color="#450d09" height="900" />
+        <Header color="#450d09" height="815" />
         <StyledTitle>Meet the Team</StyledTitle>
         <StyledDescription>
           A group of curious students inspired by creativity.
@@ -57,7 +58,6 @@ const About = () => (
     <Container
       text
       style={{
-        // transform: "translateY(-50px)",
         marginLeft: "auto",
         marginRight: "auto",
         color: "white",

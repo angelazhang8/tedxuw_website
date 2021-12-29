@@ -9,12 +9,10 @@ import {
   StyledButtonText,
 } from "./styles";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
-import Time from "../../components/Time/Time";
 import facebook from "../../res/images/facebook.svg";
 import instagram from "../../res/images/instagram.svg";
 import linkedin from "../../res/images/linkedin.svg";
 import twitter from "../../res/images/twitter.svg";
-import collage1 from "../../res/images/collage1.png";
 import collage2 from "../../res/images/collage2.png";
 import attendees from "../../res/images/attendees.png";
 import { Link } from "react-scroll";
@@ -22,15 +20,16 @@ import "../../grid.min.css";
 import Header from "../../components/Header/Header";
 import BeforeEvent from "../../components/BeforeEvent/BeforeEvent";
 import DuringEvent from "../../components/DuringEvent/DuringEvent";
-
+import AfterEvent from "../../components/AfterEvent/AfterEvent";
 // Landing page component
 function Landing() {
   //Functions to track clicks
   return (
     <div style={{ background: "black" }}>
       <Header color="black" />
-      {/* <BeforeEvent /> */}
-      <DuringEvent />
+      {/* <BeforeEvent />
+      <DuringEvent /> */}
+      <AfterEvent />
       <Container
         text
         style={{
