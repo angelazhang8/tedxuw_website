@@ -29,7 +29,7 @@ const Faq = () => (
     <Accordion
       title="How can I apply to speak at TEDxUW?"
       content="<p>
-      Every year, we have a speaker nomination process in place where you can nominate either yourself or somebody you think would make a great TEDx speaker. The deadline for this year’s speaker nomination process is [insert date] and you may use [insert link] to complete the process.
+      Every year, we have a speaker nomination process in place where you can nominate either yourself or somebody you think would make a great TEDx speaker. The deadline for this year’s speaker nomination process has passed; please stay tuned for future speaker nominations.
       </p>"
     />
     <Accordion

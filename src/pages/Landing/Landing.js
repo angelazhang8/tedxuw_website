@@ -6,10 +6,6 @@ import {
   StyledTitle,
   StyledDescription,
   StyledText,
-  StyledTextContainer,
-  StyledSocialContainer,
-  StyledGridColumn,
-  StyledGrid,
   StyledButtonText,
 } from "./styles";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
@@ -24,6 +20,8 @@ import attendees from "../../res/images/attendees.png";
 import { Link } from "react-scroll";
 import "../../grid.min.css";
 import Header from "../../components/Header/Header";
+import BeforeEvent from "../../components/BeforeEvent/BeforeEvent";
+import DuringEvent from "../../components/DuringEvent/DuringEvent";
 
 // Landing page component
 function Landing() {
@@ -31,76 +29,8 @@ function Landing() {
   return (
     <div style={{ background: "black" }}>
       <Header color="black" />
-      <Container
-        text
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-          width: "1004px",
-          position: "relative",
-          textAlign: "left",
-          paddingTop: "80px",
-        }}>
-        <Time />
-        <StyledMissionTitle>2020 Vision.</StyledMissionTitle>
-      </Container>
-      <Link to="footer" smooth={true} spy={true}>
-        <Button
-          // onClick={() => window.location.replace("/#footer")}
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            backgroundColor: "#E62B1E",
-            borderRadius: "100px",
-            color: "#FCFCFC",
-            width: "272px",
-            height: "45px",
-            textAlign: "center",
-            justifyContent: "center",
-            border: "none",
-          }}>
-          <Divider hidden style={{ height: "150px" }} />
-          <StyledButtonText>Sign Up for Email Reminders</StyledButtonText>
-        </Button>
-      </Link>
-      <Container
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-          // width: "1440px",
-          width: "100%",
-          position: "relative",
-          textAlign: "left",
-        }}>
-        <div
-          style={{
-            // width: "1440px",
-            width: "100%",
-            height: "299px",
-            backgroundImage: `url(${collage1})`,
-          }}>
-          <Container
-            text
-            style={{
-              marginLeft: "auto",
-              marginRight: "auto",
-              color: "white",
-              width: "745px",
-              position: "relative",
-              textAlign: "left",
-            }}>
-            <StyledStatement style={{ paddingTop: "29px" }}>
-              2020 marked the start of an incredibly difficult time period. It
-              is easy to say that hindsight is 2020, but we do not live in the
-              past and unfortunately can’t change the present — what we can do
-              is learn, grow, and look toward the future with 20/20 vision.
-            </StyledStatement>
-          </Container>
-        </div>
-      </Container>
-
+      {/* <BeforeEvent /> */}
+      <DuringEvent />
       <Container
         text
         style={{

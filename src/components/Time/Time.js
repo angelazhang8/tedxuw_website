@@ -3,14 +3,6 @@ import moment from "moment";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
 import { StyledTimeUnit, StyledDigit, StyledCaption } from "./styles";
 
-// function Digit(props) {
-//   return (
-//     <article>
-//       <p>{props.time}</p>
-//     </article>
-//   );
-// }
-
 function Time() {
   const [days, setDays] = useState(0);
   const [days1, setDays1] = useState(0);
@@ -31,7 +23,7 @@ function Time() {
   const [loading, setLoading] = useState(true);
 
   const countDown = () => {
-    const endDate = new Date("January 1, 2022 00:00:00").getTime();
+    const endDate = new Date("February 15, 2022 00:00:00").getTime();
     const today = new Date().getTime();
     const timeDiff = endDate - today;
 
