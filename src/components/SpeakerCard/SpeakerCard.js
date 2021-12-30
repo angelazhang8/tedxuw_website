@@ -60,6 +60,7 @@ class SpeakerCard extends React.Component {
                 width: "362px",
                 marginBottom: "20px",
                 marginTop: "20px",
+                borderRadius: "181px"
               }}
               src={this.props.img}
             />

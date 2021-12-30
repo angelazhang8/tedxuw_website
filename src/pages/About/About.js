@@ -233,7 +233,11 @@ const About = () => (
         </div>
       </div>
       <StyledHeader>Speaker Relations</StyledHeader>
-      <div class="ui grid">
+      <div
+        class="ui grid"
+        style={{
+          marginTop: "10px",
+        }}>
         <div
           class="column"
           style={{
@@ -318,7 +322,7 @@ const About = () => (
         style={{
           marginTop: "10px",
         }}>
-        <div class="column" style={{ width: "350px" }}>
+        <div class="column" style={{ paddingTop: "35px", width: "350px" }}>
           <ExecCard
             img={annie_yuan}
             name="Annie Yuan"
@@ -334,7 +338,7 @@ const About = () => (
         style={{
           marginTop: "10px",
         }}>
-        <div class="column" style={{ width: "350px" }}>
+        <div class="column" style={{ paddingTop: "35px", width: "350px" }}>
           <ExecCard
             img={mahnoor_fatima}
             name="Mahnoor Fatima"
@@ -343,7 +347,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/mahnoor-fatima00/"
           />
         </div>
-        <div class="column" style={{ width: "350px" }}>
+        <div class="column" style={{ paddingTop: "35px", width: "350px" }}>
           <ExecCard
             img={grace_ren}
             name="Grace Ren"
@@ -352,7 +356,7 @@ const About = () => (
             // linkedin="https://www.linkedin.com/"
           />
         </div>
-        <div class="column">
+        <div class="column" style={{ paddingTop: "35px" }}>
           <ExecCard
             img={alan_pang}
             name="Alan Pang"
