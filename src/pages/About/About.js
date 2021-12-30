@@ -207,7 +207,9 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/christineeunseolee/"
           />
         </div>
-        <div class="column" style={{ paddingLeft: "0px" }}>
+        <div class="column" 
+          style={{ paddingLeft: "0px",
+          paddingTop: "35px" }}>
           <ExecCard
             img={leona_kuo}
             name="Leona Kuo"
