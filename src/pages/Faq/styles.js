@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Divider, Container } from "semantic-ui-react";
 export const StyledTitle = styled.h1`
   &&& {
     /* Title */
@@ -12,6 +12,10 @@ export const StyledTitle = styled.h1`
     /* identical to box height */
 
     color: #ffffff;
+    margin-bottom: 64px;
+    @media (min-width: 768px) {
+      width: 100%;
+    }
   }
 `;
 
@@ -53,5 +57,35 @@ export const StyledDescription = styled.h1`
     line-height: 25px;
     text-decoration: none;
     color: #ffffff;
+  }
+`;
+
+export const StyledMoreQuestionsDiv = styled.div`
+  &&& {
+    background: black;
+    color: white;
+    padding-top: 20px;
+    border-top: 1px solid #3c3c3c;
+    height: 200px;
+    width: 745px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    @media (max-width: 745px) {
+      width: 90%;
+      padding: 1rem;
+    }
+  }
+`;
+
+export const StyledFAQContainer = styled(Container)`
+  &&& {
+    margin-left: auto;
+    margin-right: auto;
+    width: 745px;
+    @media (max-width: 745px) {
+      width: 90%;
+      padding: 1rem;
+    }
   }
 `;

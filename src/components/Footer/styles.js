@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Container, Grid, GridColumn } from "semantic-ui-react";
+import column1 from "./Footer";
 
 export const StyledLink = styled.a`
   &&& {
@@ -60,6 +61,21 @@ export const StyledSubtleLink = styled.a`
   }
 `;
 
+export const StyledFooterContainer = styled(Container)`
+  &&& {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1040px;
+    height: 384px;
+    background: black;
+    @media (max-width: 1100px) {
+      justify-items: center;
+      width: 90%;
+      padding: 1rem;
+    }
+  }
+`;
+
 export const StyledHr = styled.hr`
   &&& {
     transform: translateX(-15px);
@@ -67,6 +83,18 @@ export const StyledHr = styled.hr`
     width: 1040px;
     height: 0px;
     border: 1.59223px solid #3c3c3c;
-    color: white;
+    background-color: #3c3c3c;
+    @media (max-width: 1040px) {
+      width: calc(100% + 20px);
+    }
+  }
+`;
+
+export const StyledConnectContainer = styled.div`
+  &&& {
+    width: 490px;
+    @media (max-width: 490px) {
+      width: 100%;
+    }
   }
 `;

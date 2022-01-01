@@ -9,7 +9,7 @@ import {
 } from "./styles";
 import tedxuw_logo from "../../res/images/tedxuw_logo.svg";
 import { NavLink } from "react-router-dom";
-import Temp from "../Burger/Burger";
+import HamburgerMenu from "../Burger/Burger";
 
 const useScrollPosition = () => {
   // if (typeof window === "undefined") return 500;
@@ -54,7 +54,7 @@ function Header(props) {
         backgroundColor: headerColor,
         ...boxStyles,
       }}>
-      <Temp />
+      <HamburgerMenu />
       <StyledNavContainer>
         <ul
           style={{

@@ -36,7 +36,7 @@ const Partners = () => (
           marginLeft: "auto",
           marginRight: "auto",
           color: "white",
-          // width: "1040px",
+          width: "1040px",
           position: "relative",
           textAlign: "center",
           textAlign: "left",

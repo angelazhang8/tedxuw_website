@@ -75,7 +75,7 @@ const useOnClickOutside = (ref, handler) => {
   }, [ref, handler]);
 };
 
-const Temp = () => {
+const HamburgerMenu = () => {
   const [open, setOpen] = React.useState(false);
   const node = React.useRef();
   useOnClickOutside(node, () => setOpen(false));
@@ -103,6 +103,7 @@ const StyledMenu = styled.nav`
 
   @media (max-width: 576px) {
     width: 100%;
+    padding: 1rem;
   }
   a {
     font-size: 2rem;
@@ -113,6 +114,7 @@ const StyledMenu = styled.nav`
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.2rem;
+    line-height: 130%;
 
     text-decoration: none;
     transition: color 0.3s linear;
@@ -151,4 +153,4 @@ const Menu = ({ open }) => {
   );
 };
 
-export default Temp;
+export default HamburgerMenu;
