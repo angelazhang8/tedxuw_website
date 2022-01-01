@@ -26,6 +26,10 @@ import {
   StyledMainHeader,
   StyledHeaderDescription,
   StyledSmallHeader,
+  StyledSpeakerContainer,
+  StyledSpeakerContainer2,
+  StyledSpeakerContainer3,
+  StyledDivider,
 } from "./styles";
 
 const Speakers = () => (
@@ -40,19 +44,7 @@ const Speakers = () => (
         marginTop: "0px",
       }}>
       <Header color="#2e0807" height="200" />
-      <Container
-        text
-        style={{
-          // transform: "translateY(-50px)",
-          marginTop: "70px",
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-          width: "1040px",
-          position: "relative",
-          textAlign: "center",
-          textAlign: "left",
-        }}>
+      <StyledSpeakerContainer>
         <StyledRedHeader style={{ paddingTop: "64px" }}>
           Coming Soon
         </StyledRedHeader>
@@ -60,42 +52,18 @@ const Speakers = () => (
         <StyledHeaderDescription>
           In the meantime, checkout our past speakers below!
         </StyledHeaderDescription>
-      </Container>
+      </StyledSpeakerContainer>
 
-      <Container
-        text
-        style={{
-          // transform: "translateY(-50px)",
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-          width: "1004px",
-          position: "relative",
-          textAlign: "center",
-          textAlign: "center",
-          padding: "0px",
-        }}>
+      <StyledSpeakerContainer2>
         <Link to="speakers" smooth={true} spy={true}>
           <img
             src={down}
             style={{ width: "32px", marginTop: "83px", marginBottom: "40px" }}
           />
         </Link>
-      </Container>
+      </StyledSpeakerContainer2>
     </div>
-    <Container
-      text
-      style={{
-        // transform: "translateY(-50px)",
-        marginLeft: "auto",
-        marginRight: "auto",
-        color: "white",
-        width: "1004px",
-        position: "relative",
-        textAlign: "center",
-        textAlign: "center",
-        padding: "0px",
-      }}>
+    <StyledSpeakerContainer3>
       <p class="speakers">
         <StyledSmallHeader>2021 Speakers</StyledSmallHeader>
       </p>
@@ -156,8 +124,8 @@ const Speakers = () => (
         talk_name="Enter the Metaverse"
         description="Tanner currently works at Kik Interactive, one of Canada’s tech unicorns, which was founded here at the UW Velocity program. For the past year, Tanner has been working with the team at Kik to develop an ecosystem of digital services powered by the cryptocurrency, Kin. His number one priority is finding a way to empower everyone, regardless of demographic, location, or socioeconomic status, to generate and capture value in this age of globalization. In another life, Tanner was a 3-year captain for the Laurier Golden Hawks football team, squaring off in many “Battles of Waterloo.”"
       />
-    </Container>
-    <Divider style={{ height: "100px" }} />
+    </StyledSpeakerContainer3>
+    <StyledDivider />
   </section>
 );
 

@@ -10,8 +10,8 @@ const StyledBurger = styled.button`
     display: none;
   }
   position: absolute;
-  top: 10%;
-  right: 2rem;
+  top: 15%;
+  right: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -124,6 +124,7 @@ const StyledMenu = styled.nav`
     @media (max-width: 576px) {
       font-size: 1.5rem;
       text-align: center;
+      line-height: 50%;
     }
 
     &:hover {
@@ -135,6 +136,9 @@ const StyledMenu = styled.nav`
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
+      <NavLink exact to="/">
+        Home
+      </NavLink>
       <NavLink exact to="/Speakers">
         Speakers
       </NavLink>

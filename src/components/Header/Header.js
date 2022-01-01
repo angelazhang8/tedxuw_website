@@ -38,6 +38,7 @@ const boxStyles = {
   position: "-webkit-sticky",
   position: "sticky",
   top: "0",
+  left: "0",
   paddingLeft: "0px !important",
   width: "100%",
   zIndex: "10",

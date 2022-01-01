@@ -1,5 +1,12 @@
 import styled from "styled-components";
-import { Container, Grid, GridColumn, Button, Form } from "semantic-ui-react";
+import {
+  Container,
+  Grid,
+  GridColumn,
+  Button,
+  Form,
+  Divider,
+} from "semantic-ui-react";
 
 export const StyledRedHeader = styled.h3`
   &&& {
@@ -59,5 +66,63 @@ export const StyledSmallHeader = styled.h4`
     /* Dark White */
 
     color: #e0e0e0;
+  }
+`;
+
+export const StyledSpeakerContainer = styled(Container)`
+  &&& {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 1040px;
+    position: relative;
+
+    text-align: left;
+    @media (max-width: 1040px) {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  }
+`;
+
+export const StyledSpeakerContainer2 = styled(Container)`
+  &&& {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 1040px;
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    @media (max-width: 1040px) {
+      margin-top: 0px;
+      width: 100%;
+    }
+  }
+`;
+
+export const StyledSpeakerContainer3 = styled(Container)`
+  &&& {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 1040px;
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    @media (max-width: 1040px) {
+      width: 100%;
+    }
+  }
+`;
+
+export const StyledDivider = styled(Divider)`
+  &&& {
+    height: 100px;
+    @media (max-width: 1040px) {
+      height: 2rem;
+    }
   }
 `;
