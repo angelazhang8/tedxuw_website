@@ -27,9 +27,9 @@ function Landing() {
   return (
     <div style={{ background: "black" }}>
       <Header color="black" />
-      {/* <BeforeEvent />
-      <DuringEvent /> */}
-      <AfterEvent />
+      {/* <BeforeEvent /> */}
+      <DuringEvent />
+      {/* <AfterEvent /> */}
       <Container
         text
         style={{

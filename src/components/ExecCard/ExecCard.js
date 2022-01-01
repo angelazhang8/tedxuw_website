@@ -33,7 +33,11 @@ class ExecCard extends React.Component {
       displayLinkedinIcon = (
         <a href={this.props.linkedin} target="_blank" rel="noopener noreferrer">
           <img
-            style={{ width: "24px", transform: "translate(10px)", borderRadius: "12px" }}
+            style={{
+              width: "24px",
+              transform: "translate(10px)",
+              borderRadius: "12px",
+            }}
             alt=""
             src={linkedin}
             onMouseOut={(e) => (e.currentTarget.src = linkedin)}
@@ -45,7 +49,10 @@ class ExecCard extends React.Component {
     }
     return (
       <Container style={{ width: "270px" }}>
-        <img src={this.props.img} style={{ width: "235px" }} />
+        <img
+          src={this.props.img}
+          style={{ width: "235px", borderRadius: "117.5px" }}
+        />
         <Container
           style={{
             textAlign: "left",
