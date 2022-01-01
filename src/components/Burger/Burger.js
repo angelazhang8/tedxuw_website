@@ -1,9 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import {} from "./styles";
+
 // https://codesandbox.io/s/trusting-panna-hv7tr?file=/src/Burger.js:0-3115
+import { NavLink } from "react-router-dom";
+
 const StyledBurger = styled.button`
+  @media (min-width: 1200px) {
+    display: none;
+  }
   position: absolute;
-  top: 5%;
+  top: 10%;
   right: 2rem;
   display: flex;
   flex-direction: column;
@@ -15,7 +22,6 @@ const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-
   &:focus {
     outline: none;
   }
@@ -23,13 +29,12 @@ const StyledBurger = styled.button`
   div {
     width: 2rem;
     height: 0.25rem;
-    background: ${({ open }) => (open ? "#0D0C1D" : "#EFFFFA")};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
-    color: black;
-    background: black;
+    color: white;
+    background: white;
 
     :first-child {
       transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
@@ -86,8 +91,8 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: yellow;
-  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  background: black;
+  transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
   height: 100vh;
   text-align: left;
   padding: 2rem;
@@ -101,13 +106,18 @@ const StyledMenu = styled.nav`
   }
   a {
     font-size: 2rem;
-    text-transform: uppercase;
+
     padding: 2rem 0;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
-    color: blue;
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+
     text-decoration: none;
     transition: color 0.3s linear;
+    color: white;
+    background: none;
 
     @media (max-width: 576px) {
       font-size: 1.5rem;
@@ -115,7 +125,7 @@ const StyledMenu = styled.nav`
     }
 
     &:hover {
-      color: black;
+      color: #8b8b8b;
     }
   }
 `;
@@ -123,24 +133,20 @@ const StyledMenu = styled.nav`
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
-      <a href="/">
-        <span role="img" aria-label="about us">
-          💁🏻‍♂️
-        </span>
-        About us jdfjhkjahsdfkjhafkj
-      </a>
-      <a href="/">
-        <span role="img" aria-label="price">
-          💸
-        </span>
-        Pricing
-      </a>
-      <a href="/">
-        <span role="img" aria-label="contact">
-          📩
-        </span>
-        Contact
-      </a>
+      <NavLink exact to="/Speakers">
+        Speakers
+      </NavLink>
+      <NavLink exact to="/Partners">
+        Partners
+      </NavLink>
+      <NavLink exact to="/About">
+        About
+      </NavLink>
+      <NavLink exact to="/Faq">
+        FAQ
+      </NavLink>
+      <a href="https://medium.com/@tedxuw">Blog</a>
+      <a href="">Register Now</a>
     </StyledMenu>
   );
 };
