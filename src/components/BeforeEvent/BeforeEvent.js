@@ -18,10 +18,15 @@ class BeforeEvent extends React.Component {
     return (
       <div>
         <StyledBeforeEventContainer
+          style={{ alignItems: "center", paddingTop: "80px" }}>
+          <Time />
+        </StyledBeforeEventContainer>
+
+        <StyledBeforeEventContainer
           style={{
-            paddingTop: "80px",
+            alignItems: "left",
+            textAlignt: "left",
           }}>
-          {/* <Time /> */}
           <StyledMissionTitle>2020 Vision.</StyledMissionTitle>
         </StyledBeforeEventContainer>
         <Link to="footer" smooth={true} spy={true}>

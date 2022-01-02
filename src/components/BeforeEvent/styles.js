@@ -61,6 +61,9 @@ export const StyledMissionTitle = styled.h1`
       font-size: 20vw;
       line-height: 30vw;
     }
+    @media (max-width: 700px) {
+      margin-top: 0px;
+    }
   }
 `;
 export const StyledBeforeEventContainer = styled(Container)`
@@ -70,7 +73,8 @@ export const StyledBeforeEventContainer = styled(Container)`
     color: white;
     width: 1040px;
     position: relative;
-    text-align: left;
+    // background: green;
+    // text-align: left;
     // background: green;
     @media (max-width: 1040px) {
       width: 100%;

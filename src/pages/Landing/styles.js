@@ -36,7 +36,7 @@ export const StyledStatement = styled.p`
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
-    @media (max-width: 800px) {
+    @media (max-width: 1040px) {
       font-size: 20px;
       line-height: 30px;
     }
