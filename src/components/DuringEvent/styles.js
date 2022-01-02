@@ -24,6 +24,9 @@ export const StyledMissionTitle = styled.h1`
       margin-top: 0px;
       padding-left: 1rem;
     }
+    @media (max-width: 250px) {
+      padding-left: 0rem;
+    }
   }
 `;
 
@@ -171,6 +174,9 @@ export const StyledContainer2 = styled(Container)`
       text-align: left;
       padding-top: 80px;
       padding-left: 1rem;
+    }
+    @media (max-width: 250px) {
+      padding-left: 0rem;
     }
   }
 `;

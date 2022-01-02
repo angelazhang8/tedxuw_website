@@ -73,8 +73,8 @@ function Landing(props) {
     <div>
       <Header color="black" />
       {/* <BeforeEvent /> */}
-      <DuringEvent />
-      {/* <AfterEvent /> */}
+      {/* <DuringEvent /> */}
+      <AfterEvent />
       <StyledLandingContainer style={{ marginTop: "90px" }}>
         <StyledTitle>
           <span style={{ textDecoration: "underline 15px solid #e62b1e" }}>

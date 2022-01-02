@@ -55,3 +55,22 @@ export const StyledCollapseText = styled.h4`
     color: #afafaf;
   }
 `;
+
+export const StyledContainer = styled(Container)`
+  &&& {
+    width: 270px;
+    @media (max-width: 270px) {
+      width: 100%;
+    }
+  }
+`;
+
+export const StyledImg = styled.img`
+  &&& {
+    width: 235px;
+    border-radius: 50%;
+    @media (max-width: 235px) {
+      width: 100%;
+    }
+  }
+`;
