@@ -45,7 +45,6 @@ export const StyledDescription = styled.h4`
 export const StyledImg = styled.img`
   &&& {
     width: 235px;
-    background: blue;
     @media (max-width: 870px) {
       width: 90%;
     }
@@ -56,7 +55,6 @@ export const StyledFounderCardContainer = styled(Container)`
   &&& {
     text-align: left;
     width: 574px;
-    background: green;
     @media (max-width: 870px) {
       width: 90%;
       padding-left: 1rem;

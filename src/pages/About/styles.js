@@ -59,7 +59,6 @@ export const StyledAboutContainer = styled(Container)`
     width: 1040px;
     position: relative;
     text-align: center;
-    background: green;
     @media (max-width: 1040px) {
       width: 90%;
       // margin-left: 1rem;

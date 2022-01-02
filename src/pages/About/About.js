@@ -97,13 +97,9 @@ const About = () => (
             position="Director of Marketing"
             description="As someone who loves watching TED and TEDx talks, Salma is excited to lead the marketing team in reaching a wide audience for this year's TEDxUW conference. Salma is also excited to use her event planning skills to organize the best TEDxUW conference yet along with the rest of the team. Feel free to reach out to Salma if you have any questions about TEDxUW, marketing, or getting involved in UWaterloo!"
             linkedin="https://www.linkedin.com/in/salmamarzouk/"
-            style={{ background: "yellow" }}
           />
         </div>
-        <div
-          class="column"
-          className="col_type1"
-          style={{ background: "blue" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={abby_zinman}
             name="Abby Zinman"
@@ -112,7 +108,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/abby-zinman-79212a1aa/"
           />
         </div>
-        <div class="column" className="col_type1" style={{ background: "red" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={angela_zhang}
             name="Angela Zhang"
