@@ -36,7 +36,6 @@ class ExecCard extends React.Component {
             style={{
               width: "24px",
               transform: "translate(10px)",
-              borderRadius: "12px",
             }}
             alt=""
             src={linkedin}

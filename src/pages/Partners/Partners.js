@@ -4,6 +4,11 @@ import {
   StyledRedHeader,
   StyledMainHeader,
   StyledHeaderDescription,
+  StyledSpeakerContainer,
+  StyledSpeakerContainer2,
+  StyledSpeakerContainer3,
+  StyledImg,
+  StyledDivider,
 } from "./styles";
 import down from "../../res/images/down.svg";
 import university_of_waterloo from "../../res/images/sponsors/university_of_waterloo.svg";
@@ -15,6 +20,7 @@ import wusa from "../../res/images/sponsors/wusa.svg";
 
 import { Link } from "react-scroll";
 import Header from "../../components/Header/Header";
+import "./Partners.css";
 
 const Partners = () => (
   <section>
@@ -28,19 +34,7 @@ const Partners = () => (
         marginTop: "0px",
       }}>
       <Header color="#2e0807" height="200" />
-      <Container
-        text
-        style={{
-          // transform: "translateY(-50px)",
-          marginTop: "70px",
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-          width: "1040px",
-          position: "relative",
-          textAlign: "center",
-          textAlign: "left",
-        }}>
+      <StyledSpeakerContainer>
         <StyledRedHeader style={{ paddingTop: "64px" }}>
           Coming Soon
         </StyledRedHeader>
@@ -48,73 +42,41 @@ const Partners = () => (
         <StyledHeaderDescription>
           In the meantime, thank you to our 2020 partners for their support!
         </StyledHeaderDescription>
-      </Container>
-      <Container
-        text
-        style={{
-          // transform: "translateY(-50px)",
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-          width: "1004px",
-          position: "relative",
-          textAlign: "center",
-          textAlign: "center",
-          padding: "0px",
-        }}>
+      </StyledSpeakerContainer>
+      <StyledSpeakerContainer2>
         <Link to="partners" smooth={true} spy={true}>
           <img
             src={down}
             style={{ width: "32px", marginTop: "83px", marginBottom: "40px" }}
           />
         </Link>
-      </Container>
+      </StyledSpeakerContainer2>
     </div>
-    <Container
-      text
-      style={{
-        // transform: "translateY(-50px)",
-        marginTop: "50px",
-        marginBottom: "160px",
-        marginLeft: "auto",
-        marginRight: "auto",
-        color: "white",
-        width: "1004px",
-        position: "relative",
-        textAlign: "center",
-        textAlign: "center",
-        padding: "0px",
-      }}>
+
+    <StyledSpeakerContainer3>
       <div class="partners">
-        <div class="ui grid" style={{ transform: "translateX(-10px" }}>
-          <div class="row" style={{ columnGap: "80px", alignItems: "center" }}>
-            <div class="four wide column">
-              <img src={university_of_waterloo} style={{ width: "235px" }} />
-            </div>
-            <div class="four wide column">
-              <img src={wusa} style={{ width: "235px" }} />
-            </div>
-            <div class="four wide column">
-              <img
-                src={waterloo_arts_endowment_fund}
-                style={{ width: "235px" }}
-              />
-            </div>
+        <div class="ui grid">
+          <div class="column" className="sponsor_col">
+            <StyledImg src={university_of_waterloo} />
           </div>
-          <div class="row" style={{ columnGap: "80px", alignItems: "center" }}>
-            <div class="four wide column">
-              <img src={basecamp} style={{ width: "235px" }} />
-            </div>
-            <div class="four wide column">
-              <img src={city_of_waterloo} style={{ width: "235px" }} />
-            </div>
-            <div class="four wide column">
-              <img src={mailchimp} style={{ width: "235px" }} />
-            </div>
+          <div class="column" className="sponsor_col">
+            <StyledImg src={wusa} />
+          </div>
+          <div class="column" className="sponsor_col">
+            <StyledImg src={waterloo_arts_endowment_fund} />
+          </div>
+          <div class="column" className="sponsor_col">
+            <StyledImg src={basecamp} />
+          </div>
+          <div class="column" className="sponsor_col">
+            <StyledImg src={city_of_waterloo} />
+          </div>
+          <div class="column" className="sponsor_col">
+            <StyledImg src={mailchimp} />
           </div>
         </div>
       </div>
-    </Container>
+    </StyledSpeakerContainer3>
   </section>
 );
 
