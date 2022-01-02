@@ -91,7 +91,7 @@ const StyledMenu = styled.nav`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: black;
+  background: green;
   transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
   height: 100vh;
   text-align: left;

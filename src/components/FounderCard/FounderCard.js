@@ -13,7 +13,7 @@ import "./FounderCard.css";
 class FounderCard extends React.Component {
   render() {
     return (
-      <div class="ui grid ">
+      <div class="ui grid">
         <div
           class="row"
           style={{
