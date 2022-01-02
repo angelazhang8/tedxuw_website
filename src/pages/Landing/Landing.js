@@ -72,9 +72,9 @@ function Landing(props) {
   return (
     <div>
       <Header color="black" />
-      <BeforeEvent />
-      {/* <DuringEvent />
-      <AfterEvent /> */}
+      {/* <BeforeEvent /> */}
+      <DuringEvent />
+      {/* <AfterEvent /> */}
       <StyledLandingContainer style={{ marginTop: "90px" }}>
         <StyledTitle>
           <span style={{ textDecoration: "underline 15px solid #e62b1e" }}>
@@ -179,7 +179,6 @@ function Landing(props) {
           change-makers.
         </StyledDescription>
       </StyledLandingContainer>
-
       <StyledBackgroundImgDiv
         style={{
           backgroundImage: `url(${collage2})`,
@@ -204,7 +203,6 @@ function Landing(props) {
           </div>
         </StyledLandingContainer2>
       </StyledBackgroundImgDiv>
-
       <StyledText style={{ textAlign: "center" }}>
         Follow us on Social Media!
       </StyledText>
