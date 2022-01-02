@@ -163,11 +163,9 @@ export const StyledLandingContainer = styled(Container)`
     width: 745px;
     position: relative;
     text-align: left;
-    padding-bottom: 5rem;
     // background: purple;
     @media (max-width: 745px) {
       width: 90%;
-      padding-bottom: 2rem;
       padding-left: 1rem;
       padding-right: 1rem;
     }

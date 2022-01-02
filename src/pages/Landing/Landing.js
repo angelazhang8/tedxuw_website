@@ -152,7 +152,7 @@ function Landing(props) {
           TED.com and amassing over 5 million views on YouTube, TEDxUW sparks
           innovation across the globe starting at the University of Waterloo.
         </StyledDescription>
-        <StyledDescription>
+        <StyledDescription style={{ paddingBottom: "6rem" }}>
           <span
             style={{
               color: "#afafaf",
