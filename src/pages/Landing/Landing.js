@@ -213,7 +213,7 @@ function Landing(props) {
           class="relaxed ui grid"
           style={{
             columnGap: gap,
-            background: "red",
+            // background: "red",
             paddingLeft: social_padding,
             paddingRight: social_padding,
           }}>

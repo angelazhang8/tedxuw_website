@@ -134,7 +134,7 @@ export const StyledSocialContainer = styled(Container)`
     width: 420px;
     position: relative;
     text-align: left;
-    background: red;
+    // background: red;
 
     @media (max-width: 420px) {
       width: 90%;
@@ -163,11 +163,13 @@ export const StyledLandingContainer = styled(Container)`
     width: 745px;
     position: relative;
     text-align: left;
-    background: purple;
+    padding-bottom: 5rem;
+    // background: purple;
     @media (max-width: 745px) {
-      width: 100%;
-      // padding-left: 1rem;
-      // margin-right: 1rem;
+      width: 90%;
+      padding-bottom: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 `;
@@ -182,14 +184,14 @@ export const StyledLandingContainer2 = styled(Container)`
     text-align: left;
     transform: translate(50px, -10px);
     align-items: center;
-    background: green;
+    // background: green;
 
     @media (max-width: 1040px) {
       width: 80%;
     }
     @media (max-width: 600px) {
       width: 65%;
-      background: blue;
+      // background: blue;
     }
   }
 `;
