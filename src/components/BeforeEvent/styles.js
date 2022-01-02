@@ -115,3 +115,22 @@ export const StyledDivider = styled.div`
     }
   }
 `;
+
+export const StyledButton = styled(Button)`
+  &&& {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e62b1e;
+    border-radius: 100px;
+    color: #fcfcfc;
+    width: 272px;
+    height: 45px;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    @media (max-width: 272px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+`;

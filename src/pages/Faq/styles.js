@@ -16,6 +16,9 @@ export const StyledTitle = styled.h1`
     @media (min-width: 768px) {
       width: 100%;
     }
+    @media (max-width: 745px) {
+      margin-bottom: 34px;
+    }
   }
 `;
 
@@ -83,9 +86,18 @@ export const StyledFAQContainer = styled(Container)`
     margin-left: auto;
     margin-right: auto;
     width: 745px;
-    @media (max-width: 745px) {
+    @media (max-width: 800px) {
       width: 90%;
       padding: 1rem;
+    }
+  }
+`;
+
+export const StyledDivider = styled(Divider)`
+  &&& {
+    height: 144px;
+    @media (max-width: 745px) {
+      height: 50px;
     }
   }
 `;

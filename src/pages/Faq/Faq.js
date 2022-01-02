@@ -4,6 +4,7 @@ import {
   StyledDescription,
   StyledMoreQuestionsDiv,
   StyledFAQContainer,
+  StyledDivider,
 } from "./styles";
 import { Divider, Container } from "semantic-ui-react";
 import Accordion from "../../components/Accordion/Accordion";
@@ -12,7 +13,7 @@ import Header from "../../components/Header/Header";
 const Faq = () => (
   <section>
     <Header color="black" />
-    <Divider style={{ color: "white", height: "144px" }} />
+    <StyledDivider />
     <StyledTitle>Frequently Asked Questions</StyledTitle>
     <StyledFAQContainer>
       <Accordion

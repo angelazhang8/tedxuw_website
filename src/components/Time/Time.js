@@ -10,7 +10,7 @@ import {
   StyledHeaderDescription,
 } from "./styles";
 
-const stringDate = "February 15, 2022 00:00:00";
+const stringDate = "February 19, 2022 09:00:00";
 const endDate = new Date(stringDate).getTime();
 
 function Time() {
@@ -78,7 +78,7 @@ function Time() {
   return (
     <div>
       <StyledHeaderDescription style={{ color: "white" }}>
-        TedxUW will virtually take place on {stringDate}
+        TedxUW will virtually take place on {stringDate} ET.
       </StyledHeaderDescription>
       <StyledContainer>
         <section style={{ display: "flex", flexDirection: "column" }}>

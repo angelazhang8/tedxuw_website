@@ -7,6 +7,7 @@ import {
   StyledBeforeEventContainer2,
   StyledImgDiv,
   StyledDivider,
+  StyledButton,
 } from "./styles";
 import { Container, Button, Divider } from "semantic-ui-react";
 import collage1 from "../../res/images/collage1.png";
@@ -30,22 +31,10 @@ class BeforeEvent extends React.Component {
           <StyledMissionTitle>2020 Vision.</StyledMissionTitle>
         </StyledBeforeEventContainer>
         <Link to="footer" smooth={true} spy={true}>
-          <Button
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              backgroundColor: "#E62B1E",
-              borderRadius: "100px",
-              color: "#FCFCFC",
-              width: "272px",
-              height: "45px",
-              textAlign: "center",
-              justifyContent: "center",
-              border: "none",
-            }}>
+          <StyledButton>
             <StyledDivider />
             <StyledButtonText>Sign Up for Email Reminders</StyledButtonText>
-          </Button>
+          </StyledButton>
         </Link>
 
         <Container
