@@ -59,7 +59,7 @@ export const StyledTitle = styled.h2`
     text-align: left;
 
     text-underline-offset: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 2.5rem;
     @media (min-width: 745px) {
       transform: translateX(-20px);
     }

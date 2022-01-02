@@ -72,8 +72,8 @@ function Landing(props) {
   return (
     <div>
       <Header color="black" />
-      {/* <BeforeEvent />
-      <DuringEvent />
+      <BeforeEvent />
+      {/* <DuringEvent />
       <AfterEvent /> */}
       <StyledLandingContainer style={{ marginTop: "90px" }}>
         <StyledTitle>
