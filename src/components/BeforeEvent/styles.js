@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Container, Button, Divider } from "semantic-ui-react";
 
 export const StyledButtonText = styled.p`
   &&& {
@@ -22,6 +23,19 @@ export const StyledStatement = styled.p`
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
+
+    @media (max-width: 745px) {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @media (max-width: 350px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    @media (max-width: 300px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 `;
 export const StyledMissionTitle = styled.h1`
@@ -38,5 +52,62 @@ export const StyledMissionTitle = styled.h1`
     text-shadow: 4px 4px 25px rgba(249, 214, 103, 0.5);
     margin-bottom: 32px;
     margin-top: 48px;
+    // background: green;
+    @media (max-width: 1040px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    @media (max-width: 580px) {
+      font-size: 20vw;
+      line-height: 30vw;
+    }
+  }
+`;
+export const StyledBeforeEventContainer = styled(Container)`
+  &&& {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 1040px;
+    position: relative;
+    text-align: left;
+    // background: green;
+    @media (max-width: 1040px) {
+      width: 100%;
+    }
+  }
+`;
+
+export const StyledBeforeEventContainer2 = styled(Container)`
+  &&& {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 745px;
+    position: relative;
+    textalign: left;
+    @media (max-width: 745px) {
+      width: 100%;
+    }
+  }
+`;
+
+export const StyledImgDiv = styled.div`
+  &&& {
+    width: 100%;
+    height: 299px;
+    @media (max-width: 1040px) {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+`;
+
+export const StyledDivider = styled.div`
+  &&& {
+    height: 150px;
+    @media (max-width: 600px) {
+      height: 70px;
+    }
   }
 `;
