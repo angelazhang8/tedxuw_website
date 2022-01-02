@@ -1,7 +1,17 @@
 import React, { useEffect, useState, Component } from "react";
 import moment from "moment";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
-import { StyledTimeUnit, StyledDigit, StyledCaption } from "./styles";
+import {
+  StyledArticle,
+  StyledTimeUnit,
+  StyledDigit,
+  StyledCaption,
+  StyledContainer,
+  StyledHeaderDescription,
+} from "./styles";
+
+const stringDate = "February 19, 2022 09:00:00";
+const endDate = new Date(stringDate).getTime();
 
 function Time() {
   const [days, setDays] = useState(0);
@@ -23,7 +33,7 @@ function Time() {
   const [loading, setLoading] = useState(true);
 
   const countDown = () => {
-    const endDate = new Date("February 15, 2022 00:00:00").getTime();
+    // const endDate = new Date("February 15, 2022 00:00:00").getTime();
     const today = new Date().getTime();
     const timeDiff = endDate - today;
 
@@ -66,86 +76,93 @@ function Time() {
   }, []);
 
   return (
-    <Container
-      style={{
-        marginTop: "127px",
-        color: "white",
-        textAlign: "center",
-      }}>
-      <section style={{ display: "flex", flexDirection: "column" }}>
-        <div style={{ display: "flex", flexWrap: "wrap", textAlign: "center" }}>
-          <article>
-            <StyledDigit style={{ marginRight: "8px" }}>
-              <StyledTimeUnit>{days1}</StyledTimeUnit>
-            </StyledDigit>
-          </article>
-          <article>
-            <StyledDigit>
-              <StyledTimeUnit>{days2}</StyledTimeUnit>
-            </StyledDigit>
-          </article>
-          <article style={{ paddingRight: "131px" }}></article>
-          <article>
-            <StyledDigit style={{ marginRight: "8px" }}>
-              <StyledTimeUnit>{hours1}</StyledTimeUnit>
-            </StyledDigit>
-          </article>
-          <article>
-            <StyledDigit>
-              <StyledTimeUnit>{hours2}</StyledTimeUnit>
-            </StyledDigit>
-          </article>
-          <article style={{ paddingRight: "131px" }}></article>
-          <article>
-            <StyledDigit style={{ marginRight: "8px" }}>
-              <StyledTimeUnit>{minutes1}</StyledTimeUnit>
-            </StyledDigit>
-          </article>
-          <article>
-            <StyledDigit>
-              <StyledTimeUnit>{minutes2}</StyledTimeUnit>
-            </StyledDigit>
-          </article>
-          <article style={{ paddingRight: "131px" }}></article>
-          <article>
-            <StyledDigit style={{ marginRight: "8px" }}>
-              <StyledTimeUnit>{seconds1}</StyledTimeUnit>
-            </StyledDigit>
-          </article>
-          <article>
-            <StyledDigit>
-              <StyledTimeUnit>{seconds2}</StyledTimeUnit>
-            </StyledDigit>
-          </article>
-        </div>
-      </section>
-      <section>
-        <div style={{ display: "flex", flexWrap: "wrap", textAlign: "center" }}>
-          <article>
-            <div style={{ width: "152px" }}>
-              <StyledCaption>Days</StyledCaption>
-            </div>
-          </article>
-          <article style={{ paddingRight: "131px" }}></article>
-          <article>
-            <div style={{ width: "152px", alignItems: "center" }}>
-              <StyledCaption>Hours </StyledCaption>
-            </div>
-          </article>
-          <article style={{ paddingRight: "131px" }}></article>
-          <article>
-            <div style={{ width: "152px", alignItems: "center" }}>
-              <StyledCaption>Minutes </StyledCaption>
-            </div>
-          </article>
-          <article style={{ paddingRight: "131px" }}></article>
-          <article>
-            <div style={{ width: "152px", alignItems: "center" }}></div>
-            <StyledCaption>Seconds</StyledCaption>
-          </article>
-        </div>
-      </section>
-    </Container>
+    <div>
+      <StyledHeaderDescription style={{ color: "white" }}>
+        TedxUW will virtually take place on {stringDate} ET.
+      </StyledHeaderDescription>
+      <StyledContainer>
+        <section style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              alignItems: "center",
+              textAlign: "center",
+            }}>
+            <article>
+              <StyledDigit style={{ marginRight: "8px" }}>
+                <StyledTimeUnit>{days1}</StyledTimeUnit>
+              </StyledDigit>
+            </article>
+            <article>
+              <StyledDigit>
+                <StyledTimeUnit>{days2}</StyledTimeUnit>
+              </StyledDigit>
+            </article>
+            <StyledArticle />
+            <article>
+              <StyledDigit style={{ marginRight: "8px" }}>
+                <StyledTimeUnit>{hours1}</StyledTimeUnit>
+              </StyledDigit>
+            </article>
+            <article>
+              <StyledDigit>
+                <StyledTimeUnit>{hours2}</StyledTimeUnit>
+              </StyledDigit>
+            </article>
+            <StyledArticle />
+            <article>
+              <StyledDigit style={{ marginRight: "8px" }}>
+                <StyledTimeUnit>{minutes1}</StyledTimeUnit>
+              </StyledDigit>
+            </article>
+            <article>
+              <StyledDigit>
+                <StyledTimeUnit>{minutes2}</StyledTimeUnit>
+              </StyledDigit>
+            </article>
+            <StyledArticle />
+            <article>
+              <StyledDigit style={{ marginRight: "8px" }}>
+                <StyledTimeUnit>{seconds1}</StyledTimeUnit>
+              </StyledDigit>
+            </article>
+            <article>
+              <StyledDigit>
+                <StyledTimeUnit>{seconds2}</StyledTimeUnit>
+              </StyledDigit>
+            </article>
+          </div>
+        </section>
+        <section>
+          <div
+            style={{ display: "flex", flexWrap: "wrap", textAlign: "center" }}>
+            <article>
+              <div style={{ width: "152px" }}>
+                <StyledCaption>Days</StyledCaption>
+              </div>
+            </article>
+            <StyledArticle />
+            <article>
+              <div style={{ width: "152px", alignItems: "center" }}>
+                <StyledCaption>Hours </StyledCaption>
+              </div>
+            </article>
+            <StyledArticle />
+            <article>
+              <div style={{ width: "152px", alignItems: "center" }}>
+                <StyledCaption>Minutes </StyledCaption>
+              </div>
+            </article>
+            <StyledArticle />
+            <article>
+              <div style={{ width: "152px", alignItems: "center" }}></div>
+              <StyledCaption>Seconds</StyledCaption>
+            </article>
+          </div>
+        </section>
+      </StyledContainer>
+    </div>
   );
 }
 

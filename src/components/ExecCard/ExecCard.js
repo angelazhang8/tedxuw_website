@@ -4,6 +4,8 @@ import {
   StyledPosition,
   StyledDescription,
   StyledCollapseText,
+  StyledContainer,
+  StyledImg,
 } from "./styles";
 import { Container, ImageGroup } from "semantic-ui-react";
 import linkedin from "../../res/images/linkedin_red.svg";
@@ -36,7 +38,6 @@ class ExecCard extends React.Component {
             style={{
               width: "24px",
               transform: "translate(10px)",
-              borderRadius: "12px",
             }}
             alt=""
             src={linkedin}
@@ -48,11 +49,8 @@ class ExecCard extends React.Component {
       displayLinkedinIcon = <div></div>;
     }
     return (
-      <Container style={{ width: "270px" }}>
-        <img
-          src={this.props.img}
-          style={{ width: "235px", borderRadius: "117.5px" }}
-        />
+      <StyledContainer>
+        <StyledImg src={this.props.img} />
         <Container
           style={{
             textAlign: "left",
@@ -90,7 +88,7 @@ class ExecCard extends React.Component {
             )}
           </a>
         </Container>
-      </Container>
+      </StyledContainer>
     );
   }
 }

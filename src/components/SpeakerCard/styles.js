@@ -56,3 +56,28 @@ export const StyledCollapseText = styled.h4`
     color: #afafaf;
   }
 `;
+
+export const StyledContainer = styled(Container)`
+  &&& {
+    text-align: left;
+    width: 574px;
+    transform: translateX(-20px);
+    @media (max-width: 1040px) {
+      margin-left: 2rem;
+      width: 100%;
+    }
+  }
+`;
+export const StyledImg = styled.img`
+  &&& {
+    width: 362px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 181px;
+
+    @media (max-width: 509px) {
+      margin-left: 2rem;
+      width: 100%;
+    }
+  }
+`;

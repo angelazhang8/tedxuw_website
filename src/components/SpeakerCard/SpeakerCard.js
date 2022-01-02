@@ -5,11 +5,14 @@ import {
   StyledPosition,
   StyledDescription,
   StyledCollapseText,
+  StyledContainer,
+  StyledImg,
 } from "./styles";
 import Truncate from "react-truncate";
 import PropTypes from "prop-types";
 import down from "../../res/images/down2.svg";
 import up from "../../res/images/up.svg";
+import "./SpeakerCard.css";
 
 class SpeakerCard extends React.Component {
   constructor(...args) {
@@ -44,34 +47,18 @@ class SpeakerCard extends React.Component {
     const { children, more, less, lines } = this.props;
     const { expanded, truncated } = this.state;
     return (
-      <div class="ui grid">
+      <div class="ui grid" style={{ margin: "1rem" }}>
         <div
           class="row"
-          style={{ verticalAlign: "middle", alignItems: "center" }}>
-          <div
-            class="five wide column"
-            style={{
-              position: "left",
-              justifyItems: "left",
-              marginRight: "32px",
-            }}>
-            <img
-              style={{
-                width: "362px",
-                marginBottom: "20px",
-                marginTop: "20px",
-                borderRadius: "181px",
-              }}
-              src={this.props.img}
-            />
+          style={{
+            verticalAlign: "middle",
+            alignItems: "center",
+          }}>
+          <div class="column" className="speaker_img_col">
+            <StyledImg src={this.props.img} />
           </div>
-          <div class="eight wide column">
-            <Container
-              style={{
-                textAlign: "left",
-                width: "574px",
-                transform: "translateX(-20px)",
-              }}>
+          <div class="column" className="speaker_desc_col">
+            <StyledContainer>
               <StyledName>{this.props.name}</StyledName>
               <StyledPosition>{this.props.talk_name}</StyledPosition>
               <StyledDescription>
@@ -99,7 +86,7 @@ class SpeakerCard extends React.Component {
                   </span>
                 )}
               </StyledDescription>
-            </Container>
+            </StyledContainer>
           </div>
         </div>
       </div>

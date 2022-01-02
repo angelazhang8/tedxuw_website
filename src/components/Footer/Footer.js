@@ -6,6 +6,9 @@ import instagram from "../../res/images/instagram.svg";
 import linkedin from "../../res/images/linkedin.svg";
 import twitter from "../../res/images/twitter.svg";
 import "../../grid.min.css";
+
+import "./Footer.css";
+
 import {
   StyledLink,
   StyledHeading,
@@ -13,24 +16,19 @@ import {
   StyledList,
   StyledSubtleLink,
   StyledHr,
+  StyledFooterContainer,
+  StyledConnectContainer,
 } from "./styles";
 import EmailForm from "../../components/EmailForm/EmailForm";
 class Footer extends Component {
   render() {
     return (
       <div id="footer">
-        <Container
-          style={{
-            marginLeft: "auto",
-            marginRight: "auto",
-            width: "1040px",
-            height: "384px",
-            background: "black",
-          }}>
+        <StyledFooterContainer>
           <StyledHr />
           <div class="ui grid ">
             <div class="row" style={{ columnGap: "80px", alignItems: "left" }}>
-              <div style={{ width: "490px" }}>
+              <StyledConnectContainer>
                 <Container style={{ textAlign: "left" }}>
                   <StyledHeading>Let's stay connected!</StyledHeading>
                   <StyledDescription>
@@ -42,14 +40,13 @@ class Footer extends Component {
                     style={{
                       marginBottom: "33px",
                       marginTop: "34px",
-                      marginLeft: "0",
                       marginRight: "auto",
                       color: "white",
                       width: "166px",
                       position: "relative",
                       textAlign: "left",
                     }}>
-                    <div class="ui  grid" style={{ color: "white" }}>
+                    <div class="ui grid" style={{ color: "white" }}>
                       <div class="column">
                         <ImageGroup>
                           <a
@@ -120,7 +117,6 @@ class Footer extends Component {
                       </div>
                     </div>
                   </Container>
-
                   <StyledDescription>
                     Copyright © 2020 TEDxUW - All Rights Reserved.
                     <br />
@@ -128,8 +124,8 @@ class Footer extends Component {
                     TED.
                   </StyledDescription>
                 </Container>
-              </div>
-              <div class="three wide column">
+              </StyledConnectContainer>
+              <div class="three wide column" className="column1">
                 <Container style={{ textAlign: "left" }}>
                   <StyledHeading>Contact</StyledHeading>
                   <StyledLink href="mailto:partnership@tedxuw.com">
@@ -181,7 +177,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-        </Container>
+        </StyledFooterContainer>
       </div>
     );
   }

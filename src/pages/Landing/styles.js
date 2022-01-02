@@ -1,16 +1,6 @@
 import styled from "styled-components";
 import { Container, Grid, GridColumn } from "semantic-ui-react";
 
-export const StyledLandingContainer = styled(Container)`
-  &&& {
-    position: absolute;
-    width: 1004px;
-    height: 199px;
-    left: 218px;
-    top: 447px;
-  }
-`;
-
 export const StyledTextContainer = styled(Container)`
   &&& {
     width: 745px;
@@ -46,6 +36,14 @@ export const StyledStatement = styled.p`
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
+    @media (max-width: 1040px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @media (max-width: 700px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 `;
 
@@ -59,6 +57,12 @@ export const StyledTitle = styled.h2`
     line-height: 43px;
     letter-spacing: 0em;
     text-align: left;
+
+    text-underline-offset: 15px;
+    padding-bottom: 2.5rem;
+    @media (min-width: 745px) {
+      transform: translateX(-20px);
+    }
   }
 `;
 
@@ -122,9 +126,20 @@ export const StyledGridColumn = styled(GridColumn)`
 
 export const StyledSocialContainer = styled(Container)`
   &&& {
-    position: absolute;
-    margin-bottom: 32px;
-    top: 1500px;
+    margin-top: 32px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 420px;
+    position: relative;
+    text-align: left;
+    // background: red;
+
+    @media (max-width: 420px) {
+      width: 90%;
+      margin-bottom: 20px;
+    }
   }
 `;
 
@@ -137,5 +152,82 @@ export const StyledButtonText = styled.p`
     line-height: 21px;
 
     color: #fcfcfc;
+  }
+`;
+
+export const StyledLandingContainer = styled(Container)`
+  &&& {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 745px;
+    position: relative;
+    text-align: left;
+    // background: purple;
+    @media (max-width: 745px) {
+      width: 90%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+`;
+
+export const StyledLandingContainer2 = styled(Container)`
+  &&& {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 1040px;
+    position: relative;
+    text-align: left;
+    transform: translate(50px, -10px);
+    align-items: center;
+    // background: green;
+
+    @media (max-width: 1040px) {
+      width: 80%;
+    }
+    @media (max-width: 600px) {
+      width: 65%;
+      // background: blue;
+    }
+  }
+`;
+
+export const StyledImg = styled.img`
+  &&& {
+    width: 332px;
+    height: 221.72px;
+    @media (max-width: 1040px) {
+      max-width: 100%;
+      height: auto;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+`;
+
+export const StyledBackgroundImgDiv = styled.div`
+  &&& {
+    width: 100%;
+    height: 324.41px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 1040px) {
+      width: 90%;
+      height: auto;
+      margin-bottom: none;
+    }
+  }
+`;
+
+export const StyledSocial = styled.img`
+  &&& {
+    width: 57px;
+
+    @media (max-width: 526px) {
+      width: 30px;
+    }
   }
 `;

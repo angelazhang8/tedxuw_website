@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import {
   StyledLandingContainer,
   StyledMissionTitle,
@@ -7,6 +7,11 @@ import {
   StyledDescription,
   StyledText,
   StyledButtonText,
+  StyledLandingContainer2,
+  StyledImg,
+  StyledBackgroundImgDiv,
+  StyledSocialContainer,
+  StyledSocial,
 } from "./styles";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
 import facebook from "../../res/images/facebook.svg";
@@ -22,48 +27,63 @@ import BeforeEvent from "../../components/BeforeEvent/BeforeEvent";
 import DuringEvent from "../../components/DuringEvent/DuringEvent";
 import AfterEvent from "../../components/AfterEvent/AfterEvent";
 // Landing page component
-function Landing() {
-  //Functions to track clicks
+
+import "./Landing.css";
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+  useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}
+
+function Landing(props) {
+  const size = useWindowSize();
+  var gap = size.width < "500" ? "10px" : "35px";
+  var social_padding = "0px";
+  if (size.width < "526") {
+    social_padding = "20px";
+  }
+  if (size.width < "400") {
+    social_padding = "0px";
+  }
+  if (size.width < "300") {
+    gap = "0px";
+  }
+
   return (
-    <div style={{ background: "black" }}>
+    <div>
       <Header color="black" />
       {/* <BeforeEvent /> */}
-      <DuringEvent />
-      {/* <AfterEvent /> */}
-      <Container
-        text
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-          width: "745px",
-          position: "relative",
-          textAlign: "left",
-          marginTop: "90px",
-        }}>
-        <StyledTitle>What is TEDx?</StyledTitle>
-      </Container>
-      <div
-        style={{
-          position: "relative",
-          marginLeft: "auto",
-          marginRight: "auto",
-          transform: "translate(-110%, -100%)",
-          // transform: "translate(-18vw, -100%)",
-          color: "white",
-          width: "243px",
-          borderBottom: "15px solid #e62b1e",
-        }}></div>
-      <Container
-        text
-        style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-          width: "745px",
-          position: "relative",
-          textAlign: "left",
-        }}>
+      {/* <DuringEvent /> */}
+      <AfterEvent />
+      <StyledLandingContainer style={{ marginTop: "90px" }}>
+        <StyledTitle>
+          <span style={{ textDecoration: "underline 15px solid #e62b1e" }}>
+            &nbsp;&nbsp;What is TEDx
+          </span>
+          ?
+        </StyledTitle>
+      </StyledLandingContainer>
+      <StyledLandingContainer>
         <StyledDescription>
           In the spirit of ideas worth spreading, TED has created a program
           called&nbsp;
@@ -83,18 +103,14 @@ function Landing() {
           guidance for the TEDx program, but individual TEDx events, including
           ours, are self-organized.
         </StyledDescription>
-        <StyledTitle>What is TEDxUW?</StyledTitle>
-        <div
-          style={{
-            position: "relative",
-            marginLeft: "auto",
-            marginRight: "auto",
-            transform: "translate(-78.3%, -100%)",
-            // transform: "translate(-16vw, -100%)",
-            color: "white",
-            width: "303px",
-            borderBottom: "15px solid #e62b1e",
-          }}></div>
+
+        <StyledTitle>
+          <span style={{ textDecoration: "underline 15px solid #e62b1e" }}>
+            &nbsp;&nbsp;What is TEDxUW
+          </span>
+          ?
+        </StyledTitle>
+
         <StyledDescription style={{ marginBottom: "30px" }}>
           <span
             style={{
@@ -136,7 +152,7 @@ function Landing() {
           TED.com and amassing over 5 million views on YouTube, TEDxUW sparks
           innovation across the globe starting at the University of Waterloo.
         </StyledDescription>
-        <StyledDescription>
+        <StyledDescription style={{ paddingBottom: "6rem" }}>
           <span
             style={{
               color: "#afafaf",
@@ -162,88 +178,50 @@ function Landing() {
           businessmen, problem-solvers, entrepreneurs, writers, activists, and
           change-makers.
         </StyledDescription>
-      </Container>
-      <Container
+      </StyledLandingContainer>
+      <StyledBackgroundImgDiv
         style={{
-          marginLeft: "auto",
-          marginRight: "auto",
-          marginTop: "126px",
-          color: "white",
-          // width: "1440px",
-          width: "100%",
-          position: "relative",
-          textAlign: "left",
+          backgroundImage: `url(${collage2})`,
         }}>
-        <div
-          style={{
-            width: "100%",
-            height: "324.41px",
-            backgroundImage: `url(${collage2})`,
-            marginBottom: "100px",
-          }}>
-          <Container
-            text
-            style={{
-              marginLeft: "auto",
-              marginRight: "auto",
-              color: "white",
-              width: "1040px",
-              position: "relative",
-              textAlign: "left",
-              transform: "translate(50px, -10px)",
-              alignItems: "center",
-            }}>
-            <div class="ui grid">
-              <div
-                class="row"
-                style={{ columnGap: "60px", alignItems: "center" }}>
-                <div class="five wide column">
-                  <img
-                    src={attendees}
-                    style={{
-                      width: "332px",
-                      height: "221.72px",
-                      left: "284px",
-                      top: "2270px",
-                    }}
-                  />
-                </div>
-                <div class="seven wide column">
-                  <StyledStatement>
-                    “There aren’t many times I’d say I’d be willing to travel 18
-                    hours to go to a 7 hour conference but I’d do this again in
-                    a heartbeat.”
-                  </StyledStatement>
-                  <StyledStatement> - 2017 TEDxUW Delegate</StyledStatement>
-                </div>
+        <StyledLandingContainer2>
+          <div class="ui grid">
+            <div
+              class="row"
+              style={{ columnGap: "60px", alignItems: "center" }}>
+              <div class="five wide column">
+                <StyledImg src={attendees} />
+              </div>
+              <div class="seven wide column">
+                <StyledStatement>
+                  “There aren’t many times I’d say I’d be willing to travel 18
+                  hours to go to a 7 hour conference but I’d do this again in a
+                  heartbeat.”
+                </StyledStatement>
+                <StyledStatement> - 2017 TEDxUW Delegate</StyledStatement>
               </div>
             </div>
-          </Container>
-        </div>
-      </Container>
+          </div>
+        </StyledLandingContainer2>
+      </StyledBackgroundImgDiv>
       <StyledText style={{ textAlign: "center" }}>
         Follow us on Social Media!
       </StyledText>
-      <Container
-        style={{
-          marginTop: "32px",
-          marginBottom: "100px",
-          marginLeft: "auto",
-          marginRight: "auto",
-          color: "white",
-          width: "420px",
-          position: "relative",
-          textAlign: "left",
-        }}>
-        <div class="ui relaxed grid" style={{ color: "white" }}>
-          <div class="column" style={{ marginRight: "42px" }}>
+      <StyledSocialContainer>
+        <div
+          class="relaxed ui grid"
+          style={{
+            columnGap: gap,
+            // background: "red",
+            paddingLeft: social_padding,
+            paddingRight: social_padding,
+          }}>
+          <div class="column" className="social_col">
             <ImageGroup>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <img
-                  style={{ width: "57px" }}
+                <StyledSocial
                   alt=""
                   src={facebook}
                   onMouseOut={(e) => (e.currentTarget.src = facebook)}
@@ -251,14 +229,13 @@ function Landing() {
               </a>
             </ImageGroup>
           </div>
-          <div class="column" style={{ marginRight: "42px" }}>
+          <div class="column" className="social_col">
             <ImageGroup>
               <a
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <img
-                  style={{ width: "57px" }}
+                <StyledSocial
                   alt=""
                   src={linkedin}
                   onMouseOut={(e) => (e.currentTarget.src = linkedin)}
@@ -266,14 +243,13 @@ function Landing() {
               </a>
             </ImageGroup>
           </div>
-          <div class="column" style={{ marginRight: "42px" }}>
+          <div class="column" className="social_col">
             <ImageGroup>
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <img
-                  style={{ width: "57px" }}
+                <StyledSocial
                   alt=""
                   src={instagram}
                   onMouseOut={(e) => (e.currentTarget.src = instagram)}
@@ -281,14 +257,13 @@ function Landing() {
               </a>
             </ImageGroup>
           </div>
-          <div class="column">
+          <div class="column" className="social_col">
             <ImageGroup>
               <a
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener noreferrer">
-                <img
-                  style={{ width: "57px" }}
+                <StyledSocial
                   alt=""
                   src={twitter}
                   onMouseOut={(e) => (e.currentTarget.src = twitter)}
@@ -297,7 +272,7 @@ function Landing() {
             </ImageGroup>
           </div>
         </div>
-      </Container>
+      </StyledSocialContainer>
     </div>
   );
 }

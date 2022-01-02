@@ -1,7 +1,14 @@
 import React from "react";
 import meet_the_team from "../../res/images/meet_the_team.png";
 import { Container, ImageGroup, Divider, Button } from "semantic-ui-react";
-import { StyledTitle, StyledDescription, StyledHeader } from "./styles";
+import {
+  StyledTitle,
+  StyledDescription,
+  StyledHeader,
+  StyledAboutContainer,
+  StyledHeaderDiv,
+  StyledExecContainer,
+} from "./styles";
 import Header from "../../components/Header/Header";
 import FounderCard from "../../components/FounderCard/FounderCard";
 import ExecCard from "../../components/ExecCard/ExecCard";
@@ -28,43 +35,32 @@ import alan_pang from "../../res/images/team/alan_pang.png";
 import mahnoor_fatima from "../../res/images/team/mahnoor_fatima.png";
 import grace_ren from "../../res/images/team/grace_ren.png";
 import filler from "../../res/images/team/filler.png";
-
+import "./About.css";
 const About = () => (
   <section>
-    <div
+    <StyledHeaderDiv
       style={{
-        width: "100%",
-        height: "815px",
         backgroundImage: `url(${meet_the_team})`,
-        // transform: "translateY(-50px)",
+        width: "100%",
+        marginRight: "0px",
       }}>
       <Container
         text
         style={{
-          marginLeft: "auto",
-          marginRight: "auto",
           color: "white",
           width: "100%",
           position: "relative",
           textAlign: "center",
         }}>
         <Header color="#450d09" height="815" />
+
         <StyledTitle>Meet the Team</StyledTitle>
         <StyledDescription>
           A group of curious students inspired by creativity.
         </StyledDescription>
       </Container>
-    </div>
-    <Container
-      style={{
-        marginTop: "100px",
-        marginLeft: "auto",
-        marginRight: "auto",
-        color: "white",
-        width: "1004px",
-        position: "relative",
-        textAlign: "center",
-      }}>
+    </StyledHeaderDiv>
+    <StyledAboutContainer>
       <StyledHeader>Founders</StyledHeader>
       <FounderCard
         img={matthew_zhu}
@@ -85,19 +81,16 @@ const About = () => (
         description="Omar Khan is a final year student in the Accounting and Financial Management program. He has been part of TEDxUW since 2020 where he started as a partnership manager. Given his experience of coordinating multiple events throughout his extracurricular involvement at the University of Waterloo and during his coop term at Junior Achievement Central Ontario, Omar is not new to delivering events that are engaging. Being the Co-Chair for TEDxUW 2021, he is excited to use his expertise to deliver yet another successful event."
         linkedin="https://www.linkedin.com/in/omarkhan28"
       />
+    </StyledAboutContainer>
+    <StyledExecContainer>
       <StyledHeader>Marketing</StyledHeader>
       <div
         class="ui grid"
         style={{
           marginTop: "10px",
+          columnGap: "65px",
         }}>
-        <div
-          class="column"
-          style={{
-            paddingTop: "35px",
-            paddingLeft: "0px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={salma_marzouk}
             name="Salma Marzouk"
@@ -106,13 +99,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/salmamarzouk/"
           />
         </div>
-        <div
-          class="column"
-          style={{
-            paddingTop: "35px",
-            paddingLeft: "0px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={abby_zinman}
             name="Abby Zinman"
@@ -121,7 +108,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/abby-zinman-79212a1aa/"
           />
         </div>
-        <div class="column" style={{ paddingLeft: "0px", paddingTop: "35px" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={angela_zhang}
             name="Angela Zhang"
@@ -130,13 +117,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/angela-zhang-uw/"
           />
         </div>
-        <div
-          class="column"
-          style={{
-            paddingLeft: "0px",
-            paddingTop: "35px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={jennifer_man}
             name="Jennifer Man"
@@ -145,13 +126,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/jenniferm0814/"
           />
         </div>
-        <div
-          class="column"
-          style={{
-            paddingLeft: "0px",
-            paddingTop: "35px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={pamela_wang}
             name="Pamela Wang"
@@ -160,7 +135,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/pamwang/"
           />
         </div>
-        <div class="column" style={{ paddingLeft: "0px", paddingTop: "35px" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={filler}
             name="Miguel Arango"
@@ -176,14 +151,9 @@ const About = () => (
         class="ui grid"
         style={{
           marginTop: "10px",
+          columnGap: "65px",
         }}>
-        <div
-          class="column"
-          style={{
-            paddingLeft: "0px",
-            paddingTop: "35px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={soyeon_jang}
             name="Soyeon Jang"
@@ -192,13 +162,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/soyeon-j/"
           />
         </div>
-        <div
-          class="column"
-          style={{
-            paddingLeft: "0px",
-            paddingTop: "35px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={christine_lee}
             name="Christine Lee"
@@ -207,9 +171,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/christineeunseolee/"
           />
         </div>
-        <div class="column" 
-          style={{ paddingLeft: "0px",
-          paddingTop: "35px" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={leona_kuo}
             name="Leona Kuo"
@@ -218,13 +180,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/leona-kuo-7b8462157"
           />
         </div>
-        <div
-          class="column"
-          style={{
-            paddingLeft: "0px",
-            paddingTop: "35px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={taneya_raguram}
             name="Taneya Raguram"
@@ -239,14 +195,9 @@ const About = () => (
         class="ui grid"
         style={{
           marginTop: "10px",
+          columnGap: "65px",
         }}>
-        <div
-          class="column"
-          style={{
-            paddingLeft: "0px",
-            paddingTop: "35px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={kiana_wong}
             name="Kiana Wong"
@@ -254,13 +205,7 @@ const About = () => (
             description="Kiana is an Honours Science and incoming Pharmacy student. She has been heavily involved in public speaking, and is currently an instructor with a Royal Canadian Air Cadet Squadron where she runs the Effective Speaking team. As the Director of Speaker Relations, she looks forward to working closely with the speakers, and contributing her knowledge and skills when collaborating with the team. Kiana is extremely honoured to be a part of an organization where she can work with individuals in achieving a common goal: to share ideas worth spreading, and she looks forward to the upcoming TEDxUW event!"
           />
         </div>
-        <div
-          class="column"
-          style={{
-            paddingLeft: "0px",
-            paddingTop: "35px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={kate_bendall}
             name="Kate Bendall"
@@ -269,7 +214,7 @@ const About = () => (
             linkedin="www.linkedin.com/in/katebendall"
           />
         </div>
-        <div class="column" style={{ paddingLeft: "0px", paddingTop: "35px" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={ahmed_khalil}
             name="Ahmed Khalil"
@@ -278,13 +223,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/ahmedek/"
           />
         </div>
-        <div
-          class="column"
-          style={{
-            paddingLeft: "0px",
-            paddingTop: "35px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={julia_ling_smith}
             name="Julia-Ling Smith"
@@ -293,13 +232,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/julia-ling-smith-58a61a1b5"
           />
         </div>
-        <div
-          class="column"
-          style={{
-            paddingLeft: "0px",
-            paddingTop: "35px",
-            marginRight: "300px",
-          }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={filler}
             name="Andrea Ta"
@@ -308,7 +241,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/andrea-ta-5060241b8/"
           />
         </div>
-        <div class="column" style={{ paddingLeft: "0px", paddingTop: "35px" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={filler}
             name="Sehaj Raj Singh"
@@ -323,8 +256,9 @@ const About = () => (
         class="ui grid"
         style={{
           marginTop: "10px",
+          columnGap: "65px",
         }}>
-        <div class="column" style={{ paddingTop: "35px", width: "350px" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={annie_yuan}
             name="Annie Yuan"
@@ -339,8 +273,9 @@ const About = () => (
         class="ui grid"
         style={{
           marginTop: "10px",
+          columnGap: "65px",
         }}>
-        <div class="column" style={{ paddingTop: "35px", width: "350px" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={mahnoor_fatima}
             name="Mahnoor Fatima"
@@ -349,7 +284,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/mahnoor-fatima00/"
           />
         </div>
-        <div class="column" style={{ paddingTop: "35px", width: "350px" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={grace_ren}
             name="Grace Ren"
@@ -358,7 +293,7 @@ const About = () => (
             // linkedin="https://www.linkedin.com/"
           />
         </div>
-        <div class="column" style={{ paddingTop: "35px" }}>
+        <div class="column" className="col_type1">
           <ExecCard
             img={alan_pang}
             name="Alan Pang"
@@ -368,7 +303,7 @@ const About = () => (
           />
         </div>
       </div>
-    </Container>
+    </StyledExecContainer>
   </section>
 );
 

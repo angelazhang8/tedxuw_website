@@ -1,33 +1,29 @@
 import React, { useEffect, useState, Component } from "react";
-import { StyledName, StyledPosition, StyledDescription } from "./styles";
+import {
+  StyledName,
+  StyledPosition,
+  StyledDescription,
+  StyledFounderCardContainer,
+  StyledImg,
+} from "./styles";
 import { Container, ImageGroup } from "semantic-ui-react";
 import linkedin from "../../res/images/linkedin.svg";
+import "./FounderCard.css";
 
 class FounderCard extends React.Component {
   render() {
     return (
-      <div class="ui grid ">
+      <div class="ui grid">
         <div
           class="row"
           style={{
             alignItems: "center",
           }}>
-          <div
-            class="four wide column"
-            style={{
-              position: "left",
-              justifyItems: "left",
-              marginRight: "20px",
-              transform: "translateX(-20px)",
-            }}>
-            <img style={{ width: "235px" }} src={this.props.img} />
+          <div class="column" className="founder_img_col">
+            <StyledImg src={this.props.img} />
           </div>
-          <div class="eight wide column">
-            <Container
-              style={{
-                textAlign: "left",
-                width: "574px",
-              }}>
+          <div class="column" className="founder_desc_col">
+            <StyledFounderCardContainer>
               <StyledName>{this.props.name}</StyledName>
               <StyledPosition>
                 {this.props.position}
@@ -44,7 +40,7 @@ class FounderCard extends React.Component {
                 </a>
               </StyledPosition>
               <StyledDescription>{this.props.description}</StyledDescription>
-            </Container>
+            </StyledFounderCardContainer>
           </div>
         </div>
       </div>

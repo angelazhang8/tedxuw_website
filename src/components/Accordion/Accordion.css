@@ -1,6 +1,6 @@
 /* Style the accordion section */
 .accordion__section {
-  width: 745px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -12,13 +12,13 @@
   display: flex;
   align-items: center;
   border: 1px solid #3c3c3c;
+
   border-left: none;
   border-right: none;
   border-bottom: none;
   outline: none;
   background-color: black;
-
-  width: 745px;
+  width: 100%;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -38,7 +38,7 @@
 
   color: #ffffff;
   text-align: left;
-  width: 621px;
+  width: 85%;
   padding-left: 10px;
 }
 

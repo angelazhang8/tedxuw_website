@@ -10,8 +10,8 @@ const StyledBurger = styled.button`
     display: none;
   }
   position: absolute;
-  top: 10%;
-  right: 2rem;
+  top: 15%;
+  right: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -75,7 +75,7 @@ const useOnClickOutside = (ref, handler) => {
   }, [ref, handler]);
 };
 
-const Temp = () => {
+const HamburgerMenu = () => {
   const [open, setOpen] = React.useState(false);
   const node = React.useRef();
   useOnClickOutside(node, () => setOpen(false));
@@ -103,6 +103,7 @@ const StyledMenu = styled.nav`
 
   @media (max-width: 576px) {
     width: 100%;
+    padding: 1rem;
   }
   a {
     font-size: 2rem;
@@ -113,6 +114,7 @@ const StyledMenu = styled.nav`
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.2rem;
+    line-height: 130%;
 
     text-decoration: none;
     transition: color 0.3s linear;
@@ -122,6 +124,7 @@ const StyledMenu = styled.nav`
     @media (max-width: 576px) {
       font-size: 1.5rem;
       text-align: center;
+      line-height: 50%;
     }
 
     &:hover {
@@ -133,6 +136,9 @@ const StyledMenu = styled.nav`
 const Menu = ({ open }) => {
   return (
     <StyledMenu open={open}>
+      <NavLink exact to="/">
+        Home
+      </NavLink>
       <NavLink exact to="/Speakers">
         Speakers
       </NavLink>
@@ -151,4 +157,4 @@ const Menu = ({ open }) => {
   );
 };
 
-export default Temp;
+export default HamburgerMenu;

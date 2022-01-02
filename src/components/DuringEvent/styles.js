@@ -15,10 +15,48 @@ export const StyledMissionTitle = styled.h1`
     color: #fcfcfc;
 
     text-shadow: 4px 4px 25px rgba(249, 214, 103, 0.5);
+
+    @media (max-width: 580px) {
+      font-size: 20vw;
+      line-height: 30vw;
+    }
+    @media (max-width: 700px) {
+      margin-top: 0px;
+      padding-left: 1rem;
+    }
+    @media (max-width: 250px) {
+      padding-left: 0rem;
+    }
   }
 `;
 
 export const StyledStatement = styled.p`
+  &&& {
+    color: #fcfcfc;
+    font-family: Avenir;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    @media (max-width: 745px) {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @media (max-width: 350px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    @media (max-width: 300px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+`;
+
+export const StyledStatement2 = styled.p`
   &&& {
     font-family: Avenir;
     font-style: normal;
@@ -27,6 +65,18 @@ export const StyledStatement = styled.p`
     line-height: 44px;
     /* identical to box height */
     color: #ffffff;
+    @media (max-width: 745px) {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    @media (max-width: 350px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    @media (max-width: 300px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 `;
 
@@ -42,6 +92,19 @@ export const StyledRegistrationNotice = styled.p`
     /* Red */
 
     color: #e62b1e;
+
+    @media (max-width: 745px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+    @media (max-width: 350px) {
+      font-size: 16px;
+      line-height: 15px;
+    }
+    @media (max-width: 300px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 `;
 
@@ -61,7 +124,6 @@ export const StyledButton = styled(Button)`
   &&& {
     display: inline-flex;
     align-items: center;
-
     background: #e62b1e;
     border-radius: 100px;
 
@@ -74,18 +136,53 @@ export const StyledButton = styled(Button)`
 
     width: 162px;
     height: 53px;
+    @media (max-width: 162px) {
+      width: 100%;
+      height: auto;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+    @media (max-width: 1040px) {
+      transform: translateY(1.5rem);
+    }
   }
 `;
 
-export const FeaturedSpeakersText = styled.p`
+export const StyledContainer = styled(Container)`
   &&& {
-    font-family: Futura;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 42px;
-    /* identical to box height */
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 1040px;
+    position: relative;
+    text-align: left;
+    padding-top: 80px;
+    @media (max-width: 1040px) {
+      display: none;
+    }
+  }
+`;
+export const StyledContainer2 = styled(Container)`
+  &&& {
+    @media (min-width: 1040px) {
+      display: none;
+    }
 
-    color: #ffffff;
+    @media (max-width: 1040px) {
+      color: white;
+      position: relative;
+      text-align: left;
+      padding-top: 80px;
+      padding-left: 1rem;
+    }
+    @media (max-width: 250px) {
+      padding-left: 0rem;
+    }
+  }
+`;
+export const StyledImg = styled.img`
+  &&& {
+    height: 536.08px;
+    width: 492px;
   }
 `;

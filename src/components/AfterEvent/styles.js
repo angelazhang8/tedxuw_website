@@ -15,6 +15,17 @@ export const StyledMissionTitle = styled.h1`
     color: #fcfcfc;
 
     text-shadow: 4px 4px 25px rgba(249, 214, 103, 0.5);
+    @media (max-width: 580px) {
+      font-size: 20vw;
+      line-height: 30vw;
+    }
+    @media (max-width: 700px) {
+      margin-top: 0px;
+      padding-left: 1rem;
+    }
+    @media (max-width: 250px) {
+      padding-left: 0rem;
+    }
   }
 `;
 export const StyledStatement = styled.p`
@@ -23,9 +34,18 @@ export const StyledStatement = styled.p`
     font-style: normal;
     font-weight: normal;
     font-size: 32px;
-    // line-height: 44px;
+    line-height: 44px;
     /* identical to box height */
     color: #ffffff;
+    transform: translateY(-85px);
+    margin-top: 0px;
+    paddingtop: 0px;
+    @media (max-width: 600px) {
+      margin-top: 100px;
+      margin-bottom: 3rem;
+      font-size: 25px;
+      line-height: 30px;
+    }
   }
 `;
 
@@ -41,18 +61,10 @@ export const StyledNotice = styled.p`
     /* Red */
 
     color: #e62b1e;
-  }
-`;
-export const FeaturedSpeakersText = styled.p`
-  &&& {
-    font-family: Futura;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
-    // line-height: 42px;
-    /* identical to box height */
-
-    color: #ffffff;
+    @media (max-width: 600px) {
+      font-size: 20px;
+      line-height: 25px;
+    }
   }
 `;
 export const StyledButtonText = styled.p`
@@ -84,6 +96,13 @@ export const StyledButton = styled(Button)`
 
     width: 252px;
     height: 53px;
+
+    @media (max-width: 162px) {
+      width: 100%;
+      height: auto;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
   }
 `;
 export const StyledButtonWhite = styled(Button)`
@@ -100,5 +119,43 @@ export const StyledButtonWhite = styled(Button)`
     border: 2px solid #e0e0e0;
     box-sizing: border-box;
     border-radius: 100px;
+    @media (max-width: 162px) {
+      width: 100%;
+      height: auto;
+      padding-bottom: 0px;
+      margin-bottom: 0px;
+    }
+  }
+`;
+
+export const StyledContainer = styled(Container)`
+  &&& {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 1040px;
+    position: relative;
+    text-align: center;
+    padding-top: 80px;
+    @media (max-width: 1040px) {
+      width: 100%;
+    }
+  }
+`;
+
+export const StyledButtonDiv = styled.div`
+  &&& {
+    transform: translateY(-25px);
+    @media (max-width: 580px) {
+      display: none;
+    }
+  }
+`;
+export const StyledButtonContainer = styled(Container)`
+  &&& {
+    transform: translateY(-4rem);
+    @media (min-width: 580px) {
+      display: none;
+    }
   }
 `;
