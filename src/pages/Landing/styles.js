@@ -137,7 +137,8 @@ export const StyledSocialContainer = styled(Container)`
     // background: red;
 
     @media (max-width: 420px) {
-      width: 90%;
+      width: 80%;
+      margin-left: 1rem;
       margin-bottom: 20px;
     }
   }
@@ -165,7 +166,7 @@ export const StyledLandingContainer = styled(Container)`
     text-align: left;
     // background: purple;
     @media (max-width: 745px) {
-      width: 90%;
+      width: 85%;
       padding-left: 1rem;
       padding-right: 1rem;
     }

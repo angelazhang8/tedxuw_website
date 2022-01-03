@@ -113,7 +113,9 @@ export const StyledSpeakerContainer3 = styled(Container)`
     text-align: center;
     padding: 0px;
     @media (max-width: 1040px) {
-      width: 100%;
+      width: 95%;
+      // margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
 `;

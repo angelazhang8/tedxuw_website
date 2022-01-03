@@ -91,8 +91,10 @@ export const StyledFooterContainer = styled(Container)`
     background: black;
     @media (max-width: 1100px) {
       justify-items: center;
-      width: 90%;
+      width: 80%;
       padding: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
 `;

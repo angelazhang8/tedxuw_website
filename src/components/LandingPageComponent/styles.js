@@ -10,7 +10,7 @@ export const StyledCollageContainer = styled(Container)`
     position: relative;
     textalign: left;
     @media (max-width: 745px) {
-      width: 100%;
+      width: 90%;
       margin-top: 0px;
       padding-top: 0px;
     }

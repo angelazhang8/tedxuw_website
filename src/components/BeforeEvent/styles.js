@@ -77,7 +77,7 @@ export const StyledBeforeEventContainer = styled(Container)`
     // text-align: left;
     // background: green;
     @media (max-width: 1040px) {
-      width: 100%;
+      width: 90%;
     }
   }
 `;
@@ -91,7 +91,7 @@ export const StyledBeforeEventContainer2 = styled(Container)`
     position: relative;
     textalign: left;
     @media (max-width: 745px) {
-      width: 100%;
+      width: 90%;
     }
   }
 `;
