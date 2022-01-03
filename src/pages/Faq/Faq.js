@@ -19,7 +19,8 @@ const Faq = () => (
       <Accordion
         title="When and where is TEDxUW happening?"
         content="
-        <p>The event date is TBD and will happen virtually via Zoom in light of the pandemic and public health measures. Please check our website again soon to get your free ticket! We hope to see you there!</p>
+        <p>The event date will tentatively be happening on February 19th, 2022 and will be virtual in light of the pandemic and public health measures. Please check our website again soon to get your free ticket! We hope to see you there!
+        </p>
         "
       />
       <Accordion
@@ -63,7 +64,7 @@ const Faq = () => (
       <Accordion
         title="I really want to get involved with TEDxUW! How can I be a part of the movement?"
         content="<p>
-      We love having new people join our TEDxUW family of change-makers and we have plenty of opportunities for you to get involved. You can be a part of the movement in many ways:
+        We love having new people join our TEDxUW family of change-makers and we have plenty of opportunities for you to get involved. You can be a part of the movement in many ways, such as:
       <ul>
       <li>Apply to be a speaker or nominate a potential speaker</li>
       <li>Applying to join our core team</li>
@@ -74,7 +75,7 @@ const Faq = () => (
       </ul>
       </p>"
         special_text="<p>
-      If you want to get involved, email us at <a href='mailto:partnership@tedxuw.com' style={{color:'red'}}>partnership@tedxuw.com</a> and we can help you out! 
+      If you want to get involved, email us at <a href='mailto:partnership@tedxuw.com' style={{color:'red'}}>partnership@tedxuw.com</a> and we will connect with you!
       </p>"
       />
     </StyledFAQContainer>
