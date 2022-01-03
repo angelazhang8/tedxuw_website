@@ -141,6 +141,17 @@ class Footer extends Component {
                   <StyledHeading style={{ paddingTop: "1.5rem" }}>
                     Past Websites
                   </StyledHeading>
+                  <StyledLink href="http://2020.tedxuw.com/">
+                    TEDxUW 2020{" "}
+                    <img
+                      src={outline}
+                      style={{
+                        width: "18px",
+                        transform: "translate(8px, 4px)",
+                      }}
+                    />
+                    <br />
+                  </StyledLink>
                   <StyledLink href="http://2018.tedxuw.com/">
                     TEDxUW 2018{" "}
                     <img
