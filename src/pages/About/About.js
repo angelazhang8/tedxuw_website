@@ -304,6 +304,7 @@ const About = () => (
         </div>
       </div>
     </StyledExecContainer>
+    <div style={{ paddingBottom: "2rem" }} />
   </section>
 );
 
