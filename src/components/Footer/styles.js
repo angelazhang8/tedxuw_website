@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Container, Grid, GridColumn } from "semantic-ui-react";
 import column1 from "./Footer";
-
+import { NavLink } from "react-router-dom";
 export const StyledLink = styled.a`
   &&& {
     font-family: Avenir;
@@ -45,7 +45,23 @@ export const StyledDescription = styled.h1`
   }
 `;
 
-export const StyledSubtleLink = styled.a`
+export const StyledSubtleLink = styled(NavLink)`
+  &&& {
+    text-decoration: none;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+
+    /* Light Grey */
+
+    color: #afafaf;
+  }
+`;
+
+export const StyledSubtleLink2 = styled.a`
   &&& {
     text-decoration: none;
     font-family: Avenir;

@@ -8,7 +8,7 @@ import twitter from "../../res/images/twitter.svg";
 import "../../grid.min.css";
 
 import "./Footer.css";
-
+import { NavLink } from "react-router-dom";
 import {
   StyledLink,
   StyledHeading,
@@ -18,8 +18,10 @@ import {
   StyledHr,
   StyledFooterContainer,
   StyledConnectContainer,
+  StyledSubtleLink2,
 } from "./styles";
 import EmailForm from "../../components/EmailForm/EmailForm";
+
 class Footer extends Component {
   render() {
     return (
@@ -149,30 +151,30 @@ class Footer extends Component {
               <div class="two wide column">
                 <Container style={{ textAlign: "left" }}>
                   <StyledHeading>Navigate</StyledHeading>
-                  <StyledSubtleLink href="/">
+                  <StyledSubtleLink exact to="/">
                     Home
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="Speakers">
+                  <StyledSubtleLink exact to="/Speakers">
                     Speakers
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="Partners">
+                  <StyledSubtleLink exact to="/Partners">
                     Partners
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="About">
+                  <StyledSubtleLink exact to="/About">
                     About
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="Faq">
+                  <StyledSubtleLink exact to="/Faq">
                     FAQ
                     <br />
                   </StyledSubtleLink>
-                  <StyledSubtleLink href="https://medium.com/@tedxuw">
+                  <StyledSubtleLink2 href="https://medium.com/@tedxuw">
                     Blog
                     <br />
-                  </StyledSubtleLink>
+                  </StyledSubtleLink2>
                 </Container>
               </div>
             </div>
