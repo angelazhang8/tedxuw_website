@@ -81,10 +81,10 @@ export const StyledContainer = styled(Container)`
 export const StyledImg = styled.img`
   &&& {
     width: 235px;
-    height: 235px;
     border-radius: 117.5px;
     @media (max-width: 235px) {
       width: 100%;
+      height: auto;
       border-radius: 50%;
     }
   }

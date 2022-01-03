@@ -12,29 +12,30 @@ import {
 import Header from "../../components/Header/Header";
 import FounderCard from "../../components/FounderCard/FounderCard";
 import ExecCard from "../../components/ExecCard/ExecCard";
-import matthew_zhu from "../../res/images/team/matthew_zhu.png";
-import omar_khan from "../../res/images/team/omar_khan.png";
-import annie_yuan from "../../res/images/team/annie_yuan.png";
-import salma_marzouk from "../../res/images/team/salma_marzouk.png";
-import jennifer_man from "../../res/images/team/jennifer_man.png";
+import matthew_zhu from "../../res/images/team/matthew.png";
+import omar_khan from "../../res/images/team/omar.png";
+import annie_yuan from "../../res/images/team/annie.png";
+import salma_marzouk from "../../res/images/team/salma.png";
+import jennifer_man from "../../res/images/team/jennifer.png";
 // miguel arango
-import abby_zinman from "../../res/images/team/abby_zinman.png";
-import angela_zhang from "../../res/images/team/angela_zhang.png";
-import pamela_wang from "../../res/images/team/pamela_wang.png";
-import kiana_wong from "../../res/images/team/kiana_wong.png";
+import abby_zinman from "../../res/images/team/abby.png";
+import angela_zhang from "../../res/images/team/angela.png";
+import pamela_wang from "../../res/images/team/pamela.png";
+import kiana_wong from "../../res/images/team/kiana.png";
 // hoang anh (andrea) ta
-import julia_ling_smith from "../../res/images/team/julia_ling_smith.png";
-import kate_bendall from "../../res/images/team/kate_bendall.png";
+import julia_ling_smith from "../../res/images/team/julia-ling.png";
+import kate_bendall from "../../res/images/team/kate.png";
 // sehaj raj singh
-import soyeon_jang from "../../res/images/team/soyeon_jang.png";
-import christine_lee from "../../res/images/team/christine_lee.png";
-import leona_kuo from "../../res/images/team/leona_kuo.png";
-import taneya_raguram from "../../res/images/team/taneya_raguram.png";
-import ahmed_khalil from "../../res/images/team/ahmed_khalil.png";
-import alan_pang from "../../res/images/team/alan_pang.png";
-import mahnoor_fatima from "../../res/images/team/mahnoor_fatima.png";
-import grace_ren from "../../res/images/team/grace_ren.png";
-import miguel_arango from "../../res/images/team/Miguel.png";
+import soyeon_jang from "../../res/images/team/soyeon.png";
+import christine_lee from "../../res/images/team/christine.png";
+import leona_kuo from "../../res/images/team/leona.png";
+import taneya_raguram from "../../res/images/team/taneya.png";
+import ahmed_khalil from "../../res/images/team/ahmed.png";
+import alan_pang from "../../res/images/team/alan.png";
+import mahnoor_fatima from "../../res/images/team/mahnoor.png";
+import grace_ren from "../../res/images/team/grace.png";
+import miguel_arango from "../../res/images/team/miguel.png";
+import andrea from "../../res/images/team/andrea.png";
 import filler from "../../res/images/team/filler.png";
 import "./About.css";
 const About = () => (
@@ -235,7 +236,7 @@ const About = () => (
         </div>
         <div class="column" className="col_type1">
           <ExecCard
-            img={filler}
+            img={andrea}
             name="Andrea Ta"
             position="Speaker Relations Associate"
             description="Andrea recently finished her 2B term majoring in Biology. Exploring the world, sharing knowledge and taking on challenges are some of the things that excite her. TEDxUW provides just that exhilaration, alongside great stories and innovative ideas. She can’t wait to see what this year has to offer!"

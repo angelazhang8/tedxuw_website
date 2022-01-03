@@ -45,8 +45,9 @@ export const StyledDescription = styled.h4`
 export const StyledImg = styled.img`
   &&& {
     width: 235px;
+    border-radius: 50%;
     @media (max-width: 870px) {
-      width: 90%;
+      width: calc(min(235px, 100%));
       margin-left: 1rem;
     }
   }
