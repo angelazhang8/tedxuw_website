@@ -11,6 +11,9 @@ export const StyledName = styled.h3`
     /* identical to box height */
     /* Red */
     color: #e62b1e;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 1rem;
   }
 `;
 
@@ -25,6 +28,9 @@ export const StyledPosition = styled.h4`
     /* White */
 
     color: #ffffff;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0.5rem;
   }
 `;
 
@@ -39,6 +45,10 @@ export const StyledDescription = styled.h4`
     /* Light Grey */
 
     color: #afafaf;
+
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 1rem;
   }
 `;
 
@@ -53,6 +63,7 @@ export const StyledCollapseText = styled.h4`
     /* Light Grey */
 
     color: #afafaf;
+    margin-top: 0.5rem;
   }
 `;
 
@@ -63,7 +74,7 @@ export const StyledContainer = styled(Container)`
       width: 100%;
     }
     @media (max-width: 738px) {
-      padding-top: 1rem;
+      padding-bottom: 1.5rem;
     }
   }
 `;
