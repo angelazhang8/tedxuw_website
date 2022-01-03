@@ -73,9 +73,8 @@ export const StyledContainer = styled(Container)`
     @media (max-width: 270px) {
       width: 100%;
     }
-    @media (max-width: 738px) {
-      padding-bottom: 1.5rem;
-    }
+
+    padding-bottom: 1rem;
   }
 `;
 
