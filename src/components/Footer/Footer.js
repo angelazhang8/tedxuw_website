@@ -5,6 +5,7 @@ import facebook from "../../res/images/facebook.svg";
 import instagram from "../../res/images/instagram.svg";
 import linkedin from "../../res/images/linkedin.svg";
 import twitter from "../../res/images/twitter.svg";
+import outline from "../../res/images/outline.svg";
 import "../../grid.min.css";
 
 import "./Footer.css";
@@ -130,20 +131,47 @@ class Footer extends Component {
               <div class="three wide column" className="column1">
                 <Container style={{ textAlign: "left" }}>
                   <StyledHeading>Contact</StyledHeading>
-                  <StyledLink href="mailto:partnership@tedxuw.com">
+                  <StyledLink
+                    href="mailto:partnership@tedxuw.com"
+                    style={{
+                      textDecoration: "underline",
+                    }}>
                     partnership@tedxuw.com
                   </StyledLink>
-                  <StyledHeading>Past Websites</StyledHeading>
+                  <StyledHeading style={{ paddingTop: "1.5rem" }}>
+                    Past Websites
+                  </StyledHeading>
                   <StyledLink href="http://2018.tedxuw.com/">
-                    TEDxUW 2018
+                    TEDxUW 2018{" "}
+                    <img
+                      src={outline}
+                      style={{
+                        width: "18px",
+                        transform: "translate(8px, 4px)",
+                      }}
+                    />
                     <br />
                   </StyledLink>
                   <StyledLink href="https://tedxuw.github.io/2017/">
-                    TEDxUW 2017
+                    TEDxUW 2017{" "}
+                    <img
+                      src={outline}
+                      style={{
+                        width: "18px",
+                        transform: "translate(8px, 4px)",
+                      }}
+                    />
                     <br />
                   </StyledLink>
                   <StyledLink href="https://tedxuw.github.io/2016/">
-                    TEDxUW 2016
+                    TEDxUW 2016{" "}
+                    <img
+                      src={outline}
+                      style={{
+                        width: "18px",
+                        transform: "translate(8px, 4px)",
+                      }}
+                    />
                     <br />
                   </StyledLink>
                 </Container>

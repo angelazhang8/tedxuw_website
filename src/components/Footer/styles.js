@@ -8,14 +8,15 @@ export const StyledLink = styled.a`
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    line-height: 22px;
+
     /* identical to box height */
 
-    text-decoration-line: underline;
+    text-decoration-line: none;
 
     /* Red */
 
     color: #e62b1e;
+    line-height: 35px;
   }
 `;
 
@@ -58,6 +59,9 @@ export const StyledSubtleLink = styled(NavLink)`
     /* Light Grey */
 
     color: #afafaf;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    line-height: 35px;
   }
 `;
 
