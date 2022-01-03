@@ -20,6 +20,7 @@ import Faq from "./pages/Faq/Faq";
 export default function App() {
   return (
     <div className="App">
+      {/* <BrowserRouter basename="ted737"> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />

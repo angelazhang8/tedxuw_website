@@ -122,7 +122,10 @@ const Speakers = () => (
         img={tanner_philp2}
         name="Tanner Philp"
         talk_name="Enter the Metaverse"
-        description="Tanner currently works at Kik Interactive, one of Canada’s tech unicorns, which was founded here at the UW Velocity program. For the past year, Tanner has been working with the team at Kik to develop an ecosystem of digital services powered by the cryptocurrency, Kin. His number one priority is finding a way to empower everyone, regardless of demographic, location, or socioeconomic status, to generate and capture value in this age of globalization. In another life, Tanner was a 3-year captain for the Laurier Golden Hawks football team, squaring off in many “Battles of Waterloo.”"
+        description="Tanner is the Head of Corporate Development and Operations for Code Inc., a cryptocurrency wallet for mainstream consumers. Tanner helped launch the cryptocurrency Kin on Ethereum, the development of the Kin Blockchain, and the subsequent migration to the Solana blockchain - the largest migration in the history of crypto. Prior to Code Inc. Tanner was the Head of Corp Dev at Kik Messenger, a chat app with over  a half a billion users. While at Kik, Tanner helped execute three strategic financings, four acquisitions, and two divestitures across North America, Asia, and Europe. 
+ 
+        Outside of his professional experience Tanner has been an early contributor to some of the leading cryptocurrency projects, dating back to 2014. He also served as a three time captain for the Laurier Varsity Football Team where he was also an Academic All Canadian. While at Laurier Tanner was the Head of Student Athlete Academic Success, a lab instructor for Business, Calculus, and Economics, and the VP of the Lettermen Association - a group dedicated to community outreach for Laurier Athletics. 
+        "
       />
     </StyledSpeakerContainer3>
     <StyledDivider />
