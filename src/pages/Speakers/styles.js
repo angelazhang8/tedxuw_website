@@ -82,6 +82,9 @@ export const StyledSpeakerContainer = styled(Container)`
     @media (max-width: 1040px) {
       margin-top: 2rem;
       width: 100%;
+      background: green;
+      margin-right: 0px;
+      padding-right: 0px;
     }
   }
 `;
@@ -99,6 +102,8 @@ export const StyledSpeakerContainer2 = styled(Container)`
     @media (max-width: 1040px) {
       margin-top: 0px;
       width: 100%;
+      margin-right: 0px;
+      padding-right: 0px;
     }
   }
 `;
@@ -113,9 +118,9 @@ export const StyledSpeakerContainer3 = styled(Container)`
     text-align: center;
     padding: 0px;
     @media (max-width: 1040px) {
-      width: 95%;
+      width: 100%;
       // margin-left: 1rem;
-      margin-right: 1rem;
+      // padding-right: 1rem;
     }
   }
 `;

@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div className="App">
       {/* <BrowserRouter basename="ted737"> */}
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      {/* <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path={process.env.PUBLIC_URL + "/"} element={<Landing />} />
           <Route path={process.env.PUBLIC_URL + "/About"} element={<About />} />
@@ -34,6 +34,16 @@ export default function App() {
             element={<Speakers />}
           />
           <Route path={process.env.PUBLIC_URL + "/Faq"} element={<Faq />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Partners" element={<Partners />} />
+          <Route path="/Speakers" element={<Speakers />} />
+          <Route path="/Faq" element={<Faq />} />
         </Routes>
         <Footer />
       </BrowserRouter>
