@@ -78,6 +78,7 @@ export const StyledSubtleLink2 = styled.a`
     /* Light Grey */
 
     color: #afafaf;
+    line-height: 35px;
   }
 `;
 
