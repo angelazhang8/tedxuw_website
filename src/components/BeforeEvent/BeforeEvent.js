@@ -5,6 +5,7 @@ import {
   StyledButtonText,
   StyledBeforeEventContainer,
   StyledBeforeEventContainer2,
+  StyledBeforeEventContainer3,
   StyledImgDiv,
   StyledDivider,
   StyledButton,
@@ -23,13 +24,13 @@ class BeforeEvent extends React.Component {
           <Time />
         </StyledBeforeEventContainer>
 
-        <StyledBeforeEventContainer
+        <StyledBeforeEventContainer3
           style={{
-            alignItems: "left",
-            textAlignt: "left",
+            alignItems: "center",
+            textAlign: "center",
           }}>
           <StyledMissionTitle>2020 Vision.</StyledMissionTitle>
-        </StyledBeforeEventContainer>
+        </StyledBeforeEventContainer3>
         <Link to="footer" smooth={true} spy={true}>
           <StyledButton>
             <StyledDivider />

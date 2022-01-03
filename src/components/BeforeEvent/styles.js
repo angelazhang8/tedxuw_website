@@ -73,11 +73,9 @@ export const StyledBeforeEventContainer = styled(Container)`
     color: white;
     width: 1040px;
     position: relative;
-    // background: green;
-    // text-align: left;
-    // background: green;
+    text-align: center;
     @media (max-width: 1040px) {
-      width: 90%;
+      width: 100%;
     }
   }
 `;
@@ -92,6 +90,25 @@ export const StyledBeforeEventContainer2 = styled(Container)`
     textalign: left;
     @media (max-width: 745px) {
       width: 90%;
+    }
+  }
+`;
+
+export const StyledBeforeEventContainer3 = styled(Container)`
+  &&& {
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    width: 1040px;
+    position: relative;
+    text-align: center;
+    @media (max-width: 1040px) {
+      width: 90%;
+      padding-left: 1rem;
+    }
+    @media (max-width: 200px) {
+      width: 90%;
+      padding-left: 0rem;
     }
   }
 `;
