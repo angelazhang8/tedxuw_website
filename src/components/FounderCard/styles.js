@@ -11,6 +11,9 @@ export const StyledName = styled.h3`
     /* identical to box height */
     /* Red */
     color: #e62b1e;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 1rem;
   }
 `;
 
@@ -25,6 +28,9 @@ export const StyledPosition = styled.h4`
     /* White */
 
     color: #ffffff;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-top: 0.5rem;
   }
 `;
 

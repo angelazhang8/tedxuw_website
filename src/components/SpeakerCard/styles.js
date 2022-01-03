@@ -11,6 +11,8 @@ export const StyledName = styled.h3`
     /* identical to box height */
     /* Red */
     color: #e62b1e;
+
+    margin-bottom: 20px;
     @media (max-width: 1040px) {
       margin-right: 0.7rem;
     }
@@ -28,6 +30,8 @@ export const StyledPosition = styled.h4`
     /* White */
 
     color: #ffffff;
+    margin-top: 0px;
+    margin-bottom: 15px;
     @media (max-width: 1040px) {
       margin-right: 0.7rem;
     }

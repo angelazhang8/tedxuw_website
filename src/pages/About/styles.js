@@ -61,8 +61,6 @@ export const StyledAboutContainer = styled(Container)`
     text-align: center;
     @media (max-width: 1040px) {
       width: 90%;
-      // margin-left: 1rem;
-      // margin-right: 1rem;
     }
   }
 `;
