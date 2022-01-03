@@ -11,6 +11,9 @@ export const StyledName = styled.h3`
     /* identical to box height */
     /* Red */
     color: #e62b1e;
+    @media (max-width: 1040px) {
+      margin-right: 0.7rem;
+    }
   }
 `;
 
@@ -25,6 +28,9 @@ export const StyledPosition = styled.h4`
     /* White */
 
     color: #ffffff;
+    @media (max-width: 1040px) {
+      margin-right: 0.7rem;
+    }
   }
 `;
 
@@ -39,6 +45,9 @@ export const StyledDescription = styled.div`
     /* Light Grey */
 
     color: #afafaf;
+    @media (max-width: 1040px) {
+      margin-right: 0.7rem;
+    }
   }
 `;
 
@@ -63,8 +72,9 @@ export const StyledContainer = styled(Container)`
     width: 574px;
     transform: translateX(-20px);
     @media (max-width: 1040px) {
-      margin-left: 2rem;
       width: 100%;
+      margin-left: 2rem;
+      align-items: center;
     }
   }
 `;
@@ -73,11 +83,11 @@ export const StyledImg = styled.img`
     width: 362px;
     margin-bottom: 20px;
     margin-top: 20px;
-    border-radius: 181px;
+    border-radius: 50%;
 
-    @media (max-width: 509px) {
-      margin-left: 2rem;
-      width: 100%;
+    @media (max-width: 1040px) {
+      margin-left: 1rem;
+      width: calc(min(362px, 100%));
     }
   }
 `;

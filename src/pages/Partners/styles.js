@@ -61,6 +61,7 @@ export const StyledSpeakerContainer = styled(Container)`
       margin-top: 2rem;
       width: 90%;
       margin-left: 1rem;
+      margin-right: 1rem;
     }
   }
 `;

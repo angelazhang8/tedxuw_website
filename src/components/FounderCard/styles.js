@@ -47,6 +47,7 @@ export const StyledImg = styled.img`
     width: 235px;
     @media (max-width: 870px) {
       width: 90%;
+      margin-left: 1rem;
     }
   }
 `;
