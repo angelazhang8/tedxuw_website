@@ -71,6 +71,7 @@ export const StyledHeaderDiv = styled.div`
     width: 100%;
     height: 815px;
     right: 0px;
+
     @media (max-width: 870px) {
       height: 80vw;
       line-height: 90%;

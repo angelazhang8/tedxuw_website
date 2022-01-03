@@ -34,6 +34,7 @@ import ahmed_khalil from "../../res/images/team/ahmed_khalil.png";
 import alan_pang from "../../res/images/team/alan_pang.png";
 import mahnoor_fatima from "../../res/images/team/mahnoor_fatima.png";
 import grace_ren from "../../res/images/team/grace_ren.png";
+import miguel_arango from "../../res/images/team/Miguel.png";
 import filler from "../../res/images/team/filler.png";
 import "./About.css";
 const About = () => (
@@ -61,7 +62,7 @@ const About = () => (
       </Container>
     </StyledHeaderDiv>
     <StyledAboutContainer>
-      <StyledHeader>Founders</StyledHeader>
+      <StyledHeader>Co-chairs</StyledHeader>
       <FounderCard
         img={matthew_zhu}
         name="Matthew Zhu"
@@ -121,7 +122,7 @@ const About = () => (
           <ExecCard
             img={jennifer_man}
             name="Jennifer Man"
-            position="Content Manager"
+            position="Graphic Designer"
             description="Jennifer is a 4th year student in the Planning program and she has been a Graphic Designer for TEDxUW since 2020. She is excited to storytell this year's inspiring theme through innovative visualizations. Jennifer is excited to be part of a meaningful event that shares knowledge through storytelling, experiences and ideas."
             linkedin="https://www.linkedin.com/in/jenniferm0814/"
           />
@@ -137,7 +138,7 @@ const About = () => (
         </div>
         <div class="column" className="col_type1">
           <ExecCard
-            img={filler}
+            img={miguel_arango}
             name="Miguel Arango"
             position="Social Media Manager"
             description="Miguel is a person who has always watched TEDx talks to learn about new subjects, understand things better, or learn about new paradoxes. He is thrilled to take on the social media manager role and propose better ideas and new ways to increase engagement with our social media platforms. Miguel is also motivated to use his analysis and organization skills to deliver and develop the best plans to up our social media platforms."
@@ -241,15 +242,6 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/andrea-ta-5060241b8/"
           />
         </div>
-        <div class="column" className="col_type1">
-          <ExecCard
-            img={filler}
-            name="Sehaj Raj Singh"
-            position="Speaker Relation Associate"
-            description="Sehaj is a second year Hons. Economics and Business student from India. He’s been into debating, Model UNs and public speaking from the past 6 years now and is greatly impressed by the concept of TED talks. He’s extremely grateful for this role because of the great networking and learning opportunities it has to offer. Apart from this, he’s a passionate ciniphile and photographer/filmmaker. He’s really excited for this year’s TEDx event and looks forward to bring up some fresh ideas."
-            linkedin="https://www.linkedin.com/in/sehaj-raj-singh-8a286b192/"
-          />
-        </div>
       </div>
       <StyledHeader>Operations</StyledHeader>
       <div
@@ -277,11 +269,11 @@ const About = () => (
         }}>
         <div class="column" className="col_type1">
           <ExecCard
-            img={mahnoor_fatima}
-            name="Mahnoor Fatima"
-            position="Partnership Manager"
-            description="Mahnoor is a third-year student in the Health Sciences program pursuing a Pre-Clinical Specialization. As a partnership manager, Mahnoor will be networking with various organizations to gain sponsorships and initiate collaborations. In addition to that, she will be overlooking the budget for the year."
-            linkedin="https://www.linkedin.com/in/mahnoor-fatima00/"
+            img={alan_pang}
+            name="Alan Pang"
+            position="Finance Director"
+            description="Alan Pang is a fourth year student in the Accounting and Financial Management program. Alan joined TEDxUW in 2019 as a Partnerships Manager, before becoming Finance Director in 2020. In his position, Alan will oversee all aspects of TEDxUW’s financial reporting process. He is very excited to be part of the TEDxUW team."
+            linkedin="https://www.linkedin.com/in/alan-pang-2461aa15b/"
           />
         </div>
         <div class="column" className="col_type1">
@@ -295,11 +287,11 @@ const About = () => (
         </div>
         <div class="column" className="col_type1">
           <ExecCard
-            img={alan_pang}
-            name="Alan Pang"
-            position="Finance Director"
-            description="Alan Pang is a fourth year student in the Accounting and Financial Management program. Alan joined TEDxUW in 2019 as a Partnerships Manager, before becoming Finance Director in 2020. In his position, Alan will oversee all aspects of TEDxUW’s financial reporting process. He is very excited to be part of the TEDxUW team."
-            linkedin="https://www.linkedin.com/in/alan-pang-2461aa15b/"
+            img={mahnoor_fatima}
+            name="Mahnoor Fatima"
+            position="Partnership Manager"
+            description="Mahnoor is a third-year student in the Health Sciences program pursuing a Pre-Clinical Specialization. As a partnership manager, Mahnoor will be networking with various organizations to gain sponsorships and initiate collaborations. In addition to that, she will be overlooking the budget for the year."
+            linkedin="https://www.linkedin.com/in/mahnoor-fatima00/"
           />
         </div>
       </div>

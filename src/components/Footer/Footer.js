@@ -53,7 +53,7 @@ class Footer extends Component {
                       <div class="column">
                         <ImageGroup>
                           <a
-                            href="https://www.facebook.com/"
+                            href="https://www.facebook.com/TEDxUW/"
                             target="_blank"
                             rel="noopener noreferrer">
                             <img
@@ -70,7 +70,7 @@ class Footer extends Component {
                       <div class="column">
                         <ImageGroup>
                           <a
-                            href="https://www.linkedin.com/"
+                            href="https://ca.linkedin.com/company/tedxuw"
                             target="_blank"
                             rel="noopener noreferrer">
                             <img
@@ -87,7 +87,7 @@ class Footer extends Component {
                       <div class="column">
                         <ImageGroup>
                           <a
-                            href="https://www.instagram.com/"
+                            href="https://www.instagram.com/tedxuw/"
                             target="_blank"
                             rel="noopener noreferrer">
                             <img
@@ -104,7 +104,7 @@ class Footer extends Component {
                       <div class="column">
                         <ImageGroup>
                           <a
-                            href="https://twitter.com/"
+                            href="https://mobile.twitter.com/tedxuw"
                             target="_blank"
                             rel="noopener noreferrer">
                             <img
@@ -121,7 +121,7 @@ class Footer extends Component {
                     </div>
                   </Container>
                   <StyledDescription>
-                    Copyright © 2020 TEDxUW - All Rights Reserved.
+                    Copyright © 2022 TEDxUW - All Rights Reserved.
                     <br />
                     This independent TEDx event is operated under license from
                     TED.

@@ -7,7 +7,8 @@ import {
   StyledButton,
   StyledNavContainer,
 } from "./styles";
-import tedxuw_logo from "../../res/images/tedxuw_logo.svg";
+// import tedxuw_logo from "../../res/images/tedxuw_logo.svg";
+import tedxuw_logo from "../../res/images/logo_white.png";
 import { NavLink } from "react-router-dom";
 import HamburgerMenu from "../Burger/Burger";
 
@@ -76,6 +77,7 @@ function Header(props) {
                 style={{
                   transform: "translate(-75px,-10px)",
                   position: "fixed",
+                  width: "130.97px",
                 }}
               />
             </a>

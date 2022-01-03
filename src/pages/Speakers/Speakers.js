@@ -45,12 +45,13 @@ const Speakers = () => (
       }}>
       <Header color="#2e0807" height="200" />
       <StyledSpeakerContainer>
-        <StyledRedHeader style={{ paddingTop: "64px" }}>
+        <div style={{ paddingTop: "64px" }} />
+        {/* <StyledRedHeader style={{ paddingTop: "64px" }}>
           Coming Soon
-        </StyledRedHeader>
-        <StyledMainHeader>2021 Speaker Lineup </StyledMainHeader>
+        </StyledRedHeader> */}
+        <StyledMainHeader>2022 Speaker Lineup </StyledMainHeader>
         <StyledHeaderDescription>
-          In the meantime, checkout our past speakers below!
+          Check out our 2022 speakers below
         </StyledHeaderDescription>
       </StyledSpeakerContainer>
 
@@ -64,19 +65,21 @@ const Speakers = () => (
       </StyledSpeakerContainer2>
     </div>
     <StyledSpeakerContainer3>
-      <p class="speakers">
+      {/* <p class="speakers">
         <StyledSmallHeader>2021 Speakers</StyledSmallHeader>
-      </p>
-      <SpeakerCard
-        img={andrew_guy2}
-        name="Andrew Guy"
-        talk_name="Find the Good in Humanity"
-        description="Andrew is a MACP candidate, he has earned degrees from Southern
+      </p> */}
+      <div class="speakers">
+        <SpeakerCard
+          img={andrew_guy2}
+          name="Andrew Guy"
+          talk_name="Find the Good in Humanity"
+          description="Andrew is a MACP candidate, he has earned degrees from Southern
         Arkansas University, dual BSc in Medical Biology, Exercise Science, MSc,
         Master of Science in sports medicine (Kinesiology). Andrew is a
         professionally certified educator, Professional Teacher PD facilitator,
         and a former teacher of the year."
-      />
+        />
+      </div>
       <SpeakerCard
         img={anh_le2}
         name="Anh Le"

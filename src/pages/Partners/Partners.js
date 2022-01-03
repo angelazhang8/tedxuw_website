@@ -38,7 +38,7 @@ const Partners = () => (
         <StyledRedHeader style={{ paddingTop: "64px" }}>
           Coming Soon
         </StyledRedHeader>
-        <StyledMainHeader>2021 Partners </StyledMainHeader>
+        <StyledMainHeader>2022 Partners </StyledMainHeader>
         <StyledHeaderDescription>
           In the meantime, thank you to our 2020 partners for their support!
         </StyledHeaderDescription>
