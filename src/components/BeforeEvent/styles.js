@@ -57,7 +57,7 @@ export const StyledMissionTitle = styled.h1`
       margin-left: 1rem;
       margin-right: 1rem;
     }
-    @media (max-width: 580px) {
+    @media (max-width: 600px) {
       font-size: 20vw;
       line-height: 30vw;
     }
@@ -104,7 +104,6 @@ export const StyledBeforeEventContainer3 = styled(Container)`
     text-align: center;
     @media (max-width: 1040px) {
       width: 90%;
-      padding-left: 1rem;
     }
     @media (max-width: 200px) {
       width: 90%;
