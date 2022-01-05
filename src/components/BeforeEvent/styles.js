@@ -48,11 +48,11 @@ export const StyledMissionTitle = styled.h1`
     font-weight: 700;
     line-height: 199px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     text-shadow: 4px 4px 25px rgba(249, 214, 103, 0.5);
     margin-bottom: 32px;
     margin-top: 48px;
-    // background: green;
+
     @media (max-width: 1040px) {
       margin-left: 1rem;
       margin-right: 1rem;

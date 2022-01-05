@@ -35,12 +35,11 @@ const Partners = () => (
       }}>
       <Header color="#2e0807" height="200" />
       <StyledSpeakerContainer>
-        <StyledRedHeader style={{ paddingTop: "64px" }}>
-          Coming Soon
-        </StyledRedHeader>
+        <div style={{ paddingTop: "64px" }} />
+        {/* <StyledRedHeader>Coming Soon</StyledRedHeader> */}
         <StyledMainHeader>2022 Partners </StyledMainHeader>
         <StyledHeaderDescription>
-          In the meantime, thank you to our 2020 partners for their support!
+          Thank you to our generous partners for their support!
         </StyledHeaderDescription>
       </StyledSpeakerContainer>
       <StyledSpeakerContainer2>
@@ -59,21 +58,21 @@ const Partners = () => (
           <div class="column" className="sponsor_col">
             <StyledImg src={university_of_waterloo} />
           </div>
-          <div class="column" className="sponsor_col">
+          {/* <div class="column" className="sponsor_col">
             <StyledImg src={wusa} />
-          </div>
+          </div> */}
           <div class="column" className="sponsor_col">
             <StyledImg src={waterloo_arts_endowment_fund} />
           </div>
-          <div class="column" className="sponsor_col">
+          {/* <div class="column" className="sponsor_col">
             <StyledImg src={basecamp} />
-          </div>
-          <div class="column" className="sponsor_col">
+          </div> */}
+          {/* <div class="column" className="sponsor_col">
             <StyledImg src={city_of_waterloo} />
           </div>
           <div class="column" className="sponsor_col">
             <StyledImg src={mailchimp} />
-          </div>
+          </div> */}
         </div>
       </div>
     </StyledSpeakerContainer3>

@@ -51,7 +51,7 @@ const Speakers = () => (
         </StyledRedHeader> */}
         <StyledMainHeader>2022 Speaker Lineup </StyledMainHeader>
         <StyledHeaderDescription>
-          Check out our 2022 speakers below
+          Check out our 2022 speakers below!
         </StyledHeaderDescription>
       </StyledSpeakerContainer>
 

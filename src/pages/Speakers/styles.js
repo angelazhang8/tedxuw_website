@@ -78,11 +78,10 @@ export const StyledSpeakerContainer = styled(Container)`
     width: 1040px;
     position: relative;
 
-    text-align: center;
+    text-align: left;
     @media (max-width: 1040px) {
       margin-top: 2rem;
       width: 100%;
-      // background: green;
       margin-right: 0px;
       padding-right: 0px;
     }
