@@ -163,7 +163,7 @@ class Footer extends Component {
                     />
                     <br />
                   </StyledLink>
-                  <StyledLink href="https://tedxuw.github.io/2017/">
+                  <StyledLink href="http://2017.tedxuw.com/">
                     TEDxUW 2017{" "}
                     <img
                       src={outline}
@@ -174,7 +174,7 @@ class Footer extends Component {
                     />
                     <br />
                   </StyledLink>
-                  <StyledLink href="https://tedxuw.github.io/2016/">
+                  <StyledLink href="http://2016.tedxuw.com/">
                     TEDxUW 2016{" "}
                     <img
                       src={outline}
