@@ -71,7 +71,7 @@ const Speakers = () => (
       <div class="speakers">
         <SpeakerCard
           img={andrew_guy2}
-          name="Andrew Guy"
+          name="Andrew E. Guy"
           talk_name="Find the Good in Humanity"
           description="Andrew is a MACP candidate, he has earned degrees from Southern
         Arkansas University, dual BSc in Medical Biology, Exercise Science, MSc,
