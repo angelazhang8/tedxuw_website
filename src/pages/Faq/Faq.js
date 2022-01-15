@@ -19,7 +19,7 @@ const Faq = () => (
       <Accordion
         title="When and where is TEDxUW happening?"
         content="
-        <p>The event date will tentatively be happening on February 19th, 2022 and will be virtual in light of the pandemic and public health measures. Please check our website again soon to get your free ticket! We hope to see you there!
+        <p>The event date will be happening on February 19th, 2022 and will be virtual in light of the pandemic and public health measures. Please check our website again soon to get your free ticket! We hope to see you there!
         </p>
         "
       />

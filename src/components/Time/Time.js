@@ -77,10 +77,6 @@ function Time() {
 
   return (
     <div>
-      <StyledHeaderDescription
-        style={{ color: "white", paddingLeft: "1rem", paddingRight: "1rem" }}>
-        TedxUW will virtually take place on {stringDate} ET.
-      </StyledHeaderDescription>
       <StyledContainer>
         <section style={{ display: "flex", flexDirection: "column" }}>
           <div
@@ -163,6 +159,10 @@ function Time() {
           </div>
         </section>
       </StyledContainer>
+      <StyledHeaderDescription
+        style={{ color: "white", paddingLeft: "1rem", paddingRight: "1rem" }}>
+        TedxUW will virtually take place on February 19, 2022.
+      </StyledHeaderDescription>
     </div>
   );
 }

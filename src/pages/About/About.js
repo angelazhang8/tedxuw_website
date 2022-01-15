@@ -175,15 +175,6 @@ const About = () => (
         </div>
         <div class="column" className="col_type1">
           <ExecCard
-            img={leona_kuo}
-            name="Leona Kuo"
-            position="Logistics Manager"
-            description="Leona has been involved with TED since she was young, and she is so excited to join the team this year to help create a fantastic TEDxUW 2022 experience! Since her first year was completely online due to covid, she is particularly excited about this year’s theme."
-            linkedin="https://www.linkedin.com/in/leona-kuo-7b8462157"
-          />
-        </div>
-        <div class="column" className="col_type1">
-          <ExecCard
             img={taneya_raguram}
             name="Taneya Raguram"
             position="Logistics Manager"
@@ -275,15 +266,6 @@ const About = () => (
             position="Finance Director"
             description="Alan Pang is a fourth year student in the Accounting and Financial Management program. Alan joined TEDxUW in 2019 as a Partnerships Manager, before becoming Finance Director in 2020. In his position, Alan will oversee all aspects of TEDxUW’s financial reporting process. He is very excited to be part of the TEDxUW team."
             linkedin="https://www.linkedin.com/in/alan-pang-2461aa15b/"
-          />
-        </div>
-        <div class="column" className="col_type1">
-          <ExecCard
-            img={grace_ren}
-            name="Grace Ren"
-            position="Lead Accountant"
-            description="Grace is a 2A Mathematics/CPA student and she is excited to join the talented TEDxUW team this year. It gives her a chance to contribute her professional knowledge and skills to help enhance the team performance, to organize conferences to share with other students the power of ideas and innovation, and to emphasize community interactions. She hopes to add values to the high-performing team to deliver a memorable experience to everyone this year."
-            // linkedin="https://www.linkedin.com/"
           />
         </div>
         <div class="column" className="col_type1">

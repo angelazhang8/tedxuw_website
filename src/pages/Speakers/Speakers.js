@@ -83,7 +83,7 @@ const Speakers = () => (
       <SpeakerCard
         img={anh_le2}
         name="Anh Le"
-        talk_name="How to Optimize Your Odds for the Best Outcome?"
+        talk_name="How to Optimize Your Odds for the Best Outcome"
         description="As an Asian female immigrant/ international student, Anh wants to break out of the stereotypes and believe in herself to make a difference in the world. And to make a difference, she wants to understand how the world works through the lens of research, insights, and data. Having had a natural talent for science and arts since she was little, she joined science competitions to hackathons from school to university. She is currently a data scientist with a keen interest in developing insights. She loves learning about how the world works. She believes a great data scientist must have the speech of a diplomat, the curiosity of a scientist, and a business mindset of an entrepreneur. With a background in Biotech, Engineering, and Finance from the University of Waterloo (both a Bachelor and a Master), her insatiable curiosity and a strong desire to make an impact beyond herself have allowed her to step outside her comfort zones. Outside of work, you can find Anh playing Pokemon Go and chess, helping out with International Blockchain Olympiad and DarkByte Research, meditation, connecting with people, and biking. Past events she spoke at TEDxUW 2018, Hackthe6ix 2020, Manning Publications – Data Science, Women in Data, CAASA Master of Quantitive Finance, and DataScienceGo. To scale an idea, you need optimized execution and good decision-making. Her blog on finance, data science, and blockchain on Medium @thisisanhle (also on other socials) has over 10,000 views a month. Follow her on Medium for her insights.
         "
       />
@@ -101,7 +101,7 @@ const Speakers = () => (
       />
       <SpeakerCard
         img={thomas_lenhard2}
-        name="Thomas Lenhard"
+        name="Lenny Lenhard"
         talk_name="Cry Like A Man: Modeling Positive Masculinity"
         description="Lenny Lenhard is the founder of the Modern Manhood project, which works with Montreal high schoolers to positively reimagine what it means to be a man. Rather than tell boys who they should be, the program helps boys build the self-confidence and emotional literacy to express an authentic version of themselves, free from the constraints that patriarchy imposes upon us all. Operating with a core set of lesson plans, the program - run by men, for men - discusses topics ranging from body image to sex and beyond. As a recent McGill graduate, his insights are informed by his own experiences, as well as his background in sociology - a domain which has challenged him to question how people operate in systems we take for granted."
       />

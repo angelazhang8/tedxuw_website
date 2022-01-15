@@ -110,7 +110,7 @@ export const StyledDivider = styled(Divider)`
 export const StyledImg = styled.img`
   &&& {
     width: 235px;
-
+    margin-bottom: 2rem;
     @media (max-width: 1040px) {
       margin-top: 2rem;
     }

@@ -14,10 +14,6 @@ export const StyledDigit = styled.div`
 
     display: flex;
     align-items: center;
-    // @media (max-width: 1040px) {
-    //   width: 50px;
-    //   height: 92px;
-    // }
   }
 `;
 
@@ -80,18 +76,16 @@ export const StyledHeaderDescription = styled.h3`
     /* identical to box height */
 
     /* Dark White */
-    // width: 90%;
     margin-left: 2rem;
     margin-right: 2rem;
     color: #e0e0e0;
-    margin-top: 0px;
 
     @media (max-width: 400px) {
       margin-left: 1rem;
       margin-right: 1rem;
     }
-    @media (min-width: 700px) {
-      display: none;
-    }
+    // @media (min-width: 700px) {
+    //   display: none;
+    // }
   }
 `;

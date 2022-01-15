@@ -17,6 +17,8 @@ import city_of_waterloo from "../../res/images/sponsors/city_of_waterloo.svg";
 import mailchimp from "../../res/images/sponsors/mailchimp.svg";
 import waterloo_arts_endowment_fund from "../../res/images/sponsors/waterloo_arts_endowment_fund.svg";
 import wusa from "../../res/images/sponsors/wusa.svg";
+import waterlooarts from "../../res/images/sponsors/waterlooarts.png";
+import toast from "../../res/images/sponsors/toast.png";
 
 import { Link } from "react-scroll";
 import Header from "../../components/Header/Header";
@@ -58,21 +60,21 @@ const Partners = () => (
           <div class="column" className="sponsor_col">
             <StyledImg src={university_of_waterloo} />
           </div>
-          {/* <div class="column" className="sponsor_col">
-            <StyledImg src={wusa} />
-          </div> */}
+          <div class="column" className="sponsor_col">
+            <StyledImg src={toast} />
+          </div>
           <div class="column" className="sponsor_col">
             <StyledImg src={waterloo_arts_endowment_fund} />
           </div>
-          {/* <div class="column" className="sponsor_col">
+          <div class="column" className="sponsor_col">
             <StyledImg src={basecamp} />
-          </div> */}
-          {/* <div class="column" className="sponsor_col">
-            <StyledImg src={city_of_waterloo} />
+          </div>
+          <div class="column" className="sponsor_col">
+            <StyledImg src={waterlooarts} />
           </div>
           <div class="column" className="sponsor_col">
             <StyledImg src={mailchimp} />
-          </div> */}
+          </div>
         </div>
       </div>
     </StyledSpeakerContainer3>
