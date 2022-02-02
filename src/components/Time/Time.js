@@ -161,7 +161,7 @@ function Time() {
       </StyledContainer>
       <StyledHeaderDescription
         style={{ color: "white", paddingLeft: "1rem", paddingRight: "1rem" }}>
-        TedxUW will virtually take place on February 19, 2022.
+        TEDxUW will virtually take place on February 19, 2022.
       </StyledHeaderDescription>
     </div>
   );

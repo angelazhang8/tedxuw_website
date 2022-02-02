@@ -75,7 +75,7 @@ const Faq = () => (
       </ul>
       </p>"
         special_text="<p>
-      If you want to get involved, email us at <a href='mailto:partnership@tedxuw.com' style={{color:'red'}}>partnership@tedxuw.com</a> and we will connect with you!
+      If you want to get involved, email us at <a href='mailto:experience@tedxuw.com' style={{color:'red'}}>experience@tedxuw.com</a> and we will connect with you!
       </p>"
       />
     </StyledFAQContainer>
@@ -83,8 +83,8 @@ const Faq = () => (
       <StyledDescription>
         <span style={{ fontWeight: "800" }}>More questions?</span> Contact us at{" "}
         <span>
-          <a href="mailto:partnership@tedxuw.com" style={{ color: "red" }}>
-            partnership@tedxuw.com
+          <a href="mailto:experience@tedxuw.com" style={{ color: "red" }}>
+            experience@tedxuw.com
           </a>
         </span>{" "}
         or on social media; we’re happy to answer your questions!

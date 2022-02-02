@@ -132,11 +132,11 @@ class Footer extends Component {
                 <Container style={{ textAlign: "left" }}>
                   <StyledHeading>Contact</StyledHeading>
                   <StyledLink
-                    href="mailto:partnership@tedxuw.com"
+                    href="mailto:experience@tedxuw.com"
                     style={{
                       textDecoration: "underline",
                     }}>
-                    partnership@tedxuw.com
+                    experience@tedxuw.com
                   </StyledLink>
                   <StyledHeading style={{ paddingTop: "1.5rem" }}>
                     Past Websites

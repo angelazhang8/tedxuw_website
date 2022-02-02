@@ -50,10 +50,8 @@ function Accordion(props) {
             <div className="accordion__text">
               <p>
                 If you want to get involved, email us at{" "}
-                <a
-                  href="mailto:partnership@tedxuw.com"
-                  style={{ color: "red" }}>
-                  partnership@tedxuw.com
+                <a href="mailto:experience@tedxuw.com" style={{ color: "red" }}>
+                  experience@tedxuw.com
                 </a>{" "}
                 and we can help you out!
               </p>
