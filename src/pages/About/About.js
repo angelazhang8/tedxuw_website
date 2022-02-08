@@ -96,7 +96,7 @@ const About = () => (
           <ExecCard
             img={salma_marzouk}
             name="Salma Marzouk"
-            position="Director of Marketing"
+            position="Director of Marketing and Host"
             description="As someone who loves watching TED and TEDx talks, Salma is excited to lead the marketing team in reaching a wide audience for this year's TEDxUW conference. Salma is also excited to use her event planning skills to organize the best TEDxUW conference yet along with the rest of the team. Feel free to reach out to Salma if you have any questions about TEDxUW, marketing, or getting involved in UWaterloo!"
             linkedin="https://www.linkedin.com/in/salmamarzouk/"
           />
@@ -194,7 +194,7 @@ const About = () => (
           <ExecCard
             img={kiana_wong}
             name="Kiana Wong"
-            position="Director of Speaker Relations"
+            position="Director of Speaker Relations and Host"
             description="Kiana is an Honours Science and incoming Pharmacy student. She has been heavily involved in public speaking, and is currently an instructor with a Royal Canadian Air Cadet Squadron where she runs the Effective Speaking team. As the Director of Speaker Relations, she looks forward to working closely with the speakers, and contributing her knowledge and skills when collaborating with the team. Kiana is extremely honoured to be a part of an organization where she can work with individuals in achieving a common goal: to share ideas worth spreading, and she looks forward to the upcoming TEDxUW event!"
           />
         </div>

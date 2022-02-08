@@ -101,9 +101,13 @@ function Header(props) {
 
           <li
             style={{ transform: "translate(550px,-40px)", position: "fixed" }}>
-            <StyledButton>
-              <StyledButtonText>Register Now</StyledButtonText>
-            </StyledButton>
+            <a
+              href="https://bit.ly/tedxuw-registration"
+              style={{ textDecoration: "none" }}>
+              <StyledButton>
+                <StyledButtonText>Register Now</StyledButtonText>
+              </StyledButton>
+            </a>
           </li>
         </ul>
       </StyledNavContainer>
