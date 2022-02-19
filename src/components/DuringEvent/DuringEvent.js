@@ -33,7 +33,7 @@ class DuringEvent extends React.Component {
                 Registration Now Open!
               </StyledRegistrationNotice>
               <a
-                href="https://www.google.com"
+                href="https://bit.ly/tedxuw-registration"
                 style={{ textDecoration: "none" }}>
                 <StyledButton style={{ transform: "translateY(-65px)" }}>
                   <Divider hidden style={{ height: "150px" }} />
@@ -60,7 +60,9 @@ class DuringEvent extends React.Component {
           <StyledRegistrationNotice>
             Registration Now Open!
           </StyledRegistrationNotice>
-          <a href="https://www.google.com" style={{ textDecoration: "none" }}>
+          <a
+            href="https://bit.ly/tedxuw-registration "
+            style={{ textDecoration: "none" }}>
             <StyledButton>
               <Divider hidden style={{ height: "150px" }} />
               <StyledButtonText>Register Now</StyledButtonText>

@@ -28,7 +28,8 @@ const Faq = () => (
         content="<p>TEDx conferences typically have a theme in place and our theme for this year’s conference is 2020 Vision. Our phenomenal speakers will be exploring the theme within an eclectic range of frameworks and the day is going to be completely reflective of the theme. 
       <br/>
       <br/>
-      The schedule for the day is in the works at the moment but will be published on our website closer to the time! Keep checking the website and our social media accounts for a full break-down of events!</p>
+      Please refer to the registration page for a breakdown of the event: https://bit.ly/tedxuw-registration
+      </p>
       "
       />
       <Accordion
@@ -40,7 +41,7 @@ const Faq = () => (
       <Accordion
         title="How can I attend TEDxUW?"
         content="<p>
-      The registration form will be made available closer to the event date on our website and social media accounts, so please check again soon.
+        Register now using this link: https://bit.ly/tedxuw-registration
       </p>"
       />
       <Accordion

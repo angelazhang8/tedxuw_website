@@ -96,7 +96,7 @@ const About = () => (
           <ExecCard
             img={salma_marzouk}
             name="Salma Marzouk"
-            position="Director of Marketing and Host"
+            position="Director of Marketing"
             description="As someone who loves watching TED and TEDx talks, Salma is excited to lead the marketing team in reaching a wide audience for this year's TEDxUW conference. Salma is also excited to use her event planning skills to organize the best TEDxUW conference yet along with the rest of the team. Feel free to reach out to Salma if you have any questions about TEDxUW, marketing, or getting involved in UWaterloo!"
             linkedin="https://www.linkedin.com/in/salmamarzouk/"
           />
@@ -194,7 +194,7 @@ const About = () => (
           <ExecCard
             img={kiana_wong}
             name="Kiana Wong"
-            position="Director of Speaker Relations and Host"
+            position="Director of Speaker Relations"
             description="Kiana is an Honours Science and incoming Pharmacy student. She has been heavily involved in public speaking, and is currently an instructor with a Royal Canadian Air Cadet Squadron where she runs the Effective Speaking team. As the Director of Speaker Relations, she looks forward to working closely with the speakers, and contributing her knowledge and skills when collaborating with the team. Kiana is extremely honoured to be a part of an organization where she can work with individuals in achieving a common goal: to share ideas worth spreading, and she looks forward to the upcoming TEDxUW event!"
           />
         </div>
@@ -202,7 +202,7 @@ const About = () => (
           <ExecCard
             img={kate_bendall}
             name="Kate Bendall"
-            position="Speaker Relations Associate"
+            position="Speaker Relations Associate and Host"
             description="When deciding how to begin her university experience, Kate first recognized all the different ways in which to learn from others whether it be in classes, extracurriculars or just a chat between friends. TEDxUW is the perfect opportunity to share ideas as a speaker and thrive in open mindedness as a participant. As a new member to both the UW community and the TEDxUW team, Kate is full of passion and ready to ensure an event filled with enlightening speakers. Join her in celebrating the eloquence and expanse of knowledge that TEDxUW highlights this February!"
             linkedin="www.linkedin.com/in/katebendall"
           />
@@ -268,7 +268,7 @@ const About = () => (
             linkedin="https://www.linkedin.com/in/alan-pang-2461aa15b/"
           />
         </div>
-        <div class="column" className="col_type1">
+        {/* <div class="column" className="col_type1">
           <ExecCard
             img={mahnoor_fatima}
             name="Mahnoor Fatima"
@@ -276,7 +276,7 @@ const About = () => (
             description="Mahnoor is a third-year student in the Health Sciences program pursuing a Pre-Clinical Specialization. As a partnership manager, Mahnoor will be networking with various organizations to gain sponsorships and initiate collaborations. In addition to that, she will be overlooking the budget for the year."
             linkedin="https://www.linkedin.com/in/mahnoor-fatima00/"
           />
-        </div>
+        </div> */}
       </div>
     </StyledExecContainer>
     <div style={{ paddingBottom: "2rem" }} />

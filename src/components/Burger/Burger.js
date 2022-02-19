@@ -152,7 +152,7 @@ const Menu = ({ open }) => {
         FAQ
       </NavLink>
       <a href="https://medium.com/@tedxuw">Blog</a>
-      <a href="">Register Now</a>
+      <a href="https://bit.ly/tedxuw-registration">Register Now</a>
     </StyledMenu>
   );
 };
