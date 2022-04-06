@@ -10,8 +10,8 @@ import {
   StyledButtonDiv,
   StyledButtonContainer,
 } from "./styles";
-import { Container, Button, Divider } from "semantic-ui-react";
 import LandingPageComponent from "../LandingPageComponent/LandingPageComponent";
+import { Link } from "react-scroll";
 
 class AfterEvent extends React.Component {
   render() {
@@ -27,18 +27,17 @@ class AfterEvent extends React.Component {
           </StyledNotice>
           <StyledButtonDiv>
             <span>
-              <a
-                href="https://www.google.com"
-                style={{ textDecoration: "none", paddingRight: "24px" }}>
-                <StyledButtonWhite style={{ transform: "translateY(-65px)" }}>
-                  <StyledButtonText>
-                    Sign Up for our Newsletter
-                  </StyledButtonText>
-                </StyledButtonWhite>
+              <a style={{ textDecoration: "none", paddingRight: "24px" }}>
+                <Link to="footer" smooth={true} spy={true}>
+                  <StyledButtonWhite style={{ transform: "translateY(-65px)" }}>
+                    <StyledButtonText>
+                      Sign Up for our Newsletter
+                    </StyledButtonText>
+                  </StyledButtonWhite>
+                </Link>
               </a>
-
               <a
-                href="https://www.google.com"
+                href="https://www.youtube.com/playlist?list=PLHfzGSH2ucEirMznxU5kXUO6TUK3FYnyO"
                 style={{ textDecoration: "none" }}>
                 <StyledButton style={{ transform: "translateY(-65px)" }}>
                   <StyledButtonText>Watch Videos on Youtube</StyledButtonText>
@@ -46,21 +45,22 @@ class AfterEvent extends React.Component {
               </a>
             </span>
           </StyledButtonDiv>
+
           <StyledButtonContainer>
             <div style={{ paddingBottom: "1rem" }}>
-              <a
-                href="https://www.google.com"
-                style={{ textDecoration: "none" }}>
-                <StyledButtonWhite>
-                  <StyledButtonText>
-                    Sign Up for our Newsletter
-                  </StyledButtonText>
-                </StyledButtonWhite>
+              <a style={{ textDecoration: "none" }}>
+                <Link to="footer" smooth={true} spy={true}>
+                  <StyledButtonWhite>
+                    <StyledButtonText>
+                      Sign Up for our Newsletter
+                    </StyledButtonText>
+                  </StyledButtonWhite>
+                </Link>
               </a>
             </div>
             <div>
               <a
-                href="https://www.google.com"
+                href="https://www.youtube.com/playlist?list=PLHfzGSH2ucEirMznxU5kXUO6TUK3FYnyO"
                 style={{ textDecoration: "none" }}>
                 <StyledButton>
                   <StyledButtonText>Watch Videos on Youtube</StyledButtonText>
