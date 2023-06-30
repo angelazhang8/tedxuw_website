@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import { Grid, Image, Container, ImageGroup, Divider } from "semantic-ui-react";
 
-import facebook from "../../res/images/facebook.svg";
-import instagram from "../../res/images/instagram.svg";
-import linkedin from "../../res/images/linkedin.svg";
-import twitter from "../../res/images/twitter.svg";
+import facebook from "../../res/images/2023/facebook-logo.svg";
+import instagram from "../../res/images/2023/instagram-logo.svg";
+import linkedin from "../../res/images/2023/linkedin-logo.svg";
+import twitter from "../../res/images/2023/twitter-logo.svg";
+import youtube from "../../res/images/2023/youtube-logo.svg";
+import stump from "../../res/images/2023/stump.svg";
+import logo from "../../res/images/2023/tedxuw2023.svg"
+
 import "../../grid.min.css";
 
 import "./Footer.css";
@@ -17,170 +21,82 @@ import {
   StyledSubtleLink,
   StyledHr,
   StyledFooterContainer,
+  SocialMediaButton,
+  SocialMediaRow,
+  License,
   StyledConnectContainer,
 } from "./styles";
-import EmailForm from "../../components/EmailForm/EmailForm";
+
+// import EmailForm from "./../components/EmailForm/EmailForm";
+
 class Footer extends Component {
   render() {
     return (
-      <div id="footer">
-        <StyledFooterContainer>
-          <StyledHr />
-          <div class="ui grid ">
-            <div class="row" style={{ columnGap: "80px", alignItems: "left" }}>
-              <StyledConnectContainer>
-                <Container style={{ textAlign: "left" }}>
-                  <StyledHeading>Let's stay connected!</StyledHeading>
-                  <StyledDescription>
-                    Enter your email to receive the latest news and
-                    opportunities from the TEDxUW Community.
-                  </StyledDescription>
-                  <EmailForm />
-                  <Container
-                    style={{
-                      marginBottom: "33px",
-                      marginTop: "34px",
-                      marginRight: "auto",
-                      color: "white",
-                      width: "166px",
-                      position: "relative",
-                      textAlign: "left",
-                    }}>
-                    <div class="ui grid" style={{ color: "white" }}>
-                      <div class="column">
-                        <ImageGroup>
-                          <a
-                            href="https://www.facebook.com/"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <img
-                              style={{ width: "24px" }}
-                              alt=""
-                              src={facebook}
-                              onMouseOut={(e) =>
-                                (e.currentTarget.src = facebook)
-                              }
-                            />
-                          </a>
-                        </ImageGroup>
-                      </div>
-                      <div class="column">
-                        <ImageGroup>
-                          <a
-                            href="https://www.linkedin.com/"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <img
-                              style={{ width: "24px" }}
-                              alt=""
-                              src={linkedin}
-                              onMouseOut={(e) =>
-                                (e.currentTarget.src = linkedin)
-                              }
-                            />
-                          </a>
-                        </ImageGroup>
-                      </div>
-                      <div class="column">
-                        <ImageGroup>
-                          <a
-                            href="https://www.instagram.com/"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <img
-                              style={{ width: "24px" }}
-                              alt=""
-                              src={instagram}
-                              onMouseOut={(e) =>
-                                (e.currentTarget.src = instagram)
-                              }
-                            />
-                          </a>
-                        </ImageGroup>
-                      </div>
-                      <div class="column">
-                        <ImageGroup>
-                          <a
-                            href="https://twitter.com/"
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <img
-                              style={{ width: "24px" }}
-                              alt=""
-                              src={twitter}
-                              onMouseOut={(e) =>
-                                (e.currentTarget.src = twitter)
-                              }
-                            />
-                          </a>
-                        </ImageGroup>
-                      </div>
-                    </div>
-                  </Container>
-                  <StyledDescription>
-                    Copyright © 2020 TEDxUW - All Rights Reserved.
-                    <br />
-                    This independent TEDx event is operated under license from
-                    TED.
-                  </StyledDescription>
-                </Container>
-              </StyledConnectContainer>
-              <div class="three wide column" className="column1">
-                <Container style={{ textAlign: "left" }}>
-                  <StyledHeading>Contact</StyledHeading>
-                  <StyledLink href="mailto:partnership@tedxuw.com">
-                    partnership@tedxuw.com
-                  </StyledLink>
-                  <StyledHeading>Past Websites</StyledHeading>
-                  <StyledLink href="http://2018.tedxuw.com/">
-                    TEDxUW 2018
-                    <br />
-                  </StyledLink>
-                  <StyledLink href="https://tedxuw.github.io/2017/">
-                    TEDxUW 2017
-                    <br />
-                  </StyledLink>
-                  <StyledLink href="https://tedxuw.github.io/2016/">
-                    TEDxUW 2016
-                    <br />
-                  </StyledLink>
-                </Container>
-              </div>
-              <div class="two wide column">
-                <Container style={{ textAlign: "left" }}>
-                  <StyledHeading>Navigate</StyledHeading>
-                  <StyledSubtleLink href="/">
-                    Home
-                    <br />
-                  </StyledSubtleLink>
-                  <StyledSubtleLink href="Speakers">
-                    Speakers
-                    <br />
-                  </StyledSubtleLink>
-                  <StyledSubtleLink href="Partners">
-                    Partners
-                    <br />
-                  </StyledSubtleLink>
-                  <StyledSubtleLink href="About">
-                    About
-                    <br />
-                  </StyledSubtleLink>
-                  <StyledSubtleLink href="Faq">
-                    FAQ
-                    <br />
-                  </StyledSubtleLink>
-                  <StyledSubtleLink href="https://medium.com/@tedxuw">
-                    Blog
-                    <br />
-                  </StyledSubtleLink>
-                </Container>
-              </div>
-            </div>
+      <StyledFooterContainer>
+        <footer id='footer'>
+          <div id="logo">
+            <img id="tedxuw" src={logo} alt="TedXUW Logo" />
+            <img id="stump" src={stump} alt="Tree Stump" />
           </div>
-        </StyledFooterContainer>
-      </div>
+          <div id="past-website-links">
+            <h3 className="footer-heading">Past Websites</h3>
+            <ul>
+              <li><a href="">2020 Vision</a></li>
+              <li><a href="">Making Waves 2018</a></li>
+              <li><a href="">Defying Conventions 2017</a></li>
+              <li><a href="">TEDxUW 2016</a></li>
+            </ul>
+          </div>
+          <div id="contact-us">
+            <h3 className="footer-heading">Contact Us</h3>
+            <ul id="contact-details">
+              <li className="contact-row">
+                <span class="contact-method">Email:</span>
+                <span class="contact-value">outreach@tedxuw.com</span>
+              </li>
+            </ul>
+          </div>
+          <div id="social-links">
+          <h3 className="footer-heading">Social</h3>
+            <SocialMediaRow>
+              <SocialMediaButton>
+                <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+                  <img src={facebook} alt="Facebook" />
+                </a>
+              </SocialMediaButton>
+              <SocialMediaButton>
+                <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+                  <img src={instagram} alt="Instagram" />
+                </a>
+              </SocialMediaButton>
+              <SocialMediaButton>
+                <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+                  <img src={twitter} alt="Twitter" />
+                </a>
+              </SocialMediaButton>
+              <SocialMediaButton>
+                <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                  <img src={linkedin} alt="LinkedIn" />
+                </a>
+              </SocialMediaButton>
+              <SocialMediaButton>
+                <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
+                  <img src={youtube} alt="YouTube" />
+                </a>
+              </SocialMediaButton>
+            </SocialMediaRow>
+          </div>
+        </footer>
+        <License>
+            <p>Copyright © 2023 TEDxUW - All Rights Reserved.</p>
+            <p>This independent TEDx event is operated under license from TED.</p>
+        </License>
+      </StyledFooterContainer>
     );
   }
 }
+
+
+
 
 export default Footer;
